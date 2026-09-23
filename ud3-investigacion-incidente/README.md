@@ -14,6 +14,25 @@
 
 > La investigación del incidente constituye la fase analítica y técnica del tratamiento de un evento de seguridad. Una vez se ha detectado y validado una anomalía o un ataque, la organización debe determinar qué ocurrió, por qué ocurrió, qué impacto tuvo, qué activos se vieron afectados y qué medidas deben adoptarse para evitar recurrencia. En este sentido, la investigación no es un acto meramente documental ni descriptivo; es un proceso de análisis metodológico, orientado a la construcción de una narrativa técnica y legalmente defendible de los hechos.
 
+## Índice
+
+- [1. Introducción a la unidad](#1-introducción-a-la-unidad)
+- [2. Resultado de aprendizaje y criterios](#2-resultado-de-aprendizaje-y-criterios)
+- [3. Principios fundamentales de la investigación](#3-principios-fundamentales-de-la-investigación)
+- [4. Fases de la investigación del incidente](#4-fases-de-la-investigación-del-incidente)
+- [5. Recopilación de evidencias](#5-recopilación-de-evidencias)
+- [6. Técnicas y herramientas de análisis](#6-técnicas-y-herramientas-de-análisis)
+- [7. Métodos de investigación](#7-métodos-de-investigación)
+- [8. Investigación forense aplicada a distintos tipos de evidencia](#8-investigación-forense-aplicada-a-distintos-tipos-de-evidencia)
+- [9. Intercambio de información](#9-intercambio-de-información)
+- [10. Contención, erradicación y recuperación](#10-contención-erradicación-y-recuperación)
+- [11. Ejemplos prácticos](#11-ejemplos-prácticos)
+- [12. Ejercicios de consolidación](#12-ejercicios-de-consolidación)
+- [13. Actividades prácticas recomendadas](#13-actividades-prácticas-recomendadas)
+- [14. Resumen](#14-resumen)
+- [15. Recursos recomendados](#15-recursos-recomendados)
+- [16. Autoevaluación](#16-autoevaluación)
+
 ## 1. Introducción a la unidad
 
 La investigación del incidente constituye una de las funciones esenciales dentro de la gestión de la seguridad de la información. Su finalidad no es únicamente confirmar la existencia de una anomalía o de una amenaza, sino reconstruir el conjunto de hechos, determinar la causa raíz, medir el impacto operativo y técnico, y servir de base para la adopción de medidas eficaces de contención, erradicación, recuperación y mejora continua. Desde una perspectiva metodológica, se trata de un proceso analítico, documental y forense que convierte una alarma en conocimiento accionable para la organización.
