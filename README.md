@@ -233,26 +233,36 @@ La intención es que el alumnado no solo conozca la teoría, sino que también e
 
 ## 8. Cronograma del curso
 
-El módulo se desarrolla con una carga de **5 horas semanales**.
+El módulo se desarrolla con una carga de **5 horas semanales**, siguiendo el calendario escolar del centro. El inicio del curso se establece según la programación real del calendario académico:
 
-### Semana 1
+### Calendario de inicio
 
 | Día | Horario | Sesión | Tema |
 | --- | --- | --- | --- |
-| Martes 29 de septiembre | 2 horas | Sesión 1 | Presentación del módulo y UD1: planes de prevención y concienciación |
-| Miércoles 30 de septiembre | 3 horas | Sesión 2 | UD1: continuidad, buenas prácticas y primeros casos prácticos |
+| Martes 29 de septiembre | 2 horas lectivas | Sesión 1 | Presentación del módulo y UD1: planes de prevención y concienciación |
+| Miércoles 30 de septiembre | 3 horas lectivas | Sesión 2 | UD1: continuidad, buenas prácticas y primeros casos prácticos |
+
+### Calendario completo del curso
+
+| Unidad didáctica | Fechas aproximadas | Duración estimada | Enfoque principal |
+| --- | --- | --- | --- |
+| UD1: Planes de prevención y concienciación | 29 de septiembre - 6 de octubre | 1 semana | preparación, políticas, sensibilización y buenas prácticas |
+| UD2: Auditoría de incidentes | 7 - 13 de octubre | 1 semana | detección, análisis, impacto y priorización |
+| UD3: Investigación del incidente | 14 - 20 de octubre | 1 semana | causa raíz, forense, indicadores y alcance |
+| UD4: Implementación de medidas | 21 - 27 de octubre | 1 semana | contención, mitigación, restauración y hardening |
+| UD5: Detección y documentación | 28 de octubre - 3 de noviembre | 1 semana | evidencias, documentación, cierre y aprendizaje |
 
 ### Distribución semanal recomendada
 
-| Semana | Horas | Enfoque principal |
-| --- | --- | --- |
-| 1 | 5 h | Presentación + prevención + concienciación |
-| 2 | 5 h | Auditoría de incidentes |
-| 3 | 5 h | Investigación del incidente |
-| 4 | 5 h | Implementación de medidas |
-| 5 | 5 h | Detección, documentación y cierre |
+| Semana | Fechas previstas | Horas | Enfoque principal |
+| --- | --- | --- | --- |
+| 1 | 29-30 de septiembre | 5 h | Presentación del módulo + UD1 |
+| 2 | 6-13 de octubre | 5 h | UD2: auditoría de incidentes |
+| 3 | 14-20 de octubre | 5 h | UD3: investigación del incidente |
+| 4 | 21-27 de octubre | 5 h | UD4: implementación de medidas |
+| 5 | 28 de octubre - 3 de noviembre | 5 h | UD5: detección, documentación y cierre |
 
-> El calendario inicial se establece en la semana del 29 de septiembre: martes con 2 horas y miércoles con 3 horas.
+> El curso comienza oficialmente el **martes 29 de septiembre con 2 horas lectivas** y continúa el **miércoles 30 de septiembre con 3 horas lectivas**, completando la primera semana con una carga total de 5 horas.
 
 ---
 
