@@ -117,6 +117,75 @@ La trazabilidad es un principio fundamental porque permite:
 
 La documentación no es una tarea secundaria; es una prueba de rigor metodológico y una garantía de continuidad operativa.
 
+### 3.7. La auditoría de incidentes como disciplina analítica
+
+La auditoría de incidentes debe entenderse como una disciplina analítica y no como una simple comprobación técnica puntual. Su objetivo principal es construir una representación fiable del evento para determinar si se trata de una anomalía aislada o de un incidente con efectos reales sobre la organización. Este proceso combina la observación, la interpretación, la evidencia documental y la valoración del impacto.
+
+La auditoría inicial suele responder a cuatro preguntas básicas:
+
+- ¿Qué ocurrió?
+- ¿Cuándo ocurrió?
+- ¿Qué activos o servicios afectados resultan relevantes?
+- ¿Qué nivel de riesgo representa para la continuidad, la confidencialidad y la integridad del negocio?
+
+Estas preguntas no se responden solo con logs o alertas. Requieren contexto organizativo, conocimiento del sistema, perfil de riesgo del activo y comprensión del entorno operativo. Por ello, la auditoría de incidentes exige un enfoque sistémico, no meramente técnico.
+
+### 3.8. Diferencia entre evento, alarma, vulnerabilidad e indicio de compromiso
+
+En muchos casos, los equipos de seguridad confunden cuatro realidades distintas:
+
+- evento: hecho observable generado por un sistema o usuario;
+- alarma: señal automática que sugiere una posible anomalía;
+- vulnerabilidad: debilidad técnica, organizativa o humana que puede ser explotada;
+- indicio de compromiso: señal de que un sistema o identidad puede haber sido atacado o alterado.
+
+Un ejemplo ilustrativo es el siguiente: un acceso remoto inusual desde una IP extranjera puede ser un evento; la generación de una alarma en el SIEM lo convierte en una señal; la ausencia de control de acceso o la reutilización de credenciales puede ser una vulnerabilidad; y si el acceso es seguido de ejecución de comandos o cambios de permisos, entonces se convierte en indicio de compromiso.
+
+La capacidad de diferenciar estos niveles evita dos errores frecuentes: el exceso de alarmismo y la inacción ante señales que esconden un riesgo real. En ciberseguridad, la interpretación del contexto es tan importante como la evidencia técnica.
+
+### 3.9. Calidad de la evidencia y cadena de custodia
+
+La evidencia es el centro del análisis. Sin evidencia fiable, la clasificación del caso, la valoración del impacto y las decisiones de contención son débilmente fundamentadas. Por esa razón, todo analista debe prestar especial atención a la integridad, autenticidad y trazabilidad de la información recopilada.
+
+Se recomienda que la evidencia se registre bajo criterios de:
+
+- precisión cronológica;
+- origen verificable;
+- identificación del responsable del registro;
+- prevención de alteraciones;
+- relación con el caso analizado;
+- posibilidad de reproducción o corroboración posterior.
+
+La cadena de custodia es especialmente relevante cuando el caso puede requerir investigación forense o seguimiento jurídico. No se trata solo de conservar datos, sino de garantizar que puedan ser utilizados como prueba con validez técnica y documental.
+
+### 3.10. Criterios generales de clasificación operativa
+
+La clasificación inicial del incidente debe hacerse de forma objetiva y repetible. Los criterios más importantes suelen ser:
+
+- impacto sobre activos y servicios;
+- tipo de amenaza o vector de ataque;
+- alcance del daño o de la propagación;
+- criticidad del entorno afectado;
+- nivel de privilegios comprometidos;
+- urgencia de respuesta y contención;
+- necesidad de comunicarlo a terceros o autoridades.
+
+Un incidente de malware en un equipo aislado de pruebas puede tener una gravedad muy distinta que el mismo tipo de evento en un servidor de producción, en un entorno con datos sensibles o en una infraestructura crítica. La clasificación no es, por tanto, una cuestión de etiqueta, sino de evaluación contextual y de riesgo.
+
+### 3.11. El papel del análisis contextual y la experiencia
+
+Aunque las herramientas de detección ayudan a automatizar la identificación de amenazas, la evaluación final de un incidente requiere juicio humano. La experiencia del analista influye en la interpretación de señales aparentemente benignas, en la conexión entre eventos y en la detección de patrones que no siempre coinciden con reglas predefinidas.
+
+El análisis no se reduce a seguir una secuencia mecánica; también implica:
+
+- distinguir comportamiento normal de comportamiento anómalo;
+- comprender los procesos de negocio y la criticidad de cada servicio;
+- interpretar la relación entre actor, vector, objetivo y impacto;
+- aplicar principios de proporcionalidad y riesgo aceptable;
+- priorizar acciones según la urgencia real.
+
+Este enfoque hace que la auditoría de incidentes sea una actividad técnica pero también de gestión del riesgo y de asesoramiento operativo.
+
 ## 4. Monitorización y detección
 
 ### 4.1. Definición de monitorización
@@ -322,6 +391,35 @@ La clasificación inicial prepara la respuesta y orienta la prioridad del caso. 
 
 La clasificación inicial no debe sustituir la investigación, pero sí debe permitir actuar con rapidez antes de que la amenaza se consolide.
 
+### 7.6. Triage y priorización operativa
+
+El triage es la actividad mediante la cual se ordena el tratamiento de los casos según su urgencia, impacto potencial y necesidad de intervención inmediata. En muchos entornos, la cantidad de alertas puede ser superior a la capacidad de análisis del equipo, por lo que una adecuada priorización es esencial para evitar que se desperdicie esfuerzo sobre eventos de poco valor mientras se ignora una amenaza crítica.
+
+En la práctica, el triage suele considerar:
+
+- criticidad del activo afectado;
+- gravedad de la evidencia disponible;
+- posible propagación lateral;
+- impacto en la continuidad del servicio;
+- exposición de datos sensibles;
+- necesidad de coordinar con otros equipos, proveedores o autoridades.
+
+Un buen triage no se limita a asignar una prioridad numérica; exige decidir si el caso debe ser gestionado de forma inmediata, si requiere contención provisional, si requiere investigación más profunda o si puede seguir en un flujo de seguimiento con menor urgencia.
+
+### 7.7. Factores organizativos y regulatorios en la valoración
+
+La valoración del incidente también debe integrarse en el contexto normativo y organizativo. No todas las incidencias tienen el mismo peso si se consideran los requisitos legales, la reputación corporativa o la continuidad del negocio. Por ejemplo, un incidente que afecta a datos personales requiere un tratamiento más cuidadoso por la posible obligación de notificación, revisión documental y coordinación con responsables legales o de protección de datos.
+
+En algunos casos, la decisión de escalado no depende solo del daño técnico, sino de si el incidente puede afectar a:
+
+- la privacidad de las personas;
+- la disponibilidad de servicios esenciales;
+- la imagen institucional;
+- los requisitos contractuales o legales;
+- la continuidad del negocio en una región o país concreto.
+
+Por ello, la auditoría de incidentes debe ser entendida como una actividad de gestión de riesgos y cumplimiento, y no solo como un ejercicio técnico de detección.
+
 ## 8. Seguimiento inicial de incidentes
 
 Tras la detección del posible incidente, debe iniciarse un seguimiento inicial orientado a verificar la incidencia, medir la gravedad y limitar el daño antes de que se produzcan consecuencias mayores.
@@ -335,6 +433,21 @@ Este proceso incluye:
 - decisiones inmediatas de contención,
 - levantamiento de evidencias relevantes,
 - registro formal del caso.
+
+### 8.0. Ciclo de vida del caso de auditoría
+
+El tratamiento de un incidente no suele ser lineal, sino evolutivo. En la práctica, la gestión sigue un ciclo que puede resumirse en las siguientes fases:
+
+1. detección y alerta;
+2. validación del evento;
+3. clasificación inicial y triage;
+4. contención y estabilización;
+5. investigación técnica e interpretación de la evidencia;
+6. recuperación y restauración del servicio;
+7. cierre documental y lecciones aprendidas;
+8. actualización de controles y mejora continua.
+
+La auditoría inicial forma parte del primer bloque, pero su valor estratégico se observa en toda la cadena de gestión, porque una buena valoración inicial determina cómo se contamina, se investiga y se recupera el entorno.
 
 ### Elementos mínimos para registrar
 
@@ -492,7 +605,8 @@ Elaborar un cuadro con incidentes hipotéticos y clasificar severidad, impacto y
 La auditoría de incidentes no se reduce a la observación de alarmas; constituye un proceso analítico orientado a interpretar la evidencia, comprender el contexto operativo, determinar la relevancia del evento y priorizar la respuesta. A lo largo de esta unidad se ha abordado la base para detectar los sucesos que pueden ser incidentes reales, valorar su gravedad y decidir el seguimiento inicial necesario antes de pasar a la fase de investigación más profunda.
 
 
-## 14. Autoevaluación
+
+## 15. Autoevaluación
 
 1. ¿Qué diferencia existe entre evento, alarma e incidente?
 2. ¿Cómo se clasifica un incidente según impacto y severidad?
@@ -505,3 +619,4 @@ La auditoría de incidentes no se reduce a la observación de alarmas; constituy
 <p align="center">
   <strong>La auditoría de incidentes es la primera ventana de comprensión del problema: detecta, mide y orienta la respuesta.</strong>
 </p>
+
