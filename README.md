@@ -186,8 +186,11 @@ El alumnado desarrollará competencias relacionadas con:
 
 - [README.md](README.md): presentación general del curso.
 - [transversal/README.md](transversal/README.md): base teórica transversal del módulo.
-- [ud1](ud1): materiales y recursos de la unidad didáctica 1.
-
+- [ud1-planes-prevencion-concienciacion/README.md](ud1-planes-prevencion-concienciacion/README.md): materiales y recursos de la **Unidad Didáctica 1: Planes de prevención y concienciación**.
+- [ud2-auditoria-incidentes/README.md](ud2-auditoria-incidentes/README.md): materiales y recursos de la **Unidad Didáctica 2: Auditoría de incidentes**.
+- [ud3-investigacion-incidente/README.md](uud3-investigacion-incidente/README.md): materiales y recursos de la **Unidad Didáctica 3: Investigación del incidente**.
+- [ud4-implementacion-medidas/README.md](ud4-implementacion-medidas/README.md): materiales y recursos de la **Unidad Didáctica 4: Implementación de medidas**.
+- [ud5-detección-documentacion/README.md](ud5-detección-documentacion/README.md): materiales y recursos de la **Unidad Didáctica 5: Detección y documentación**.
 ## 10. Cierre
 
 Este módulo tiene como objetivo formar a la persona estudiante en la gestión efectiva de incidentes de ciberseguridad, desde la prevención hasta la respuesta, pasando por la investigación, la mitigación y la documentación final. La combinación de teoría, práctica, análisis técnico y trabajo en laboratorio permite desarrollar competencias útiles para el entorno profesional y para la mejora continua de la seguridad digital.
