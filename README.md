@@ -6,304 +6,141 @@
 
 <div align="center">
 
-![GitHub](https://img.shields.io/badge/Curso-Ciberseguridad-0A84FF?style=for-the-badge)
+![Curso](https://img.shields.io/badge/Curso-Ciberseguridad-0A84FF?style=for-the-badge)
 ![Nivel](https://img.shields.io/badge/Nivel-Medio%2FAvanzado-FFB000?style=for-the-badge)
 ![Formato](https://img.shields.io/badge/Formato-Landing%20Page-34D399?style=for-the-badge)
 
 </div>
 
-> Bienvenido/a al módulo de gestión de incidentes de ciberseguridad. Este repositorio está pensado como una presentación inicial para el alumnado, con una organización por unidades didácticas, objetivos formativos, materiales, herramientas y cronograma del curso.
+> Bienvenido/a al módulo de gestión de incidentes de ciberseguridad. En este espacio encontrarás la presentación del curso, la estructura por unidades didácticas, el calendario del módulo y las herramientas clave que usaremos a lo largo del curso.
 
 ---
 
-## 1. Presentación del módulo
+## 1. Presentación
 
-La gestión de incidentes de ciberseguridad es una disciplina esencial dentro de la seguridad informática, ya que permite a la organización **detectar, analizar, contener, erradicar y recuperar** sistemas y servicios ante amenazas y eventos de seguridad.
+La gestión de incidentes de ciberseguridad es una disciplina esencial para la seguridad de cualquier organización, ya que permite **detectar, analizar, contener, remediar y aprender** de los eventos que pueden comprometer la información, los servicios o los activos digitales.
 
-El objetivo del módulo es proporcionar al alumnado una visión completa del ciclo de vida del incidente, desde la **prevención y la concienciación** hasta la **investigación, la implementación de medidas y la documentación final** del caso.
+El módulo combina la dimensión **técnica**, **organizativa** y **formativa** para que el alumnado comprenda tanto la respuesta operativa como la responsabilidad institucional y la mejora continua del sistema de seguridad.
 
-Este enfoque combina:
+### Objetivos del curso
 
-- la dimensión **técnica** (análisis, forense, herramientas, detección),
-- la dimensión **organizativa** (roles, procedimientos, coordinación),
-- la dimensión **formativa** (prevención, concienciación y mejora continua).
-
-La finalidad es dotar al estudiante de una base sólida para actuar de forma ordenada y eficaz frente a incidentes reales, comprendiendo tanto la respuesta técnica como la responsabilidad institucional y operativa.
-
----
-
-## 2. Objetivos generales
-
-Al finalizar el módulo, el alumnado será capaz de:
-
-- comprender qué es un **incidente de ciberseguridad** y cómo se diferencia de un simple evento;
-- conocer los **fundamentos de la gestión de incidentes** y la **taxonomía** más habitual;
-- aplicar el **ciclo de vida del incidente** en contextos reales;
-- desarrollar actividades de **prevención y concienciación**;
-- realizar **auditorías de incidentes** y valorar su alcance;
-- investigar la causa raíz del problema;
-- implementar medidas correctivas y preventivas;
-- detectar, documentar y comunicar incidentes con rigor.
+- Comprender la diferencia entre **evento, incidente, amenaza, vulnerabilidad y riesgo**.
+- Conocer el **ciclo de vida** de la gestión de incidentes.
+- Aplicar la metodología de **auditoría, investigación, contención y documentación**.
+- Implementar medidas de **prevención, mitigación y recuperación**.
+- Trabajar con herramientas de análisis y virtualización en un entorno controlado.
 
 ---
 
-## 3. Unidades didácticas
+## 2. Unidades didácticas
 
-### UD1: Planes de prevención y concienciación
-
-**Objetivo:** preparar a la organización para reducir la probabilidad de que se produzcan incidentes y mejorar la resiliencia humana y procedimental.
-
-**Contenidos principales:**
-
-- conceptos básicos de seguridad y riesgo,
-- políticas y normas de uso,
-- concienciación del personal,
-- seguridad operativa y buenas prácticas,
-- formación en phishing, malware y comportamientos seguros,
-- continuidad del negocio y preparación previa.
-
-**Ejemplo de aplicación:**
-
-Un usuario recibe un correo falso solicitando credenciales. La prevención consiste en formar al personal para detectar esta técnica, reforzar políticas de seguridad y activar mecanismos de validación, como MFA o revisión de enlaces sospechosos.
-
----
-
-### UD2: Auditoría de incidentes
-
-**Objetivo:** valorar y analizar la naturaleza, gravedad y alcance de un incidente antes de decidir la respuesta.
-
-**Contenidos principales:**
-
-- identificación de eventos y señales de alerta,
-- análisis de impacto,
-- priorización y clasificación del incidente,
-- revisión de logs, eventos y evidencias,
-- valoración del daño potencial,
-- coordinación inicial del equipo de respuesta.
-
-**Ejemplo de aplicación:**
-
-Un SOC detecta un acceso extraño a un servidor. La auditoría inicial analiza si se trata de un acceso legítimo, si hubo movimiento lateral, qué cuentas se vieron afectadas y qué grado de impacto tiene sobre los servicios críticos.
-
----
-
-### UD3: Investigación del incidente
-
-**Objetivo:** determinar la causa raíz, el alcance y las técnicas empleadas por el atacante.
-
-**Contenidos principales:**
-
-- análisis forense de sistemas y red,
-- extracción de indicadores de compromiso,
-- revisión de procesos, conexiones y artefactos,
-- evaluación de movimiento lateral,
-- identificación de vulnerabilidades explotadas,
-- reconstrucción de la cadena de eventos.
-
-**Ejemplo de aplicación:**
-
-Tras un ransomware, se analizan los logs del equipo infectado, los procesos ejecutados, los accesos registrados, los archivos cifrados y la actividad de red para establecer cómo se produjo la infección y qué alcance tuvo en la organización.
-
----
-
-### UD4: Implementación de medidas
-
-**Objetivo:** aplicar actuaciones de contención, corrección y reforzamiento para reducir el riesgo y restaurar la seguridad.
-
-**Contenidos principales:**
-
-- aislamiento de equipos y servicios,
-- bloqueos de tráfico y direcciones,
-- cambio de credenciales y revocación de accesos,
-- restauración desde copias de seguridad limpias,
-- aplicación de parches y medidas de hardening,
-- mejora de controles de seguridad.
-
-**Ejemplo de aplicación:**
-
-Una cuenta administrativa ha sido comprometida. Se bloquea la cuenta, se revocan sesiones, se cambian contraseñas, se reinician sistemas afectados y se refuerzan políticas de acceso para evitar una nueva explotación.
-
----
-
-### UD5: Detección y documentación
-
-**Objetivo:** asegurar que la respuesta queda registrada, validada y preparada para la mejora continua.
-
-**Contenidos principales:**
-
-- monitorización y detección de eventos,
-- registro de evidencias,
-- cadena de custodia,
-- documentación del incidente,
-- análisis de lecciones aprendidas,
-- presentación de resultados y cierre del caso.
-
-**Ejemplo de aplicación:**
-
-Tras la recuperación, se documentan las causas, los tiempos de respuesta, las medidas aplicadas, la evidencia recopilada y las acciones de mejora para prevenir que el incidente se repita.
-
----
-
-## 4. Relación entre unidades y ciclo de vida del incidente
-
-El módulo se articula sobre el ciclo de vida de la gestión de incidentes:
-
-```mermaid
-flowchart LR
-    A[UD1: Prevención] --> B[UD2: Auditoría]
-    B --> C[UD3: Investigación]
-    C --> D[UD4: Medidas]
-    D --> E[UD5: Detección y documentación]
-    E --> A
-```
-
-En términos operativos:
-
-- **UD1** prepara la organización y reduce la probabilidad del incidente.
-- **UD2** analiza y prioriza la situación cuando se produce una alerta.
-- **UD3** investiga la causa raíz y el alcance real.
-- **UD4** implementa las acciones técnicas y organizativas necesarias.
-- **UD5** documenta el caso, valora la respuesta y consolida la mejora continua.
-
----
-
-## 5. Herramientas software indispensables del curso
-
-A lo largo del curso usaremos un conjunto de herramientas básicas para trabajar tanto en laboratorio como en análisis realista de incidentes.
-
-### 5.1. Virtualización y entorno de laboratorio
-
-- **VirtualBox**: entorno principal de máquinas virtuales para desplegar sistemas
-- **Máquinas virtuales Windows**: para ejercicios de malware, ransomware y análisis de endpoints
-- **Máquinas virtuales Linux**: para análisis de red, servidores y entornos de seguridad
-- **Snapshots y clonación**: para conservar estados seguros y reproducibles del laboratorio
-
-### 5.2. Herramientas de análisis y red
-
-- **Wireshark**: captura y análisis de tráfico de red
-- **Nmap**: escaneo de puertos, servicios y redes
-- **tcpdump**: captura de paquetes desde terminal
-- **PowerShell**: análisis de sistemas Windows y automatización de tareas
-- **Bash / Linux shell**: administración y procesamiento de eventos en entornos Unix/Linux
-
-### 5.3. Seguridad y detección
-
-- **EDR / antivirus / antimalware**: detección de amenazas en endpoints
-- **Firewall**: control de permisos y bloqueo de tráfico sospechoso
-- **IDS/IPS**: detección de actividad mala o anómala en red
-- **SIEM**: correlación de eventos y alertas
-- **Herramientas de forense**: análisis de memoria, disco y artefactos digitales
-
-### 5.4. Herramientas de apoyo al trabajo académico
-
-- **Git y GitHub**: control de versiones y entrega de trabajos
-- **Documentación de laboratorio**: cuaderno de apuntes, informes y trazas
-- **Navegador web**: análisis de phishing, páginas maliciosas y recursos web
-
-> El uso de máquinas virtuales es fundamental para poder practicar en un entorno controlado sin afectar a sistemas reales.
-
----
-
-## 6. Software recomendado por tipo de práctica
-
-| Tipo de actividad | Herramienta principal | Uso principal |
+| UD | Denominación | Objetivo principal |
 | --- | --- | --- |
-| Virtualización | VirtualBox | respaldar el laboratorio con equipos virtualizados |
-| Detección de tráfico | Wireshark | inspección de paquetes y comunicaciones |
-| Reconocimiento de red | Nmap | escaneo y enumeración de servicios |
-| Análisis de endpoints | Windows/Linux VM | reproducción de incidentes en sistemas reales |
-| Malware / respuesta | antivirus + EDR | detección, aislamiento y análisis |
-| Soporte documental | GitHub + Markdown | entrega de contenidos y seguimiento |
+| **UD1** | Planes de prevención y concienciación | Reducir la probabilidad del incidente y fomentar el comportamiento seguro. |
+| **UD2** | Auditoría de incidentes | Identificar, valorar y clasificar el incidente y su alcance. |
+| **UD3** | Investigación del incidente | Determinar la causa raíz y reconstruir la cadena de eventos. |
+| **UD4** | Implementación de medidas | Contener, corregir y recuperar la operativa afectada. |
+| **UD5** | Detección y documentación | Registrar la evidencia, evaluar la respuesta y cerrar el caso con aprendizaje. |
+
+### Resumen del recorrido formativo
+
+- **UD1**: prevención, cultura de seguridad, políticas y buenas prácticas.
+- **UD2**: detección, análisis, impacto y priorización.
+- **UD3**: forense, indicadores de compromiso y causa raíz.
+- **UD4**: contención, mitigación, hardening y recuperación.
+- **UD5**: documentación, evidencias y cierre con lecciones aprendidas.
 
 ---
 
-## 7. Metodología del curso
+## 3. Herramientas imprescindibles del curso
 
-La metodología combina:
+### Entorno de laboratorio
 
-- **clase magistral**, para introducir los conceptos y el marco teórico,
-- **demostración práctica**, con ejemplos de incidentes reales y simulados,
-- **laboratorio**, basado en máquinas virtuales y entornos aislados,
-- **análisis de casos**, para aplicar la teoría a situaciones concretas,
-- **documentación**, para consolidar la respuesta a incidentes y la mejora continua.
+- **VirtualBox**: virtualización del laboratorio.
+- **Máquinas virtuales Windows y Linux**: para ejercicios prácticos.
+- **Snapshots y clonación**: para recuperar estados seguros del entorno.
 
-La intención es que el alumnado no solo conozca la teoría, sino que también entienda cómo se articula la respuesta real en entornos organizativos.
+### Análisis y seguridad
 
----
+- **Wireshark**: análisis de tráfico de red.
+- **Nmap**: escaneo y reconocimiento de servicios.
+- **PowerShell / Bash**: automatización y análisis técnico.
+- **EDR / antivirus / antimalware**: detección y respuesta en endpoints.
+- **Firewall / IDS / IPS**: control del tráfico y detección de anomalías.
+- **SIEM**: correlación de eventos y alertas.
 
-## 8. Cronograma del curso
+### Trabajo académico
 
-El módulo se desarrolla con una carga de **5 horas semanales**, siguiendo el calendario escolar del centro. El inicio del curso se establece según la programación real del calendario académico:
+- **Git y GitHub**: control de versiones y entrega de material.
+- **Markdown**: documentación de actividades y informes.
+- **Navegador web**: análisis de phishing y pruebas de seguridad controladas.
 
-### Calendario de inicio
-
-| Día | Horario | Sesión | Tema |
-| --- | --- | --- | --- |
-| Martes 29 de septiembre | 2 horas lectivas | Sesión 1 | Presentación del módulo y UD1: planes de prevención y concienciación |
-| Miércoles 30 de septiembre | 3 horas lectivas | Sesión 2 | UD1: continuidad, buenas prácticas y primeros casos prácticos |
-
-### Calendario completo del curso
-
-| Unidad didáctica | Fechas aproximadas | Duración estimada | Enfoque principal |
-| --- | --- | --- | --- |
-| UD1: Planes de prevención y concienciación | 29 de septiembre - 6 de octubre | 1 semana | preparación, políticas, sensibilización y buenas prácticas |
-| UD2: Auditoría de incidentes | 7 - 13 de octubre | 1 semana | detección, análisis, impacto y priorización |
-| UD3: Investigación del incidente | 14 - 20 de octubre | 1 semana | causa raíz, forense, indicadores y alcance |
-| UD4: Implementación de medidas | 21 - 27 de octubre | 1 semana | contención, mitigación, restauración y hardening |
-| UD5: Detección y documentación | 28 de octubre - 3 de noviembre | 1 semana | evidencias, documentación, cierre y aprendizaje |
-
-### Distribución semanal recomendada
-
-| Semana | Fechas previstas | Horas | Enfoque principal |
-| --- | --- | --- | --- |
-| 1 | 29-30 de septiembre | 5 h | Presentación del módulo + UD1 |
-| 2 | 6-13 de octubre | 5 h | UD2: auditoría de incidentes |
-| 3 | 14-20 de octubre | 5 h | UD3: investigación del incidente |
-| 4 | 21-27 de octubre | 5 h | UD4: implementación de medidas |
-| 5 | 28 de octubre - 3 de noviembre | 5 h | UD5: detección, documentación y cierre |
-
-> El curso comienza oficialmente el **martes 29 de septiembre con 2 horas lectivas** y continúa el **miércoles 30 de septiembre con 3 horas lectivas**, completando la primera semana con una carga total de 5 horas.
+> El uso de máquinas virtuales es esencial para trabajar en laboratorio sin afectar a entornos reales.
 
 ---
 
-## 9. Evidencias y evaluación
+## 4. Cronograma del curso
 
-Durante el curso, el alumnado deberá demostrar la adquisición de competencias a través de:
+El módulo se desarrolla con **5 horas semanales** y el calendario de inicio del curso es el siguiente:
 
-- participación en actividades prácticas,
-- análisis de casos de seguridad,
-- documentación de incidentes,
-- resolución de ejercicios de laboratorio,
-- elaboración de informes sobre diagnóstico, análisis y respuesta.
+### Inicio del curso
 
-La evaluación se orienta tanto a la **comprensión conceptual** como a la **capacidad de aplicar el ciclo de gestión de incidentes** en situaciones concretas.
+| Día | Horario | Actividad |
+| --- | --- | --- |
+| **Martes 29 de septiembre** | 2 horas lectivas | Inicio del módulo + presentación y UD1 |
+| **Miércoles 30 de septiembre** | 3 horas lectivas | UD1: prevención, concienciación y casos prácticos |
+
+### Calendario completo estimado
+
+| Unidad | Fechas aproximadas | Duración estimada |
+| --- | --- | --- |
+| **UD1: Planes de prevención y concienciación** | 29 sep - 6 oct | 1 semana |
+| **UD2: Auditoría de incidentes** | 7 oct - 13 oct | 1 semana |
+| **UD3: Investigación del incidente** | 14 oct - 20 oct | 1 semana |
+| **UD4: Implementación de medidas** | 21 oct - 27 oct | 1 semana |
+| **UD5: Detección y documentación** | 28 oct - 3 nov | 1 semana |
+
+### Evolución general del curso
+
+| Semana | Periodo approximate | Enfoque |
+| --- | --- | --- |
+| 1 | 29 sep - 3 oct | Presentación + prevención + UD1 |
+| 2 | 6 - 10 oct | UD2: auditoría de incidentes |
+| 3 | 13 - 17 oct | UD3: investigación del incidente |
+| 4 | 20 - 24 oct | UD4: implementación de medidas |
+| 5 | 27 - 31 oct | UD5: documentación y cierre |
+| 6 - 30 | nov - jun | continuación del curso, actividades, evaluación y cierre final |
+
+> El curso se prolonga durante el calendario escolar y finaliza de forma aproximada el **10 de junio**, según el desarrollo del programa y la planificación del centro.
 
 ---
 
-## 10. Criterios de éxito del alumnado
+## 5. Metodología del curso
 
-Se considera que el estudiante ha adquirido la competencia del módulo cuando es capaz de:
+La enseñanza combina:
 
-- reconocer la diferencia entre evento e incidente,
-- valorar la gravedad de un incidente,
-- investigar y documentar el caso con rigor,
-- aplicar medidas correctivas y preventivas,
-- contribuir a la continuidad del negocio y a la mejora de la seguridad.
-
----
-
-## 11. Resumen final
-
-Este curso ofrece una visión práctica y formativa de la gestión de incidentes de ciberseguridad, organizada en cinco unidades didácticas que recorren el ciclo completo de la respuesta ante amenazas y eventos de seguridad.
-
-La combinación entre **prevención**, **auditoría**, **investigación**, **implementación de medidas** y **documentación** permite al alumnado integrar los conocimientos teóricos con las habilidades técnicas y organizativas necesarias para responder con criterio en entornos reales.
+- **clase magistral** y explicación de conceptos,
+- **demostración práctica** con herramientas y ejemplos,
+- **trabajo en laboratorio** con máquinas virtuales,
+- **análisis de casos reales o simulados**,
+- **documentación y entregas** para consolidar el aprendizaje.
 
 ---
 
-## 12. Recursos del repositorio
+## 6. Recursos del repositorio
 
-- [README.md](README.md): presentación general del módulo
-- [transversal/README.md](transversal/README.md): material base complementario
-- [ud1](ud1): recursos y contenidos asociados a la unidad didáctica 1
+- [README.md](README.md): vista principal del curso
+- [transversal/README.md](transversal/README.md): material teórico base
+- [ud1](ud1): recursos de la unidad didáctica 1
 
-> Este README funciona como landing page de presentación para el alumnado. Su propósito es orientar la estructura del módulo, mostrar el recorrido formativo y preparar el entorno de trabajo y el cronograma del curso.
+---
+
+## 7. Cierre
+
+Este módulo tiene como objetivo formar al alumnado en la gestión efectiva de incidentes de ciberseguridad, desde la prevención hasta la respuesta, pasando por la investigación, la mitigación y la documentación final. La combinación de teoría, práctica y trabajo en laboratorio permite desarrollar competencias reales y útiles para el entorno profesional.
+
+---
+
+<div align="center">
+  <strong>¡Bienvenidos/as al curso de gestión de incidentes de ciberseguridad!</strong>
+</div>
