@@ -1,7 +1,5 @@
 # Módulo profesional: Gestión de incidentes de ciberseguridad
 
-<div style="background: linear-gradient(135deg, #0f172a 0%, #111827 35%, #1f2937 100%); border: 1px solid #334155; border-radius: 18px; padding: 24px; color: #e5e7eb; margin-bottom: 20px;">
-
 <p align="center">
   <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80" alt="Seguridad informática y gestión de incidentes" width="100%" />
 </p>
@@ -15,23 +13,21 @@
 
 </div>
 
-> Bienvenido/a al módulo de gestión de incidentes de ciberseguridad. Este curso combina teoría, práctica, análisis forense y trabajo en laboratorio para formar al alumnado en la preparación, detección, respuesta y documentación de incidentes reales o simulados en entornos digitales.
-
-</div>
+> Bienvenido/a al módulo de gestión de incidentes de ciberseguridad. En este curso se aborda la preparación, detección, análisis, contención, recuperación y documentación de incidentes digitales para formar a la persona estudiante en la respuesta efectiva frente a amenazas y vulnerabilidades.
 
 ## 1. Presentación del módulo
 
 La gestión de incidentes de ciberseguridad es una disciplina esencial para cualquier organización, ya que permite detectar, analizar, contener, remediar y aprender de los eventos que pueden comprometer la confidencialidad, integridad y disponibilidad de los activos digitales.
 
-Este módulo pone el foco en una perspectiva **técnica, operativa y estratégica**: no se trata solo de conocer herramientas, sino de comprender cómo se organiza la respuesta ante un incidente, cómo se analizan los indicadores de riesgo y cómo se documenta la actividad para mejorar la resiliencia del sistema.
+Este módulo combina la dimensión **técnica**, **organizativa** y **formativa**, con el objetivo de que el alumnado comprenda tanto la respuesta operativa como la responsabilidad institucional y la mejora continua del sistema de seguridad.
 
 ### Objetivos formativos
 
 - Comprender la diferencia entre **evento, incidente, amenaza, vulnerabilidad y riesgo**.
 - Conocer el **ciclo de vida** de la gestión de incidentes.
-- Aplicar una metodología de **auditoría, investigación, contención y recuperación**.
+- Aplicar la metodología de **auditoría, investigación, contención y recuperación**.
 - Documentar y comunicar los hechos con rigor técnico y criterio organizativo.
-- Trabajar con herramientas de análisis, virtualización y monitoreo en un entorno controlado.
+- Trabajar con herramientas de análisis, virtualización y monitorización en un entorno controlado.
 
 ### ¿Qué aprenderás?
 
@@ -51,15 +47,7 @@ Este módulo pone el foco en una perspectiva **técnica, operativa y estratégic
 | **UD4** | Implementación de medidas de ciberseguridad | Procedimientos, ciberresiliencia, escalado, recuperación y documentación. |
 | **UD5** | Detección y documentación de incidentes de ciberseguridad | Notificación, coordinación y documentación del incidente. |
 
-### Recorrido formativo
-
-- **UD1**: principios generales de ciberseguridad, normativa del puesto de trabajo, formación y concienciación, materiales de formación, auditorías internas de cumplimiento.
-- **UD2**: taxonomía de incidentes, herramientas de monitorización y alerta, detección de amenazas físicas, investigación en fuentes abiertas (OSINT), clasificación y documentación inicial.
-- **UD3**: recopilación y análisis de evidencias, investigación del incidente, intercambio de información con proveedores y organismos competentes, medidas de contención.
-- **UD4**: procedimientos de actuación, ciberresiliencia, toma de decisiones y escalado, restablecimiento de servicios, documentación y seguimiento para evitar incidentes similares.
-- **UD5**: procedimientos para notificación, notificación interna y notificación a quienes corresponda.
-
-## 3. Desarrollo de contenidos por unidad didáctica
+## 3. Contenidos por unidad didáctica
 
 ### UD1. Desarrollo de planes de prevención y concienciación en ciberseguridad
 
@@ -111,17 +99,14 @@ Este módulo pone el foco en una perspectiva **técnica, operativa y estratégic
 
 ## 5. Ciclo de vida de la gestión de incidentes
 
-```mermaid
-flowchart LR
-    A[Preparación] --> B[Detección y análisis]
-    B --> C[Contención]
-    C --> D[Erradicación]
-    D --> E[Recuperación]
-    E --> F[Lecciones aprendidas]
-    F --> A
-```
+1. **Preparación**: políticas, procedimientos, formación, herramientas y planificación.
+2. **Detección y análisis**: validación de alertas, revisión de logs y evaluación del alcance.
+3. **Contención**: aislamiento de sistemas y bloqueo de accesos para evitar la propagación.
+4. **Erradicación**: eliminación del malware, corrección de vulnerabilidades y limpieza del entorno.
+5. **Recuperación**: restablecimiento de servicios y comprobación de integridad.
+6. **Lecciones aprendidas**: documentación, mejora continua y cierre del caso.
 
-La respuesta a incidentes no es un proceso aislado, sino un ciclo continuo de mejora. La fase de **preparación** reduce el tiempo de reacción; la **detección y análisis** permiten confirmar si hay un problema real; la **contención** evita la propagación; la **erradicación** elimina la causa; la **recuperación** restaura capacidades; y las **lecciones aprendidas** fortalecen la organización.
+Este enfoque permite convertir la respuesta a un incidente en un proceso estructurado y repetible.
 
 ## 6. Herramientas esenciales del curso
 
