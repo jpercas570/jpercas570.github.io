@@ -1,5 +1,20 @@
 # Módulo Transversal: Gestión de Incidentes Cibernéticos
 
+## Índice
+
+- [1. Introducción](#1-introducción)
+- [2. Objetivos del módulo](#2-objetivos-del-módulo)
+- [3. Fundamentos teóricos](#3-fundamentos-teóricos)
+- [4. Metodología práctica de gestión de incidentes](#4-metodología-práctica-de-gestión-de-incidentes)
+- [5. Práctica recomendada: flujo de respuesta a incidentes](#5-práctica-recomendada-flujo-de-respuesta-a-incidentes)
+- [6. Buenas prácticas para la respuesta](#6-buenas-prácticas-para-la-respuesta)
+- [7. Métricas e indicadores del proceso de gestión de incidentes](#7-métricas-e-indicadores-del-proceso-de-gestión-de-incidentes)
+- [8. Medidas de mejora continua](#8-medidas-de-mejora-continua)
+- [9. Conclusión](#9-conclusión)
+- [10. Bibliografía y referencias recomendadas](#10-bibliografía-y-referencias-recomendadas)
+- [11. Sugerencia de aplicación práctica](#11-sugerencia-de-aplicación-práctica)
+- [12. Síntesis final](#12-síntesis-final)
+
 ## 1. Introducción
 
 La gestión de incidentes cibernéticos es el conjunto de procesos, procedimientos y buenas prácticas que permiten detectar, analizar, contener, remediar y aprender de eventos de seguridad que puedan afectar la confidencialidad, integridad o disponibilidad de los activos de una organización.
