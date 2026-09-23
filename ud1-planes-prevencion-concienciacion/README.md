@@ -140,6 +140,82 @@ D --> F
 
 La prevención no se reduce a directivas escritas. Debe traducirse en comportamientos, hábitos, procedimientos y controles concretos.
 
+### 3.5. La gestión del riesgo como base de la prevención
+
+La gestión de riesgos es el eje sobre el que se diseña cualquier estrategia de prevención. No basta con detectar amenazas aisladas; es necesario comprender cómo interactúan los activos, las vulnerabilidades, la probabilidad de explotación y el impacto potencial sobre la organización.
+
+Un análisis de riesgos suele comenzar por identificar los activos esenciales: información, sistemas, credenciales, dispositivos, procesos críticos, relaciones con proveedores y datos personales. A continuación, se examinan las amenazas que pueden afectar a esos activos (phishing, malware, errores humanos, fallos técnicos, acceso físico no autorizado, fraude interno o condiciones ambientales). Posteriormente se evalúan las vulnerabilidades, que pueden ser de naturaleza técnica, organizativa o conductual.
+
+El riesgo se puede entender como la combinación de:
+
+- probabilidad de que ocurra una amenaza,
+- facilidad con la que esa amenaza aprovecha una vulnerabilidad,
+- impacto sobre la continuidad del negocio, la reputación, la legalidad o la seguridad de las personas.
+
+Por eso, la prevención debe priorizar los activos más críticos y aplicar medidas proporcionales al nivel de riesgo: controles preventivos, limitación del acceso, formación del personal y revisión periódica de los procedimientos.
+
+### 3.6. Controles preventivos, detectivos y correctivos
+
+Los controles de seguridad no tienen todos el mismo objetivo. Se suelen clasificar en tres grandes grupos:
+
+#### a) Controles preventivos
+
+Son los que buscan evitar que ocurra un incidente. Incluyen:
+
+- políticas y normas de uso,
+- autenticación multifactor,
+- gestión de permisos,
+- cifrado,
+- copias de seguridad,
+- actualización de software,
+- formación y sensibilización.
+
+#### b) Controles detectivos
+
+Buscan identificar anomalías o señales de riesgo antes de que el daño sea grave. Entre ellos destacan:
+
+- registros de auditoría,
+- alarmas de seguridad,
+- monitorización de redes,
+- análisis de correos sospechosos y logs,
+- simulaciones de seguridad.
+
+#### c) Controles correctivos
+
+Se activan cuando el incidente ya ha ocurrido y tienen como objetivo mitigar el impacto, recuperar el servicio y evitar que se repita. Algunos ejemplos son:
+
+- aislamiento de equipos infectados,
+- restauración desde copias de seguridad,
+- revisión de accesos comprometidos,
+- comunicación interna y coordinación con responsables,
+- evaluación de lecciones aprendidas.
+
+La política de seguridad más efectiva no se limita a un único tipo de control; requiere una combinación equilibrada entre prevención, detección y respuesta.
+
+### 3.7. Cultura de seguridad y factor humano
+
+La seguridad no depende solo de sistemas y herramientas. El factor humano es un elemento decisivo: puede actuar como primera línea de defensa o como punto de vulnerabilidad. Por ello, la prevención debe apoyarse en una cultura de seguridad que integre:
+
+- responsabilidad compartida,
+- conocimiento de riesgos habituales,
+- normas claras y consistentes,
+- comportamiento ético y proactivo,
+- capacidad para detectar y denunciar incidentes.
+
+La conciencia de seguridad se construye con la práctica. Un usuario bien formado no solo sabe qué medidas aplicar, sino que entiende por qué son necesarias y cómo afectan al conjunto de la organización. Es mucho más probable que una persona con cultura de seguridad identifique un phishing, no comparta credenciales, reporte un acceso sospechoso o mantenga un puesto de trabajo preparado para prevenir fallos.
+
+### 3.8. Seguridad como proceso continuo, no como proyecto puntual
+
+La prevención requiere continuidad. No basta con adoptar una política una vez y mantenerla olvidada; debe revisarse periódicamente. Las organizaciones cambian, los equipos evolucionan, aparecen nuevas amenazas, y cualquier norma debe adaptarse a nuevos contextos de trabajo, como el teletrabajo, el uso de dispositivos personales, la colaboración con terceros o el almacenamiento en la nube.
+
+Por esa razón, la mejora continua es un principio esencial:
+
+- revisar riesgos con frecuencia,
+- actualizar procedimientos y políticas,
+- evaluar la formación recibida,
+- comparar resultados con indicadores de cumplimiento,
+- ajustar acciones para cerrar brechas descubiertas por la auditoría.
+
 ## 4. Normativa y protección del puesto de trabajo
 
 ### 4.1. Importancia de la normativa interna
@@ -207,6 +283,38 @@ POLÍTICA DE USO SEGURO DE DISPOSITIVOS
 - Cerrar sesión cuando se abandona el puesto.
 - Escanear documentos con herramientas de seguridad si procede.
 - Mantener programas de oficina y navegadores actualizados.
+
+### 4.5. Principios de diseño de una política interna de seguridad
+
+Una política de seguridad debe ser clara, aplicable y verificable. No puede limitarse a un conjunto de recomendaciones abstractas; debe describir comportamientos esperados, responsabilidades y procedimientos de actuación concretos.
+
+Un documento de política eficaz suele incluir:
+
+- ámbito de aplicación,
+- objetivos y alcance,
+- responsables de la aplicación,
+- estándares mínimos exigidos,
+- prohibiciones y obligaciones,
+- procedimiento de reporte de incidencias,
+- periodicidad de revisión y mejora.
+
+La política debe redactarse con un lenguaje accesible, orientado a la práctica, no técnico en exceso. Debe facilitar que la persona trabajadora comprenda qué puede hacer, qué está prohibido y qué debe hacer si detecta un riesgo o un incidente.
+
+### 4.6. Normas, procedimientos y controles: relación entre ellos
+
+Es importante distinguir entre norma, procedimiento y control:
+
+- norma: establece lo que debe hacerse o no hacerse;
+- procedimiento: describe cómo se lleva a cabo una tarea de forma segura;
+- control: mecanismo, herramienta o medida técnica u organizativa para asegurar el cumplimiento.
+
+Por ejemplo:
+
+- norma: no se compartirán credenciales entre usuarios;
+- procedimiento: si un usuario sospecha una cuenta comprometida, debe cambiar la contraseña y comunicarlo;
+- control: MFA, gestión de accesos, bloqueo automático de sesión.
+
+Una organización segura no se apoya solo en normas escrita; necesita procedimientos claros y controles operativos que hagan posible el cumplimiento real.
 
 ## 5. Principios de protección del puesto de trabajo
 
@@ -313,6 +421,40 @@ Se recomienda mezclar diferentes formatos:
 | Febrero | Protección de datos y RGPD | Formación | Fomentar responsabilidad en datos |
 | Marzo | Simulación de phishing | Campaña interna | Evaluar comportamiento real |
 | Mayo | Reporte de incidentes | Reunión de feedback | Mejorar la notificación temprana |
+
+### 6.8. Diseño y evaluación de una campaña de concienciación
+
+Un programa de sensibilización eficaz debe estar basado en objetivos concretos y medibles. El diseño correcto incluye:
+
+- diagnóstico inicial del nivel de conocimiento y hábitos del personal,
+- definición de objetivos específicos y realistas,
+- segmentación por perfiles y responsabilidades,
+- elección de formatos adecuados: vídeos, infografías, talleres, simulaciones, checklist,
+- evaluación periódica para comprobar si se están produciendo cambios de comportamiento.
+
+Los indicadores más útiles para valorar la eficacia de una campaña suelen ser:
+
+- porcentaje de clics en correos simulados,
+- número de reportes de mensajes sospechosos,
+- tasa de cumplimento de políticas básicas,
+- mejora en la calidad de respuestas ante incidentes,
+- nivel de participación en cursos o sesiones,
+- reducción de incidencias relacionados con errores humanos.
+
+La medición del impacto es esencial: una campaña de concienciación que no se evalúa no puede afirmar que está aportando valor. La mejora real se demuestra cuando la conducta del personal cambia y se reducen los errores repetidos.
+
+### 6.9. Principios didácticos para una formación efectiva
+
+Para que la formación en seguridad sea útil debe cumplir criterios pedagógicos claros:
+
+- ser breve y práctica,
+- estar adaptada al perfil del destinatario,
+- relacionar la teoría con casos reales,
+- incluir ejemplos concretos de riesgo y respuesta,
+- reforzar con ejercicios y seguimiento,
+- repetir contenidos de forma periódica para consolidar hábitos.
+
+Aprender ciberseguridad no consiste en memorizar definiciones; consiste en entrenar la capacidad de reconocer situaciones de riesgo, reaccionar con criterio y reportar problemas antes de que se conviertan en incidentes mayores.
 
 ## 7. Materiales de formación y concienciación
 
@@ -457,6 +599,30 @@ C --> D[Informe de auditoría] --> E[Acciones correctivas] --> F[Seguimiento]
 
 - riesgo: retraso en respuesta y mayor impacto.
 - acción: crear canal claro y entrenamiento en denuncia.
+
+### 8.7. Tipos de auditoría y su utilidad en la prevención
+
+La auditoría internal no solo verifica cumplimiento; también ayuda a mejorar el diseño de los controles y a detectar debilidades en la cultura organizativa. Según el objetivo, pueden distinguirse varios tipos:
+
+- auditoría de cumplimiento: comprueba si se siguen normas y procedimientos;
+- auditoría de control interno: valora si los controles diseñados son suficientes;
+- auditoría de seguridad operativa: revisa configuración de equipos, redes, accesos y uso de herramientas;
+- auditoría de formación y conciencia: analiza si el personal tiene capacidad real para aplicar buenas prácticas.
+
+La auditoría debe producir evidencia objetiva: registros, capturas, permisos, informes, formularios de formación y hallazgos documentados. La utilidad del proceso no está en detectar errores aislados, sino en generar un plan de mejora con prioridad, responsables y plazos.
+
+### 8.8. Métricas básicas de cumplimiento
+
+Para saber si la prevención funciona, es útil medir indicadores como:
+
+- porcentaje de usuarios con MFA habilitado,
+- número de accesos no autorizados detectados,
+- tasa de clics en simulacros de phishing,
+- porcentaje de personal con formación actualizada,
+- número de incidencias reportadas y cerradas,
+- cumplimiento de revisiones periódicas de permisos.
+
+Estos indicadores permiten pasar de una gestión intuitiva a una gestión basada en datos y evidencia, lo que facilita la toma de decisiones y la priorización de acciones.
 
 ## 9. Técnicas y procedimientos de prevención comunes
 
@@ -700,6 +866,12 @@ La prevención requiere que la organización asuma una responsabilidad compartid
 - el responsable de seguridad aplica políticas,
 - el usuario actúa con criterio y reporta incidencias,
 - los proveedores y terceros deben respetar los mismos estándares.
+
+### 11.5. Relación entre prevención, ética y cumplimiento legal
+
+La ciberseguridad no es únicamente una cuestión técnica ni de cumplimiento formal; también tiene un componente ético. Una organización que protege datos, respeta la privacidad y toma decisiones proporcionales a los riesgos está ayudando a proteger a las personas y a sus derechos. La prevención debe evitar prácticas excesivamente invasivas o arbitrarias, y debe estar alineada con los principios de proporcionalidad, necesidad y trazabilidad.
+
+En términos legales, la prevención se conecta con varias obligaciones: protección de datos personales, continuidad del servicio, privacidad, seguridad de la información, trazabilidad de decisiones y obligación de notificación ante incidencias relevantes. Una política de seguridad bien diseñada no solo reduce riesgos, sino que refuerza la confianza y la legitimidad de la organización.
 
 ## 12. Planificación de una auditoría interna de cumplimiento
 
