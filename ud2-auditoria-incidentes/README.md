@@ -19,10 +19,49 @@
 - [1. Introducción a la unidad](#1-introducción-a-la-unidad)
 - [2. Resultado de aprendizaje y criterios](#2-resultado-de-aprendizaje-y-criterios)
 - [3. Conceptos fundamentales](#3-conceptos-fundamentales)
+  - [3.1. Evento, alarma e incidente](#31-evento-alarma-e-incidente)
+  - [3.2. Taxonomía de incidentes](#32-taxonomía-de-incidentes)
+  - [3.3. Tipos de incidentes más frecuentes](#33-tipos-de-incidentes-más-frecuentes)
+  - [3.4. Seguridad operativa y análisis de incidentes](#34-seguridad-operativa-y-análisis-de-incidentes)
+  - [3.5. Flujo general del tratamiento de un incidente](#35-flujo-general-del-tratamiento-de-un-incidente)
+  - [3.6. Evidencia, trazabilidad y documentación](#36-evidencia-trazabilidad-y-documentación)
+  - [3.7. La auditoría de incidentes como disciplina analítica](#37-la-auditoría-de-incidentes-como-disciplina-analítica)
+  - [3.8. Diferencia entre evento, alarma, vulnerabilidad e indicio de compromiso](#38-diferencia-entre-evento-alarma-vulnerabilidad-e-indicio-de-compromiso)
+  - [3.9. Calidad de la evidencia y cadena de custodia](#39-calidad-de-la-evidencia-y-cadena-de-custodia)
+  - [3.10. Criterios generales de clasificación operativa](#310-criterios-generales-de-clasificación-operativa)
+  - [3.11. El papel del análisis contextual y la experiencia](#311-el-papel-del-análisis-contextual-y-la-experiencia)
 - [4. Monitorización y detección](#4-monitorización-y-detección)
+  - [4.1. Definición de monitorización](#41-definición-de-monitorización)
+  - [4.2. Fuentes de información](#42-fuentes-de-información)
+  - [4.3. Herramientas de monitorización](#43-herramientas-de-monitorización)
+  - [4.4. Modelos de detección](#44-modelos-de-detección)
+  - [4.5. Monitorización como proceso de correlación e interpretación](#45-monitorización-como-proceso-de-correlación-e-interpretación)
+  - [4.6. Señales de alarma más habituales](#46-señales-de-alarma-más-habituales)
+  - [4.7. Relevancia del tiempo y del contexto](#47-relevancia-del-tiempo-y-del-contexto)
 - [5. Seguridad física y controles operativos](#5-seguridad-física-y-controles-operativos)
+  - [5.1. Seguridad física como vector de riesgo](#51-seguridad-física-como-vector-de-riesgo)
+  - [5.2. Consecuencias de una seguridad física débil](#52-consecuencias-de-una-seguridad-física-débil)
 - [6. Investigación OSINT](#6-investigación-osint)
-- [7. Valoración, clasificación y seguimiento inicial](#7-valoración-clasificación-y-seguimiento-inicial)
+  - [6.1. Valor del OSINT en la auditoría](#61-valor-del-osint-en-la-auditoría)
+  - [6.2. Fuentes y límites del uso](#62-fuentes-y-límites-del-uso)
+- [7. Valoración y clasificación inicial del incidente](#7-valoración-y-clasificación-inicial-del-incidente)
+  - [7.1. Factores clave](#71-factores-clave)
+  - [7.2. Criterios de severidad](#72-criterios-de-severidad)
+  - [7.3. Matriz de priorización](#73-matriz-de-priorización)
+  - [7.4. Factores que condicionan la severidad](#74-factores-que-condicionan-la-severidad)
+  - [7.5. Diferencia entre clasificación inicial y análisis profundo](#75-diferencia-entre-clasificación-inicial-y-análisis-profundo)
+  - [7.6. Triage y priorización operativa](#76-triage-y-priorización-operativa)
+  - [7.7. Factores organizativos y regulatorios en la valoración](#77-factores-organizativos-y-regulatorios-en-la-valoración)
+- [8. Seguimiento inicial de incidentes](#8-seguimiento-inicial-de-incidentes)
+  - [8.0. Ciclo de vida del caso de auditoría](#80-ciclo-de-vida-del-caso-de-auditoría)
+  - [8.1. Contención y seguimiento inicial](#81-contención-y-seguimiento-inicial)
+  - [8.2. Registro y trazabilidad](#82-registro-y-trazabilidad)
+- [9. Ejemplo práctico: detección de actividad sospechosa](#9-ejemplo-práctico-detección-de-actividad-sospechosa)
+- [10. Ejercicios de consolidación](#10-ejercicios-de-consolidación)
+- [11. Actividades prácticas recomendadas](#11-actividades-prácticas-recomendadas)
+- [12. Herramientas esenciales de la unidad](#12-herramientas-esenciales-de-la-unidad)
+- [13. Resumen](#13-resumen)
+- [14. Autoevaluación](#14-autoevaluación)
 
 ## 1. Introducción a la unidad
 
@@ -600,24 +639,22 @@ Analizar una URL sospechosa o un dominio relacionado con un correo de phishing p
 
 Elaborar un cuadro con incidentes hipotéticos y clasificar severidad, impacto y nivel de respuesta.
 
-
 ## 12. Herramientas esenciales de la unidad
 
-- **SIEM (Security Information and Event Management)**: Centraliza, recopila y correlaciona registros (logs) de eventos provenientes de múltiples fuentes (servidores, firewalls, aplicaciones). Sirve para obtener visibilidad global en tiempo real, detectar patrones de ataque complejos mediante reglas de correlación y generar alertas automatizadas para el equipo de seguridad.
-- **EDR (Endpoint Detection and Response)**: Monitoriza y analiza continuamente la actividad interna a nivel de equipo final (ordenadores, servidores, portátiles), supervisando procesos, archivos y memoria. Sirve para detectar amenazas avanzadas (como ransomware o malware sin archivo), aislar dispositivos infectados de la red de forma remota y recopilar telemetría forense detallada.
-- **IDS/IPS (Sistema de Detección / Prevención de Intrusiones)**: Inspecciona el tráfico de red en busca de firmas o comportamientos anómalos que indiquen un ataque. El IDS únicamente detecta y genera alertas sobre tráfico sospechoso, mientras que el IPS actúa de forma proactiva bloqueando o interrumpiendo el tráfico malicioso en tiempo real.
-- **Firewall** (Cortafuegos): Filtra el tráfico de red entrante y saliente según un conjunto de reglas de seguridad predefinidas (direcciones IP, puertos, protocolos). Funciona como la primera línea de defensa perimetral para aislar la red interna de conexiones no autorizadas y controlar la segmentación de redes.
-- **Wireshark**: Analizador de protocolos de red que realiza una inspección profunda (deep packet inspection) del tráfico capturado. Sirve para analizar el contenido exacto de los paquetes de datos, reconstruir sesiones de comunicación, investigar exfiltraciones de datos y analizar el comportamiento de red del malware durante un análisis forense.
-- **Nmap (Network Mapper)**: Herramienta de escaneo y descubrimiento de red. Se utiliza para identificar qué dispositivos están activos en una red, mapear topologías, descubrir puertos abiertos, auditar los servicios y versiones que se están ejecutando y detectar posibles vulnerabilidades o sistemas no autorizados.
-- **OSINT framework y motores de búsqueda**: Conjunto de recursos, metodologías y motores especializados (como Shodan, Censys o búsquedas avanzadas/Dorks) para recopilar información pública y accesible en fuentes abiertas. Sirve para realizar reconocimiento pasivo, analizar la superficie de ataque expuesta a internet, identificar credenciales o datos filtrados de la organización e investigar la infraestructura empleada por ciberdelincuentes.
+- SIEM
+- EDR
+- IDS/IPS
+- Firewall
+- Wireshark
+- Nmap
+- OSINT framework y motores de búsqueda
 
 ## 13. Resumen
 
 La auditoría de incidentes no se reduce a la observación de alarmas; constituye un proceso analítico orientado a interpretar la evidencia, comprender el contexto operativo, determinar la relevancia del evento y priorizar la respuesta. A lo largo de esta unidad se ha abordado la base para detectar los sucesos que pueden ser incidentes reales, valorar su gravedad y decidir el seguimiento inicial necesario antes de pasar a la fase de investigación más profunda.
 
 
-
-## 15. Autoevaluación
+## 14. Autoevaluación
 
 1. ¿Qué diferencia existe entre evento, alarma e incidente?
 2. ¿Cómo se clasifica un incidente según impacto y severidad?
@@ -630,4 +667,3 @@ La auditoría de incidentes no se reduce a la observación de alarmas; constituy
 <p align="center">
   <strong>La auditoría de incidentes es la primera ventana de comprensión del problema: detecta, mide y orienta la respuesta.</strong>
 </p>
-
