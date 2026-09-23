@@ -41,11 +41,11 @@ Este módulo combina la dimensión **técnica**, **organizativa** y **formativa*
 
 | UD | Denominación | Enfoque principal |
 | --- | --- | --- |
-| **UD1** | Desarrollo de planes de prevención y concienciación en ciberseguridad | Principios, normativa, formación y auditorías internas. |
-| **UD2** | Auditoría de incidentes de ciberseguridad | Taxonomía, monitorización, detección, valoración y seguimiento inicial. |
-| **UD3** | Investigación del incidente | Recopilación, análisis, investigación y medidas de contención. |
-| **UD4** | Implementación de medidas de ciberseguridad | Procedimientos, ciberresiliencia, escalado, recuperación y documentación. |
-| **UD5** | Detección y documentación de incidentes de ciberseguridad | Notificación, coordinación y documentación del incidente. |
+| **UD1** | Desarrollo de planes de prevención y concienciación en ciberseguridad | Principios generales, normativa de puesto de trabajo, planes de formación y auditorías internas de cumplimiento. |
+| **UD2** | Auditoría de incidentes de ciberseguridad | Taxonomía, herramientas de monitorización y alerta, seguridad física, investigación OSINT y seguimiento inicial. |
+| **UD3** | Investigación del incidente | Recopilación y custodia segura de evidencias, análisis forense, intercambio con proveedores u organismos y contención. |
+| **UD4** | Implementación de medidas de ciberseguridad | Procedimientos de respuesta y mitigación, ciberresiliencia, escalado, restablecimiento de servicios y lecciones aprendidas. |
+| **UD5** | Detección y documentación de incidentes de ciberseguridad | Procedimientos de notificación, comunicación interna, a autoridades competentes, afectados y medios de comunicación. |
 
 ## 3. Contenidos por unidad didáctica
 
@@ -91,11 +91,11 @@ Este módulo combina la dimensión **técnica**, **organizativa** y **formativa*
 
 | Unidad | Resultados de aprendizaje | Criterios de evaluación |
 | --- | --- | --- |
-| **UD1** | Analiza los principios y normativas de ciberseguridad y diseña planes de prevención y concienciación adaptados al entorno laboral. | Identifica los principios básicos, aplica la normativa del puesto de trabajo, elabora un plan de formación y evalúa auditorías internas de cumplimiento. |
-| **UD2** | Reconoce distintos tipos de incidentes y aplica procedimientos de monitorización, detección y valoración inicial. | Clasifica incidentes, selecciona herramientas de monitorización, identifica amenazas físicas y de OSINT, y documenta el seguimiento inicial. |
-| **UD3** | Recopila, analiza e interpreta evidencias para investigar incidentes y aplicar medidas de contención. | Reúne evidencias, analiza su valor probatorio, investiga la causa del incidente y propone medidas eficaces de contención. |
-| **UD4** | Implementa procedimientos de respuesta, recuperación y ciberresiliencia para mitigar el impacto del incidente. | Desarrolla procedimientos de actuación, coordina escalado y decisiones, restaura servicios y documenta el seguimiento posterior. |
-| **UD5** | Gestiona la notificación y documentación del incidente para garantizar una respuesta organizada y trazable. | Elabora protocolos de notificación, notifica internamente y a terceros o organismos competentes, y documenta el caso con rigor. |
+| **UD1** | Desarrolla planes de prevención y concienciación en ciberseguridad, estableciendo normas y medidas de protección. | Defines principios generales, establece normativa del puesto de trabajo, diseña plan de concienciación y material, y realiza auditorías internas de cumplimiento. |
+| **UD2** | Analiza incidentes de ciberseguridad utilizando herramientas, mecanismos de detección y alertas de seguridad. | Clasifica la taxonomía de incidentes, establece controles de monitorización lógica y física, aplica herramientas OSINT y realiza clasificación, valoración y seguimiento inicial. |
+| **UD3** | Investiga incidentes de ciberseguridad analizando los riesgos implicados y definiendo las posibles medidas a adoptar. | Recopila y almacena evidencias de forma segura, analiza evidencias e investiga el incidente, intercambia información con proveedores/organismos y aplica medidas de contención. |
+| **UD4** | Implementa medidas de ciberseguridad en redes y sistemas respondiendo a los incidentes detectados y aplicando las técnicas de protección adecuadas. | Desarrolla procedimientos de respuesta, prepara capacidades ciberresilientes, establece flujos de decisión y escalado, restablece servicios y documenta lecciones aprendidas. |
+| **UD5** | Detecta y documenta incidentes de ciberseguridad siguiendo procedimientos de actuación establecidos. | Desarrolla procedimientos de notificación en tiempo adecuado, y notifica internamente, a autoridades competentes, a personas afectadas y a medios de comunicación cuando proceda. |
 
 ## 5. Ciclo de vida de la gestión de incidentes
 
@@ -135,7 +135,7 @@ Este enfoque permite convertir la respuesta a un incidente en un proceso estruct
 
 ## 7. Cronograma del curso
 
-El módulo se desarrolla con **5 horas lectivas semanales** y se extiende a lo largo del curso escolar, finalizando aproximadamente en **mediados de junio**.
+El módulo se desarrolla con **5 horas lectivas semanales** y se extiende a lo largo de todo el curso escolar, finalizando el **12 de junio**.
 
 ### Inicio del curso
 
@@ -148,23 +148,23 @@ El módulo se desarrolla con **5 horas lectivas semanales** y se extiende a lo l
 
 | Unidad didáctica | Fechas estimadas | Duración |
 | --- | --- | --- |
-| **UD1: Desarrollo de planes de prevención y concienciación** | 29 sep - 16 oct | 3 semanas |
-| **UD2: Auditoría de incidentes** | 19 oct - 30 oct | 2 semanas |
-| **UD3: Investigación del incidente** | 2 nov - 20 nov | 3 semanas |
-| **UD4: Implementación de medidas** | 23 nov - 18 dic | 4 semanas |
-| **UD5: Detección y documentación** | 11 ene - 12 jun | 22 semanas |
+| **UD1: Desarrollo de planes de prevención y concienciación** | 29 sep - 23 oct | 4 semanas |
+| **UD2: Auditoría de incidentes** | 26 oct - 4 dic | 6 semanas |
+| **UD3: Investigación del incidente** | 7 dic - 19 feb | 8 semanas |
+| **UD4: Implementación de medidas** | 22 feb - 16 abr | 7 semanas |
+| **UD5: Detección y documentación** | 19 abr - 12 jun | 8 semanas |
 
 ### Secuencia general
 
 | Periodo | Enfoque principal |
 | --- | --- |
-| **Septiembre - octubre** | Presentación, prevención y auditoría inicial |
-| **Noviembre - diciembre** | Investigación del incidente y primeras medidas |
-| **Enero - marzo** | Continuación de la respuesta y análisis práctico |
-| **Abril - mayo** | Detención, documentación y fortalecimiento de la respuesta |
-| **Junio** | Cierre, evaluación y presentación final |
+| **Septiembre - octubre** | Presentación, marco normativo, concienciación y auditoría de prevención (UD1) |
+| **Octubre - diciembre** | Taxonomía, monitorización, detección lógica/física y OSINT (UD2) |
+| **Diciembre - febrero** | Recopilación, custodia y análisis forense de evidencias y contención (UD3) |
+| **Febrero - abril** | Procedimientos de respuesta, ciberresiliencia, escalado y recuperación (UD4) |
+| **Abril - junio** | Notificación formal (interna, autoridades, afectados, medios) y cierre de incidentes (UD5) |
 
-> El calendario del módulo está diseñado para abarcar el curso completo y cerrar la programación en torno a **mediados de junio**, conforme a la secuencia de las cinco unidades didácticas.
+> El calendario del módulo está diseñado para cubrir de forma equilibrada el temario oficial durante todo el curso escolar, finalizando el **12 de junio**, conforme a los Resultados de Aprendizaje del currículo oficial.
 
 ## 8. Metodología de enseñanza
 
