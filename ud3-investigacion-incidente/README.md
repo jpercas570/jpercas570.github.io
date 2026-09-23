@@ -16,23 +16,23 @@
 
 ## 1. Introducción a la unidad
 
-La investigación del incidente es una disciplina situada en la intersección entre la seguridad operativa, la ciencia forense digital y la gestión de riesgos. Su finalidad no es únicamente demostrar que se ha producido un suceso anómalo, sino reconstruir el conjunto de hechos, identificar la causa raíz, evaluar el alcance del impacto y sustentar la adopción de medidas de contención, recuperación y mejora continua. El valor de esta actividad radica en que permite transformar una alarma o una sospecha en conocimiento útil para la toma de decisiones.
+La investigación del incidente constituye una de las funciones esenciales dentro de la gestión de la seguridad de la información. Su finalidad no es únicamente confirmar la existencia de una anomalía o de una amenaza, sino reconstruir el conjunto de hechos, determinar la causa raíz, medir el impacto operativo y técnico, y servir de base para la adopción de medidas eficaces de contención, erradicación, recuperación y mejora continua. Desde una perspectiva metodológica, se trata de un proceso analítico, documental y forense que convierte una alarma en conocimiento accionable para la organización.
 
-Un incidente de ciberseguridad no siempre se manifiesta como un ataque claramente visible o un fraude inmediatamente detectable. En muchos casos, el primer indicio es un comportamiento anómalo, un cambio de configuración, un acceso no autorizado, un error de autenticación repetido, una anomalía en el tráfico de red o un comportamiento extraño en un sistema. La investigación del incidente exige distinguir qué parte del conjunto de datos es ruido operativo, qué parte es señal de alarma y qué parte exige un análisis formal. Esto exige una combinación de criterio técnico, capacidad de correlación, conocimiento del entorno y rigor documental.
+La investigación del incidente se sitúa en la intersección entre la seguridad operativa, la ciencia forense digital, la gestión de riesgos y la continuidad del negocio. En términos prácticos, implica distinguir entre señales de alarma, ruido operacional y evidencia válida; entre un problema funcional y un incidente de seguridad; entre una anomalía aislada y una campaña maliciosa con impacto real. Esta diferencia exige un enfoque riguroso, basado en la correlación de fuentes, la validación de hypotheses y la preservación de la evidencia.
 
-La disciplina se apoya en varios principios esenciales: preservación de la evidencia, trazabilidad, confidencialidad, integridad, orden de volatilidad, documentación o análisis de causa raíz. La evidencia no debe contaminarse ni alterarse durante la recolección, porque cualquier modificación del entorno puede afectar al análisis y, además, comprometer la validez de la investigación. Por ello, la investigación forense digital se basa en metodologías que priorizan la captura segura de datos y la conservación de su estado original.
+La disciplina se apoya en una serie de principios metodológicos que la convierten en una actividad técnica y académicamente sólida: preservación de la evidencia, trazabilidad, confidencialidad, integridad, orden de volatilidad, necesidad y proporcionalidad, y documentación formal del proceso. La evidencia debe mantenerse inalterada desde su recogida hasta su análisis; cualquier acción indebida puede comprometer la validez del caso, la reconstrucción cronológica y la defensa de la decisión organizativa. Por ello, la investigación forense digital se fundamenta en procedimientos que priorizan la captura segura de datos, la documentación de la cadena de custodia y la minimización del riesgo de contaminación del escenario.
 
-En esta unidad se trabaja sobre varios ejes que integran la práctica real de la investigación: 
+En la práctica profesional, la investigación del incidente se desarrollará alrededor de varios ejes fundamentales:
 
 - recopilación segura de evidencias;
-- análisis forense de sistemas, redes y endpoints;
-- reconstrucción cronológica de hechos;
-- identificación de causa raíz y vector de ataque;
-- intercambio de información con proveedores, autoridades u organismos competentes;
-- definición de acciones de contención, erradicación y recuperación;
-- preparación de documentación técnica y comunicativa para la organización.
+- análisis forense de sistemas, redes, endpoints y servicios;
+- reconstrucción cronológica y correlación de eventos;
+- identificación de la causa raíz y del vector de ataque;
+- intercambio de información con terceros, proveedores y organismos competentes;
+- definición de medidas de contención, erradicación y recuperación;
+- elaboración de informes técnicos y de lecciones aprendidas.
 
-Desde una perspectiva académica, la investigación del incidente no puede entenderse como una reacción improvisada. Se trata de un proceso estructurado, apoyado en evidencia, compatible con la normativa aplicable y orientado a la mejora del nivel de seguridad. En una organización moderna, la capacidad para investigar incidentes de forma eficaz es un componente esencial del control interno, la continuidad del negocio, la gestión de riesgos y la preparación ante incidentes graves.
+Desde un enfoque universitario y profesional, la investigación del incidente no puede entenderse como una respuesta improvisada ni como un conjunto de acciones aisladas. Se trata de un proceso estructurado, basado en evidencias, compatible con el marco regulatorio y orientado a la mejora del nivel de madurez de seguridad. En organizaciones complejas, esta capacidad es un componente esencial del control interno, la continuidad del negocio, la gestión del riesgo y la preparación frente a incidentes de alta severidad.
 
 ## 2. Resultado de aprendizaje y criterios
 
@@ -51,9 +51,11 @@ Investiga incidentes de ciberseguridad analizando los riesgos implicados y defin
 
 ### 3.1. Concepto de investigación del incidente
 
-La investigación del incidente es el conjunto de actividades técnicas, analíticas y documentales orientadas a responder a preguntas esenciales sobre un suceso de seguridad. En la práctica, sirve para responder a interrogantes como: ¿qué ocurrió?, ¿cuándo ocurrió?, ¿cómo se produjo?, ¿qué sistemas o personas se vieron implicadas?, ¿qué vulnerabilidad o fallo permitió la acción?, ¿qué impacto tuvo?, ¿qué medidas se deben aplicar ahora mismo? La respuesta a estas cuestiones permite a la organización no solo mitigar el daño sino también aprender de la experiencia y reducir la probabilidad de recurrencia.
+La investigación del incidente es el conjunto de actividades técnicas, analíticas, documentales y decisionales orientadas a responder preguntas esenciales sobre un suceso de seguridad. En la práctica, permite responder a interrogantes como: ¿qué ocurrió?, ¿cuándo ocurrió?, ¿cómo se produjo?, ¿qué activos o personas se vieron implicadas?, ¿qué fallo o vulnerabilidad permitió la acción?, ¿qué impacto tuvo?, ¿qué medidas deben adoptarse y con qué prioridad? La respuesta a estas cuestiones no solo permite mitigar el daño inmediato, sino también aprender de la experiencia y reducir la probabilidad de recurrencia.
 
-El propósito del proceso no es únicamente describir la secuencia de los hechos, sino explicar la relación causal entre la acción del atacante, la vulnerabilidad explotada y el impacto operativo. Esto requiere distinguir entre una simple alarma de seguridad, una anomalía funcional y un incidente real con consecuencias materiales o reputacionales. La investigación debe producir conocimientos accionables, no simplemente informes descriptivos.
+El propósito de la investigación no es únicamente describir la secuencia de los hechos, sino explicar la relación causal entre la acción del atacante, la vulnerabilidad explotada y el impacto operativo o reputacional. En este sentido, no basta con formular una hipótesis intuitiva basada en una alerta; el analista debe contrastarla con evidencia, reconstruir la cronología y validar las conclusiones antes de presentar una explicación definitiva. Una investigación correcta debe generar conocimiento accionable, no únicamente un informe descriptivo o un conjunto de observaciones aisladas.
+
+Además, la investigación tiene un carácter eminentemente profesional. Debe respetar las normas de integridad, confidencialidad y trazabilidad, y debe estar alineada con las capacidades reales de la organización. En muchos casos, la investigación no solo responde a una necesidad técnica, sino a una necesidad de gestión del riesgo, continuidad del negocio y responsabilidad institucional.
 
 ### 3.2. Integridad de la evidencia
 
@@ -375,9 +377,11 @@ Cuando el incidente tiene origen o consecuencias físicas, la investigación deb
 
 ### 9.1. Importancia del intercambio de información
 
-Cuando un incidente afecta a una organización, es posible que su impacto se extienda a terceros: proveedores, socios, clientes, infraestructura cloud, operadoras, proveedores de telecomunicaciones o autoridades competentes. El intercambio de información es una práctica esencial para validar indicadores, reducir la latencia en la respuesta, coordinar esfuerzos y acelerar la mitigación.
+Cuando un incidente afecta a una organización, su impacto rara vez se limita al entorno inmediato. En un ecosistema interconectado, la amenaza puede propagarse a proveedores, socios, clientes, prestadores de servicios, y entidades reguladoras o de coordinación. Por ello, el intercambio de información es una práctica esencial dentro de la gestión del incidente: permite validar indicadores, reducir la latencia en la respuesta, coordinar acciones y acelerar la mitigación en un contexto de riesgo compartido.
 
-La información compartida puede incluir datos sobre técnicos, fraudes identificados, URLs y dominios asociados, IOCs, patrones de uso, comportamiento observado, artefactos detectados y hallazgos de investigación. Esto permite a otras organizaciones protegerse antes de que el ataque alcance nuevas víctimas o se repita en otros entornos.
+La información compartida puede incluir datos técnicos y operativos sobre actores, fraudes identificados, URLs y dominios asociados, IOCs, patrones de uso, comportamiento observado, artefactos detectados y hallazgos de investigación. Este flujo tiene un valor estratégico porque permite a otras organizaciones protegerse antes de que el ataque alcance nuevas víctimas, se repita en otros entornos o se convierta en una campaña más amplia. El intercambio de información, por tanto, no es un acto administrativo secundario, sino una dimensión de la defensa colectiva.
+
+Desde un punto de vista empresarial y académico, el intercambio debe entenderse como un mecanismo de aprendizaje organizativo y colectivo. Las organizaciones no solo responden a un incidente aislado: también integran el conocimiento generado en su capacidad de detección, prevención y mejora continua. La organización que comparte información útil y la convierte en inteligencia operativa aumenta su resiliencia y fortalece su posición frente a amenazas persistentes y emergentes.
 
 ### 9.2. Agentes con los que se puede intercambiar información
 
@@ -447,19 +451,19 @@ Para lograr que el intercambio de información sea efectivo, debe tenerse en cue
 
 ### 9.5. Indicadores de compromiso (IOC)
 
-Los indicadores de compromiso describen las características técnicas de una amenaza por medio de las evidencias que la misma deja en el equipo comprometido tras la infección. De lo que se trata al definir un conjunto de IOC es buscar, por ejemplo, localizaciones específicas en el sistema de ficheros, registro u otras partes del sistema operativo que habitualmente sean usadas por malware; rastros dejados por herramientas utilizadas por los atacantes; señales de actividad de intrusos sobre los sistemas que indiquen movimientos laterales o comportamiento anormal del usuario; entre otros elementos.
+Los indicadores de compromiso describen las características técnicas de una amenaza a partir de las evidencias que deja en un entorno una vez se ha producido la intrusión o la ejecución maliciosa. En la práctica, los IOC pueden consistir en direcciones IP, dominios, hashes, nombres de archivos, rutas de persistencia, firmas, tokens, cambios en registros, patrones de comunicación o comportamientos observados en sistemas afectados. Su función principal es ayudar a detectar, confirmar y rastrear la actividad maliciosa a través del entorno organizativo.
 
-Tal como describe Antonio Villalón en Security Art Work, un indicador de compromiso se define como una pieza de información que puede utilizarse para identificar el posible compromiso de un entorno: desde una dirección IP hasta un conjunto de Tácticas, Técnicas y Procedimientos (TTP) usados por un atacante. Es importante buscar datos muy concretos para evitar falsos positivos. En definitiva, la definición de IOC permite a las organizaciones definir piezas de inteligencia de amenazas de manera estandarizada.
+Tal como describe Antonio Villalón en Security Art Work, un indicador de compromiso puede definirse como una pieza de información útil para identificar el posible compromiso de un entorno: desde una dirección IP hasta un conjunto de Tácticas, Técnicas y Procedimientos (TTP) empleados por un atacante. La calidad del IOC depende de su capacidad para ser específico, verificable y accionable. Una mala definición de un indicador puede originar falsos positivos, ruido operacional y pérdida de confianza en el proceso de detección.
 
 Los IOC pueden clasificarse en tres tipos principales:
 
 - Atómicos: no pueden descomponerse en partes más pequeñas sin perder utilidad. Ejemplos: una IP, un dominio, una URL, un valor hash.
-- Calculados: se derivan de datos implicados en un incidente, como el hash de un fichero o un valor de firma asociado a un artefacto.
-- Conductuales: representan el comportamiento del atacante a partir de los anteriores. Por ejemplo, el uso de la técnica de compromiso de la cadena de suministro o la modificación de políticas del dominio como mecanismo de escalada de privilegios.
+- Calculados: se derivan de artefactos o datos implicados en un incidente, como el hash de un fichero, una firma de malware o un valor de identificación asociado a una muestra.
+- Conductuales: representan el comportamiento del atacante y su modus operandi, más que la firma de un artefacto concreto. Por ejemplo, la modificación de políticas del dominio como mecanismo de escalada de privilegios o la ejecución de scripts ocultos tras la autenticación del usuario.
 
-Los IOC atómicos y calculados suelen asociarse a la inteligencia táctica o de combate, y suelen tener un tiempo de vida corto. Un atacante puede cambiar el hash de un malware o la dirección IP del servidor de mando y control en cuestión de horas. En cambio, los indicadores conductuales están asociados a inteligencia operativa y suelen ser más difíciles de modificar, por lo que tienen más valor a la hora de detectar un compromiso persistente o reproducible.
+Los IOC atómicos y calculados suelen asociarse a la inteligencia táctica y tienen un tiempo de vida corto; un atacante puede cambiar fácilmente la dirección IP del servidor de mando y control o el hash del payload. Los indicadores conductuales, en cambio, están más ligados a la inteligencia operativa y a la interpretación de patrones, por lo que suelen ser más persistentes y más útiles para detectar intrusiones continuadas o campañas repetidas.
 
-La pirámide del dolor, propuesta por David J. Bianco, refleja gráficamente la dificultad para obtener indicadores eficaces frente al esfuerzo que debe hacer un atacante para lograr su objetivo. La idea central es que, a medida que se avanza desde indicadores simples hacia patrones de comportamiento y técnicas, los IOC se vuelven más valiosos y más difíciles de evadir, pero también más complejos de obtener y analizar.
+La pirámide del dolor, propuesta por David J. Bianco, ilustra muy bien la relación entre la disponibilidad de indicadores y la dificultad de evadirlos. A medida que se avanza desde indicadores simples e identificadores aislados hacia patrones de comportamiento y técnicas, los IOC se vuelven más valiosos desde el punto de vista analítico y más difíciles de eludir para el atacante. Sin embargo, también requieren una mayor capacidad de análisis, contexto y correlación.
 
 ### 9.6. Estándares para el intercambio de información
 
@@ -567,6 +571,66 @@ En este sentido, se puede afirmar que la inteligencia sirve a la organización p
 La relación entre estos elementos es estrecha: la información compartida se analiza, se valida y se transforma en inteligencia; la inteligencia permite identificar patrones de amenaza; y esos patrones se convierten en medidas de detección, contención y mejora organizativa. En términos académicos, se trata de un ciclo de aprendizaje organizativo en materia de ciberseguridad, donde la experiencia de cada incidente se integra en el sistema de conocimiento colectivo.
 
 Este enfoque convierte el intercambio de información en una pieza clave del ciclo de defensa: desde la detección inicial hasta la contención, la recuperación y la mejora continua del sistema.
+
+### 9.10. Calidad, utilidad y validez de la información compartida
+
+La inteligencia no es útil por el simple hecho de existir; lo relevante es su calidad, su grado de fiabilidad y su capacidad para sostener una decisión operativa. Una pieza de información puede parecer útil por su apariencia técnica o por la autoridad de la fuente, pero si no está contextualizada, validada y actualizada, puede inducir a una respuesta inadecuada. Por ello, cualquier flujo de intercambio de información debe evaluarse con criterios de relevancia, valor, veracidad y oportunidad.
+
+En términos prácticos, la calidad de la información de amenazas se mide atendiendo a varios factores:
+
+- exactitud: la observación describe fielmente lo ocurrido;
+- relevancia: la información es útil para el entorno, la infraestructura o la amenaza concreta;
+- actualidad: la información está viva, no obsoleta;
+- contexto: el dato se interpreta en relación con actor, vector, impacto y tiempo;
+- trazabilidad: puede atribuirse a una fuente o proceso de validación;
+- confiabilidad: la fuente tiene una historia de calidad y no produce ruido excesivo;
+- accionabilidad: la información permite actuar de manera concreta y medible.
+
+Un indicador de compromiso sin contexto puede convertirse en ruido, mientras que la misma información integrada en una línea temporal, una técnica de ataque y un impacto de negocio puede transformar el dato en inteligencia ejecutable. Por esta razón, la organización debe establecer procesos de validación y saneamiento de la información antes de incorporarla a los sistemas de detección o a los informes de gestión.
+
+La evaluación de la calidad tampoco puede limitarse a la dimensión técnica, porque la inteligencia sobre amenazas tiene una dimensión organizativa y estratégica. El valor de la información no depende solo de su grado de detalle, sino también de la capacidad que tenga la empresa para procesarla, interpretarla y aplicarla a su contexto operativo. Esto exige una mezcla de ciberinteligencia, analítica, conocimiento del control interno y comprensión del negocio.
+
+### 9.11. Ciclo de la inteligencia de amenazas
+
+La ciberinteligencia no se reduce a la obtención de indicadores aislados, sino que se articula como un ciclo continuo. De forma general, este proceso comprende varias etapas:
+
+1. recopilación: obtención de datos desde redes, endpoints, logs, feeds externos y fuentes públicas o privadas;
+2. normalización: transformación de los datos a un formato común para evitar incompatibilidades;
+3. análisis: correlación, contextualización, validación y comparación con incidentes previos;
+4. interpretación: construcción de conocimiento sobre actor, técnica, impacto y propósito;
+5. difusión: distribución de la información relevante a quienes deben tomar decisiones;
+6. uso operativo: incorporación a reglas de detección, respuesta y gestión de riesgo;
+7. retroalimentación: evaluación de la eficacia de la información y mejora del proceso.
+
+Este ciclo refleja que la inteligencia no es un producto final estático, sino un sistema dinámico de aprendizaje. La organización que integra esta lógica mejora su capacidad para identificar amenazas emergentes, ajustar sus controles y decidir con más rapidez ante un incidente. Sin retroalimentación, cualquier inteligencia acabará siendo un archivo de indicadores sin valor real para la defensa.
+
+Un ejemplo claro es el caso de una campaña de phishing dirigida a un sector concreto. El primer dato puede ser un dominio sospechoso o una URL maliciosa. Al analizarlo con contexto, se comprueba que se utiliza una técnica de suplantación de identidad y que el dominio comparte infraestructura con anteriores ataques. A partir de ahí, la información se convierte en inteligencia operativa que puede activar filtros, revisión de nuevos mensajes, análisis de correo, y alertas en usuarios críticos. Este proceso demuestra que la utilidad de la inteligencia reside en su capacidad de convertirse en acción.
+
+### 9.12. Relación entre inteligencia, riesgo y decisión organizativa
+
+La inteligencia de amenazas solo tiene sentido si se vincula con los objetivos de la organización. En otras palabras, no se comparte o consume información por el mero interés técnico, sino porque permite reducir el riesgo y proteger activos estratégicos. El riesgo no solo depende de la existencia de una amenaza, sino también de la vulnerabilidad del sistema, la criticidad del activo, la capacidad de detección y la resistencia operativa de la organización.
+
+Por ello, el analista o responsable de seguridad debe responder a una pregunta esencial: ¿qué amenaza concreta afecta a nuestro negocio y cuál es la probabilidad de que se materialice? La inteligencia ayuda a responder esta cuestión, pero no sustituye la gestión del riesgo. La toma de decisiones debe combinar la ciberinteligencia, la evaluación de riesgos, la continuidad del negocio y la estratificación de los activos.
+
+Esto es especialmente importante en organizaciones con entornos híbridos, proveedores de servicios críticos, infraestructuras en la nube o sistemas de información con alta dependencia tecnológica. En estos entornos, la amenaza no se percibe solo como un conflicto técnico, sino como un riesgo organizativo cuya materialización puede afectar a la reputación, la operación, la privacidad y la continuidad del servicio.
+
+### 9.13. Dimensión jurídica, ética y regulatoria del intercambio
+
+La investigación del incidente y el intercambio de información no son solo cuestiones técnicas; también tienen implicaciones jurídicas y éticas. Las organizaciones deben respetar normas de protección de datos, confidencialidad, privacidad, propiedad intelectual y regulación sectorial, así como las restricciones legales de cada país o ámbito institucional.
+
+La información de un incidente puede incluir datos personales, detalles de usuarios, metadatos, contenido de comunicaciones o indicadores que, si se comparten sin control, pueden afectar a terceros. Por eso, cualquier mecanismo de intercambio ha de estar alineado con políticas internas, marco legal aplicable y procedimientos de tratamiento de la información. La apertura de canales de colaboración no debe convertirse en una vía para la divulgación indiscriminada de evidencias o de datos sensibles.
+
+Desde un punto de vista ético, la ciberinteligencia debe usarse para proteger y reducir el riesgo, no para vigilar de manera arbitraria ni para convertir la amenaza en una herramienta de presión o manipulación. El cumplimiento de protocolos de clasificación, la trazabilidad del flujo de información y la justificación del intercambio son requisitos esenciales para mantener la confianza entre organizaciones, proveedores y autoridades.
+
+La buena práctica exige distinguir entre información relevante para la defensa colectiva y datos que podrían ser excesivamente sensibles o no necesarios para el objetivo de la operación. En este sentido, la utilización del TLP, la clasificación del impacto, las políticas internas de acceso y la documentación del intercambio son instrumentos esenciales para mantener un equilibrio entre colaboración y prudencia.
+
+### 9.14. Intercambio de información como factor de resiliencia
+
+En un entorno cada vez más interconectado, la ciberresiliencia depende no solo de la capacidad de reaccionar al ataque, sino también de la capacidad de aprender y adaptarse. El intercambio de información contribuye directamente a esa capacidad. Cuando distintas organizaciones comparten indicadores, patrones y hallazgos relevantes, el conjunto del ecosistema se vuelve más resistente frente a la repetición de amenazas.
+
+La resiliencia no se define solo por la capacidad de restaurar servicios tras un incidente, sino por la capacidad de anticipar, detectar, aprender y mejorar. En ese marco, la información compartida gana valor si se convierte en práctica recurrente: reglas de detección, actualizaciones de políticas, formación específica, revisión de controles, rediseño de procesos y mejora de la continuidad del negocio.
+
+En resumen, la investigación forense del incidente y la inteligencia compartida no son actividades separadas; forman parte de una misma lógica de conocimiento, defensa y mejora. La organización que logra convertir información dispersa en inteligencia útil, y esa inteligencia en decisiones operativas, consigue reforzar su capacidad de respuesta y aumentar la madurez de su seguridad.
 
 ## 10. Contención, erradicación y recuperación
 
@@ -749,9 +813,9 @@ Explica qué aspectos deben analizarse para decidir si un incidente puede consid
 
 ## 14. Resumen
 
-La investigación del incidente es la fase que convierte la sospecha en conocimiento y la alarma en acción. Para actuar de forma efectiva, la organización debe preservar la evidencia, evitar contaminarla, reconstruir la secuencia de hechos, identificar la causa raíz y traducir el análisis en medidas de contención, erradicación y recuperación. La calidad de la investigación determina la calidad de la respuesta.
+La investigación del incidente es la fase que convierte la sospecha en conocimiento y la alarma en acción. Para actuar de forma efectiva, la organización debe preservar la evidencia, evitar contaminarla, reconstruir la secuencia de hechos, identificar la causa raíz y traducir el análisis en medidas de contención, erradicación y recuperación. En este sentido, la calidad de la investigación determina en gran medida la calidad de la respuesta, la fiabilidad de la decisión y la capacidad de aprendizaje organizativo.
 
-Una investigación bien ejecutada no solo confirma lo ocurrido, sino que permite comprender la lógica del ataque, evaluar el impacto real, proteger los activos críticos y construir un conocimiento útil para la mejora permanente de la seguridad. Este enfoque convierte la investigación de incidentes en una disciplina esencial dentro de la gestión de riesgos y la continuidad del negocio.
+Una investigación bien ejecutada no solo confirma lo ocurrido, sino que permite comprender la lógica del ataque, evaluar el impacto real, proteger los activos críticos y construir un conocimiento útil para la mejora permanente de la seguridad. Este enfoque convierte la investigación de incidentes en una disciplina esencial dentro de la gestión de riesgos, la continuidad operativa y la madurez de la organización frente a amenazas crecientes y cada vez más sofisticadas.
 
 ## 15. Recursos recomendados
 
