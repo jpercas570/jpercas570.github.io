@@ -119,7 +119,154 @@ Una notificación interna bien construida suele incluir:
 
 La notificación interna debe mantenerse actualizada según evolucione el caso. Es decir, no se trata de un aviso único, sino de un flujo dinámico de información para la toma de decisiones.
 
-### 4.2. Notificación a autoridades competentes
+### 3.4. Notificación de incidentes: marco regulatorio, autoridades competentes y comunicación interna
+
+En este punto se abordarán tanto las directrices para la notificación de incidentes de una organización a su autoridad competente y CSIRT de referencia, como las directrices para la notificación de incidentes desde un punto de vista interno a la organización.
+
+#### 3.4.1. Notificaciones externas
+
+La Guía Nacional de notificación y gestión de ciberincidentes proporciona las directrices para el cumplimiento de las obligaciones de reporte de incidentes de ciberseguridad acaecidos en el seno de las Administraciones Públicas, las infraestructuras críticas y operadores estratégicos de su competencia, así como el resto de entidades comprendidas en el ámbito de aplicación del Real Decreto-Ley 12/2018.
+
+A continuación, se muestra un esquema acerca de autoridades competentes y CSIRT de referencia:
+
+| Tipo de operador | Subtipo | Características | Autoridad competente | CSIRT de referencia |
+|---|---|---|---|---|
+| Operador de servicios esenciales | Operador crítico | CNPIC | Sector Público: CCN-CERT; Sector Privado: INCIBE-CERT | - |
+| Operador de servicios esenciales | Operador no crítico | Comprendido en el ámbito de aplicación de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público | CCN | Resto Autoridad Sectorial |
+| Proveedor de Servicios Digitales | Sector Privado | - | Secretaría de Estado de Digitalización e Inteligencia Artificial | - |
+| Proveedor de Servicios Digitales | Sector Público | Comprendido en el ámbito de aplicación de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público | CCN | - |
+
+Para la notificación de los incidentes se usará como criterio de referencia el nivel de peligrosidad que se asigne a un incidente sin perjuicio de que, a lo largo de la gestión del incidente, se categorice con un determinado nivel de impacto que haga aconsejable la comunicación del incidente a la autoridad competente o CSIRT de referencia.
+
+En relación con los ciudadanos y empresas no incluidos en el ámbito de protección de infraestructuras críticas, del sector público, o del Real Decreto-ley 12/2018, la notificación de incidentes de ciberseguridad tendrá, en todo caso, un carácter potestativo y voluntario.
+
+#### 3.4.2. Notificación obligatoria asociada
+
+De acuerdo con la Guía Nacional, los incidentes cuyo nivel de peligrosidad y/o nivel de impacto sea crítico, muy alto o alto para todos aquellos sujetos obligados deberán ser notificados a su autoridad competente o CSIRT de referencia.
+
+Como se indica en la guía, “deberán comunicar, en tiempo y forma, los incidentes que registren en sus redes y sistemas de información y estén obligados a notificar por superar los umbrales de impacto o peligrosidad establecidos en esta guía”.
+
+Siempre que se haya producido un delito es necesario “ponerlo inmediatamente en conocimiento”, es decir, ante un posible delito se debe denunciar ante las fuerzas competentes, además de notificar al CSIRT/CERT de referencia o a la AGPD si hay datos de carácter personal. El artículo 33 del RGPD impone a los responsables de un tratamiento de datos personales la obligación de notificar a la autoridad de control competente las brechas de datos personales cuando sea probable que constituyan un riesgo para los derechos y libertades de las personas.
+
+El responsable de tratamiento debe valorar el nivel de riesgo de una brecha de datos personales y notificarla a la autoridad de control cuando exista tal riesgo; además, cuando el riesgo sea alto, el responsable también deberá comunicar la brecha a las personas afectadas conforme al artículo 34 del RGPD.
+
+El plazo para notificar a la autoridad de control es de 72 horas desde que la organización tiene constancia de la brecha.
+
+En el ámbito privado, los responsables del tratamiento afectados por una brecha de datos personales deberán notificar a la AEPD:
+
+- cuando su único establecimiento esté localizado en España;
+- si tienen varios establecimientos en la Unión Europea, únicamente cuando el establecimiento principal esté localizado en España;
+- si no tienen establecimiento principal en la Unión Europea, sólo en el caso de que hayan designado un representante en España;
+- si no tienen establecimiento ni representante en la Unión Europea, en el caso de que la brecha de datos personales cuente con afectados en España.
+
+#### 3.4.3. Notificaciones internas
+
+Aunque la organización disponga de un sistema de monitorización para la detección de incidentes de seguridad, es necesario implantar canales de comunicación que permitan al personal de la organización, o a personas vinculadas a la misma de manera directa, como proveedores o colaboradores, la notificación de posibles incidentes de seguridad. Esos canales de comunicación, como correo electrónico, teléfonos de contacto, formularios web o herramientas de ticketing, deben ser ágiles, estar disponibles a través de distintos medios, estar debidamente publicitados y ser probados periódicamente para corroborar su correcto funcionamiento.
+
+El personal deberá estar concienciado para identificar y notificar lo antes posible cualquier situación sospechosa de ser un incidente de seguridad. La velocidad con la que se reconozca, analice y responda a ese incidente limitará el daño y reducirá el coste de recuperación. Por ello, es necesario emprender acciones formativas y de concienciación dirigidas a los empleados.
+
+#### 3.4.4. Información a notificar
+
+Tanto en el caso de que la entidad afectada por el incidente notifique a la autoridad competente o CSIRT de referencia, como en el caso de que se realice una notificación interna en la organización, existen una serie de datos mínimos que deben aportarse de la forma más precisa posible para una correcta gestión del incidente registrado. En este punto debe tenerse presente que se prima la agilidad por encima de la completitud de la información.
+
+Los campos esenciales suelen ser los siguientes:
+
+- asunto: breve descripción genérica del incidente;
+- descripción detallada de lo sucedido;
+- fecha y hora del incidente y de su detección; indicar con la mayor precisión posible cuándo se produjo y cuándo se detectó el primer indicio;
+- recursos tecnológicos afectados; aportar la mayor información técnica posible, como direcciones IP, sistemas operativos, aplicaciones, usuarios y puntos de acceso implicados;
+- causa del incidente si se conoce; por ejemplo, apertura de un correo malicioso, conexión de un USB infectado, descarga de un fichero sospechoso;
+- estimación del nivel de impacto; a priori es posible que sea difícil concretar el impacto ocasionado, pero es importante hacer una aproximación inicial.
+
+Habitualmente, durante el registro de un incidente, el equipo responsable de su gestión (CERT/CSIRT/ERI) asignará a cada caso un identificador único que estará presente durante todas las comunicaciones relacionadas con el incidente. En aquellos casos en los que la comunicación se realice por correo electrónico, este identificador aparecerá en el campo “Asunto”. Este valor no debe modificarse ni eliminarse, ya que esto ralentizaría la gestión de las comunicaciones y la resolución final del ciberincidente.
+
+Un ejemplo de comunicación, con respecto a un potencial incidente, entre un usuario de la compañía y el equipo de gestión de incidentes podría ser el siguiente:
+
+Asunto: Correo sospechoso
+De: usuario@compañia.com
+Para: cert@compañia.com
+
+Estimados compañeros. Les notifico que he recibido un correo que parecía venir del departamento de finanzas en el que se me indicaba que debía completar un formulario con una serie de información sobre mi banco e información personal. Tras completar el formulario y darle a enviar, llamé al departamento de finanzas y me indicaron que ellos no habían enviado ningún correo, lo que me hizo sospechar que pudiese ser un fraude.
+
+Espero que me ayuden a solucionar la situación.
+Saludos,
+
+Asunto: [CERT #1234] Re: Correo sospechoso
+De: cert@compañia.com
+Para: usuario@compañia.com
+
+Buenos días. Le indicamos que el equipo del CERT ha abierto un caso de investigación con identificador [CERT #1234]. En unos minutos le llamaremos para recopilar toda la información que necesitemos para completar la investigación. Mientras, por favor reenvíenos el correo recibido para iniciar las primeras acciones.
+Saludos,
+
+A partir de este punto, los analistas del CERT comenzarán a analizar la situación: revisarán el correo fraudulento recibido, si el envío de datos ha sido exitoso, qué recomendaciones debe seguir el usuario para mitigar el impacto del robo de datos, qué medidas tomar para evitar que vuelva a entrar este tipo de correos, qué acciones llevar a cabo para concienciar a este usuario para que desconfíe de este tipo de solicitudes de información, estudiar si ha habido más víctimas y valorar la necesidad de ampliar la investigación.
+
+Otro ejemplo de un reporte de un posible incidente de seguridad puede observarse en un extracto anonimizado de un evento de seguridad que se visualiza en la consola de administración del SIEM. Como puede verse, la notificación incluye información detallada del evento, como el asunto, la fecha en la que se detectó la alerta, la criticidad asociada, las IP involucradas, el usuario implicado, el analista responsable de la investigación y el tipo del potencial incidente. Los campos sensibles han sido anonimizados por confidencialidad.
+
+En un escenario de phishing, la notificación puede indicar el asunto “New products” en un buzón de un usuario de la compañía, y la solución antispam no ha neutralizado el mensaje. Entonces, la investigación debe centrarse en saber si el usuario ha interactuado con ese correo, qué tipo de phishing es, si lleva anexos, si incluye URL incrustadas, cuántos usuarios han podido recibir ese correo y cuánta atención precisa requiere la campaña.
+
+#### 3.4.5. Estrategia de comunicación
+
+Como hemos mencionado en los primeros capítulos, es necesario abordar la gestión de cada incidente de seguridad desde una perspectiva operativa y técnica, pero también desde una perspectiva organizativa y estratégica. Esto incluye evaluar cuál es la mejor estrategia de comunicación con los diferentes grupos de interés, como otras organizaciones, clientes, proveedores, empleados, sedes de la compañía, prensa o autoridades, dependiendo de la organización y del tipo de incidente.
+
+En los incidentes más críticos es fundamental establecer una estrategia de comunicación en función del tiempo y la prioridad, y del grupo de interés al que va dirigida la comunicación: ¿qué tipo de información se va a ofrecer?, ¿cuáles son los mensajes clave?, ¿qué formato se utilizará para la difusión de la comunicación (nota de prensa, correo electrónico, vídeo, informe, etc.)?, ¿qué canales o medios se usarán (reuniones periódicas, videoconferencias, llamadas telefónicas, correos electrónicos, listas de distribución, mensajería instantánea, etc.)?
+
+Cabe mencionar que es posible que el incidente haya provocado una denegación de servicios que se puedan plantear para comunicarse o se consideren comprometidos y no se pueda hacer uso de ellos (correo electrónico, sistema de videoconferencia, etc.). Por tanto, es necesario disponer de una alternativa segura.
+
+Es importante que la organización sea proactiva y ágil a la hora de comunicar la situación, ya que debe tener en cuenta posibles filtraciones de información, voluntarias o no, por parte de empleados, proveedores o clientes, que puedan dar a conocer de manera incompleta o errónea lo que está sucediendo. Esto puede maximizar el impacto del propio incidente en la organización.
+
+Los mensajes a comunicar deberían tener las siguientes características:
+
+- ofrecer un discurso unificado y, si es posible, procedente de una única fuente oficial de información;
+- transparencia, empatía y asunción de responsabilidades; nunca se debe mentir ni ofrecer información no contrastada;
+- transmitir confianza, actuar con serenidad, firmeza y profesionalidad;
+- demostrar atención y respeto hacia todos los involucrados;
+- poner en valor las acciones adoptadas; cualquier situación de crisis representa una oportunidad para demostrar la capacidad de la organización para solventar una situación compleja.
+
+Tal y como aconseja el CCN, se evitará mencionar, al menos inicialmente y hasta que se conozca el alcance de la situación y se valore, las causas del incidente, su responsable si lo hubiera, los datos de la investigación interna o posibles consecuencias del incidente para la organización o para otros grupos de interés.
+
+Un ejemplo público de una buena estrategia de comunicación fue la que llevó a cabo Kaspersky cuando sus redes fueron vulneradas en 2015. Lejos de centrarse solo en el compromiso y en su parte negativa, se focalizaron en cómo habían sido capaces de detectar y estudiar en detalle una amenaza tan avanzada, proporcionando información valiosa para la comunidad de ciberseguridad y transmitiendo confianza al asegurar que sus servicios no habrían sido comprometidos. El ejemplo demuestra que la comunicación de crisis debe ser clara, meditada y orientada a reforzar la confianza institucional.
+
+#### 3.4.6. Informes de incidentes de seguridad
+
+Escribir un informe sobre un incidente de seguridad no es una tarea trivial, porque puede requerirse para diferentes audiencias. En general, habrá una audiencia técnica que querrá más detalles de tipo técnico, y otra de carácter directivo que necesitará un lenguaje más claro, centrado en costes, plazos e impacto en el negocio. También puede existir una audiencia legal, interesada en normativas, evidencias y cumplimiento. Por ello, la organización deberá valorar si el informe se presenta en un único documento con diferentes partes diferenciadas (resumen ejecutivo, análisis técnico y consideraciones legales), o bien en varios informes específicos dirigidos a cada audiencia.
+
+En cualquier caso, tanto el resumen ejecutivo como las conclusiones deberán ser lo más concisos y claros posible, redactados en un lenguaje accesible y sin una excesiva carga técnica.
+
+Una estructura básica para redactar este tipo de informes podría ser la siguiente:
+
+1. Objeto y alcance del documento.
+2. Antecedentes y consideraciones preliminares.
+3. Resumen ejecutivo.
+4. Análisis.
+5. Conclusiones.
+6. Lecciones aprendidas.
+7. Anexos.
+8. Referencias.
+
+En el análisis se describirá detalladamente el trabajo realizado, incorporando información que aporte valor, como capturas de pantalla de evidencias, extractos de logs, cronología de los hechos, correos intercambiados, pruebas de concepto realizadas y cualquier otra evidencia útil. Es fundamental exponer los hechos con objetividad y demostrar que las decisiones técnicas propuestas por el equipo de respuesta tienen solvencia. Cuando se redacta el informe, conviene reforzar todas las afirmaciones con evidencia sólida y dejar claro si alguna conclusión es una hipótesis, no un hecho probado.
+
+Este apartado puede estructurarse, por ejemplo, en subapartados como timeline del incidente, detección del incidente, medidas de contención y erradicación adoptadas, recomendaciones de seguridad y análisis forense o de malware si se han realizado.
+
+En el punto de conclusiones se expondrán las principales deducciones del análisis. Deben ser claras, contundentes y oportunas, de manera que cualquier lector pueda comprender rápidamente qué ocurrió, cómo se gestionó y qué impacto tuvo.
+
+En las lecciones aprendidas, la organización evaluará qué se hizo bien y qué se hizo mal durante la gestión del incidente, proponiendo acciones que permitan mejorar estos fallos. Las preguntas clave podrían ser:
+
+- ¿Qué se gestionó adecuadamente?
+- ¿Qué etapas fueron exitosas?
+- ¿Qué actividades o metodologías ayudaron a lograr ese éxito?
+- ¿Qué se gestionó de forma inadecuada?
+- ¿Qué causas originaron el incidente y qué medidas se podrían haber implementado para evitarlo?
+- ¿El ERI disponía de los medios adecuados para llevar a cabo las tareas de respuesta?
+- ¿Los pasos indicados en los procedimientos de respuesta eran los correctos?
+- ¿El tiempo de respuesta fue el adecuado?
+
+Como resultado de esta etapa saldrán iniciativas que mejoren la seguridad de la compañía.
+
+Por último, en los anexos se incluirá toda la información adicional que sustente lo redactado en los puntos anteriores, como IOCs identificados, evidencias, listados de equipos comprometidos, logs y documentación complementaria. La referencia a las fuentes internas y externas también es esencial para asegurar la trazabilidad y la solvencia del análisis.
+
+En síntesis, la notificación y la comunicación no son actividades accesorias en la gestión del incidente; son parte integral de la respuesta, porque permiten coordinar la actuación, cumplir con obligaciones regulatorias, mantener la confianza y documentar la evolución del caso con rigor. Una organización que comunica bien y documenta con precisión es una organización que gestiona mejor su riesgo y mejora su capacidad de resiliencia.
+
+### 4.1. Notificación a autoridades competentes
 
 En algunos incidentes, la organización debe notificar a autoridades competentes. Esta obligación surge cuando se afectan datos personales, servicios críticos, infraestructuras relevantes o se incumplen requisitos normativos. La notificación puede ser obligatoria por ley o por regulación sectorial, y su ausencia puede tener consecuencias legales, sancionadoras o reputacionales.
 
@@ -382,9 +529,16 @@ La detección y la documentación son la parte final del ciclo de respuesta, per
 
 Cuando una organización aprende a documentar y comunicar adecuadamente sus incidentes, mejora su madurez en seguridad, refuerza su capacidad de respuesta y reduce el impacto de futuros sucesos. La gestión de incidentes no termina con la resolución técnica; termina con la capacidad de cerrar el caso con rigor, responsabilidad y aprendizaje.
 
+## 11. Recursos recomendados
 
+- Documentación del módulo y materiales adjuntos.
+- Procedimientos internos de notificación y comunicación.
+- Guías de notificación de incidentes y seguridad de la información.
+- Marcos de gestión de riesgo y cumplimiento normativo en seguridad.
+- Plantillas de informes de ciberincidentes y de comunicación ante crisis.
+- Materiales sobre gestión de crisis y responsable corporativa.
 
-## 11. Autoevaluación
+## 12. Autoevaluación
 
 1. ¿Qué debe incluir una notificación interna?
 2. ¿Cuándo se activa una notificación a autoridades o afectados?
