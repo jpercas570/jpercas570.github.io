@@ -216,6 +216,112 @@ Por esa razón, la mejora continua es un principio esencial:
 - comparar resultados con indicadores de cumplimiento,
 - ajustar acciones para cerrar brechas descubiertas por la auditoría.
 
+### 3.9. Principios generales de la organización en materia de ciberseguridad
+
+La gestión de la seguridad de los sistemas de información exige establecer una Organización de la Seguridad que defina los actores implicados, sus funciones y su estructura de coordinación. Esta dimensión organizativa es clave porque el riesgo de seguridad no depende solo de medidas técnicas, sino también de cómo se distribuyen las responsabilidades, cómo se gestionan los permisos y cómo se apoyan los procesos de aseguramiento desde la dirección.
+
+En el marco del Esquema Nacional de Seguridad (ENS), la seguridad se concibe como una función diferenciada dentro de la organización. El artículo 10 del ENS establece que en los sistemas de información se diferenciará claramente entre el responsable de la información, el responsable del servicio y el responsable de la seguridad. Cada una de estas figuras tiene un ámbito de autoridad distinto y ninguna debe confundirse con otra, porque la separación de responsabilidades es un principio de control y de gobernanza.
+
+- Responsable de la información: determina los requisitos de la información tratada y define qué nivel de protección necesita cada tipo de dato o servicio.
+- Responsable del servicio: define los requisitos del servicio prestado y asegura que la operación del sistema responda a las necesidades del negocio.
+- Responsable de la seguridad: determina las decisiones para satisfacer los requisitos de seguridad de la información y de los servicios, y asegura que las medidas se adopten de forma coherente con el riesgo institucional.
+
+La separación de estas funciones evita que una sola persona pueda decidir sin controles sobre la información, el servicio y su protección. De este modo, se reduce el riesgo de conflicto de intereses, se mejora la trazabilidad y se refuerza la capacidad de supervisión. La política de seguridad de la organización debe, por tanto, detallar la atribución de tareas, los mecanismos de coordinación y los procedimientos para resolver conflictos de responsabilidad.
+
+#### 3.9.1. Los roles básicos en la organización
+
+Además de las tres figuras anteriores, si la organización trata datos de carácter personal aparece una dimensión específica de protección de datos. En este caso, resulta necesario contemplar también a:
+
+- Responsable del tratamiento: decide por qué y para qué se tratan los datos personales.
+- Delegado de protección de datos (DPD): supervisa el cumplimiento de la normativa en materia de protección de datos y actúa con independencia y confidencialidad.
+- Encargado del tratamiento: ejecuta tareas concretas de tratamiento bajo la dirección del responsable.
+
+Este enfoque resulta especialmente relevante en el marco de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, que exige una organización en la que la protección de datos tenga un papel explícito y no meramente incidental.
+
+#### 3.9.2. Modelo de organización mínima y modelo ampliado
+
+La guía CCN-STIC-801 propone un esquema conceptual que relaciona seguridad de la información y protección de datos, destacando la necesidad de una estructura de gobierno, supervisión y operación. En organizaciones pequeñas o con pocos recursos, puede ser viable una estructura mínima en la que:
+
+- el gobierno y la supervisión se concentran en una única figura que integra los roles de responsable del tratamiento, responsable de la información, responsable del servicio y responsable de la seguridad;
+- el delegado de protección de datos ejerce supervisión y control independiente del cumplimiento normativo;
+- la operación recae en una figura que reporta a dirección e integra funciones de responsable del sistema y administrador de seguridad.
+
+En organizaciones más grandes, es habitual contar con comités especializados que canalicen la estrategia de seguridad. Entre los más relevantes están:
+
+- Comité de Seguridad Corporativa: alinea todas las actividades de la organización en materia de seguridad física, seguridad de la información, cumplimiento legal y planes de contingencia.
+- Comité de Seguridad de la Información: se centra en la coordinación de las medidas de seguridad de la información dentro de la organización.
+- Comité de Protección de Datos: vela por la conformidad con las exigencias legales y regulatorias relacionadas con los datos personales.
+
+Estos órganos permiten gestionar la seguridad con una visión estratégica y transversal, evitando decisiones aisladas o fragmentadas por áreas de negocio.
+
+#### 3.9.3. Distribución de responsabilidades: legal, supervisión y operación
+
+La guía del CCN distingue tres grandes bloques de responsabilidad:
+
+1. Responsabilidad legal y de definición de necesidades.
+   Corresponde a la dirección de la empresa y a los responsables del tratamiento, de la información y del servicio. Son ellos quienes fijan qué debe protegerse y qué nivel de riesgo es asumible.
+
+2. Supervision.
+   Corresponde al responsable de la seguridad y al delegado de protección de datos, según el ámbito. Su función es verificar que la organización cumple la normativa, las políticas y los procedimientos establecidos.
+
+3. Operación del sistema de información.
+   Corresponde al responsable del sistema, que ejecuta, mantiene y supervisa el funcionamiento del entorno tecnológicos y la aplicación de los controles técnicos.
+
+Este reparto demuestra que la seguridad de la información es una capacidad organizativa, no solo técnica. La dirección lidera, la supervisión garantiza el cumplimiento y la operación ejecuta. Si cualquiera de estos niveles falla, la organización queda expuesta a fallos de control, falta de trazabilidad o decisiones no alineadas con el riesgo real.
+
+#### 3.9.4. La matriz RACI como herramienta de coordinación
+
+Para asignar responsabilidades de forma explícita, el CCN propone la metodología RACI, ampliamente utilizada en gestión de riesgos y en la gobernanza organizativa. En esta herramienta:
+
+- A (Accountable): es quien toma decisiones, autoriza la actuación y responde por el resultado final.
+- R (Responsible): ejecuta el trabajo autorizado previamente.
+- C (Consulted): aporta criterio antes de decidir.
+- I (Informed): recibe información sobre la decisión tomada.
+
+Un ejemplo sencillo de RACI en ciberseguridad podría ser el siguiente:
+
+| Actividad | Dirección | Responsable de Seguridad | Responsable del Servicio | Responsable del Sistema | Usuarios |
+| --- | --- | --- | --- | --- | --- |
+| Definir política de seguridad | A | R | C | C | I |
+| Aprobar restricciones de acceso | A | R | C | R | I |
+| Evaluar riesgos de sistemas críticos | C | A/R | C | R | I |
+| Mantener copias de seguridad | I | C | I | A/R | I |
+| Reportar incidente sospechoso | I | C | I | I | A/R |
+
+La matriz RACI es especialmente útil para evitar duplicidades, definir áreas de decisión y establecer canales de coordinación claros. En organizaciones con gran complejidad, una matriz bien construida resulta esencial para la continuidad operativa y para la respuesta ante incidentes.
+
+#### 3.9.5. Infraestructuras críticas y roles de seguridad
+
+La Ley 8/2011, de 28 de abril, por la que se establecen medidas para la protección de infraestructuras críticas (Ley PIC), también refleja la necesidad de una estructura organizativa específica. Esta norma reconoce que la protección de infraestructuras críticas ya no puede limitarse a la protección material o física, sino que debe integrarse con tecnologías de la información y las ciberamenazas.
+
+El artículo 16 de la Ley PIC exige que los operadores críticos designen un Responsable de Seguridad y Enlace con la Administración. Esta figura exige, además, contar con la habilitación correspondiente del Director de Seguridad. En términos prácticos, su rol combina la coordinación con la Administración, la supervisión del riesgo y la alineación de las medidas de protección con la normativa aplicable.
+
+Asimismo, el artículo 17 habla del Delegado de Seguridad de la Infraestructura Crítica, que debe comunicarse con las administraciones competentes, especialmente en aquellos casos en los que la infraestructura tiene un elevado nivel de criticidad. Esta figura refuerza la necesidad de incorporar niveles de supervisión independiente, especialmente cuando el impacto de un fallo puede afectar a servicios esenciales para la sociedad.
+
+#### 3.9.6. Seguridad privada y organización funcional
+
+La Ley 5/2014, de 4 de abril, de Seguridad Privada, establece un marco de roles y funciones que es relevante aunque la temática principal sea la seguridad de la información. En ella se destaca la figura del Director de Seguridad, que es un requisito mínimo para quienes asumen funciones de Responsable de Seguridad y Enlace con la Administración en operadores críticos.
+
+La LSP señala que corresponde al Director de Seguridad:
+
+- organizar, dirigir e inspeccionar los servicios y recursos de seguridad privada;
+- identificar, analizar y evaluar riesgos que puedan afectar a personas y bienes;
+- planificar y controlar medidas preventivas;
+- validar la adecuación de las medidas de seguridad;
+- verificar que los sistemas y empresas contratadas cumplen la normativa;
+- coordinarse con las Fuerzas y Cuerpos de Seguridad;
+- garantizar la protección efectiva de la entidad, la empresa o el grupo empresarial.
+
+Aunque esta ley se centra en la seguridad privada y física, su modelo organizativo es valioso para comprender cómo la normativa también exige una función diferenciada de dirección, control y coordinación en materias de seguridad integral.
+
+#### 3.9.7. Marco europeo: la Directiva NIS y la figura del RSI
+
+A nivel europeo, la Unión Europea ha reforzado el marco regulatorio sobre ciberseguridad mediante la Directiva NIS. Esta directiva, transpuesta en España, establece un marco común para mejorar la resiliencia de redes y sistemas de información frente a los riesgos cibernéticos.
+
+La Directiva NIS exige que los operadores de servicios esenciales designen y comuniquen a la autoridad competente a la persona, unidad u órgano colegiado responsable de la seguridad de la información (RSI), como punto de contacto y coordinación técnica. Esto evidencia que la seguridad de la información ya no es solo una necesidad tecnológica, sino una obligación de gobierno y coordinación entre organización y administración.
+
+Este enfoque refuerza la idea de que la prevención y la gestión del riesgo deben apoyarse en una estructura organizativa clara, con responsables, órganos de coordinación y canales de comunicación definidos.
+
 ## 4. Normativa y protección del puesto de trabajo
 
 ### 4.1. Importancia de la normativa interna
@@ -456,6 +562,68 @@ Para que la formación en seguridad sea útil debe cumplir criterios pedagógico
 
 Aprender ciberseguridad no consiste en memorizar definiciones; consiste en entrenar la capacidad de reconocer situaciones de riesgo, reaccionar con criterio y reportar problemas antes de que se conviertan en incidentes mayores.
 
+### 6.10. Plan de concienciación dirigido a empleados
+
+Desde el punto de vista del proceso de gestión de incidentes de ciberseguridad, la organización debe poner en marcha campañas de concienciación y formación dirigidas a sus empleados. Estas acciones no deben limitarse a una única sesión anual, sino que deben diseñarse como programas continuados, evaluables y adaptados a la realidad del negocio.
+
+Los objetivos mínimos de una campaña de concienciación son los siguientes:
+
+- saber identificar situaciones de riesgo y ser consciente de que deben comunicarse cuanto antes;
+- conocer todos los canales de comunicación para notificar un posible incidente;
+- conocer en profundidad la política de protección del puesto de trabajo;
+- reconocer las principales amenazas actuales, como campañas de ingeniería social, correos fraudulentos, suplantación de identidad, fraudes al CEO, llamadas falsas de soporte técnico o ataques de ransomware;
+- comprender que la seguridad no es responsabilidad exclusiva del departamento técnico, sino de toda la organización.
+
+Es recomendable que estas campañas se repitan con cierta periodicidad, al menos una vez al año, aunque en entornos de mayor riesgo o mayor sensibilidad de datos es aconsejable aumentar la frecuencia. La concienciación eficaz no depende solo del contenido, sino del tono y la continuidad con que se transmite.
+
+#### 6.10.1. Formación global recomendada para todos los empleados
+
+Una situación idónea es que el empleado reciba formación sobre una serie de temas esenciales:
+
+- uso seguro de la tecnología que utiliza: equipos de sobremesa, impresoras, telefonía, redes WiFi no corporativas, portátiles, tablets y dispositivos móviles;
+- navegación web segura: cómo identificar sitios sospechosos, comprobación de certificados SSL, atención a complementos del navegador y prevención de descargas inseguras;
+- uso seguro del correo electrónico: identificación de correos maliciosos, spam, phishing, spear-phishing e ingeniería social;
+- uso de la información en papel o formato digital: grado de confidencialidad, tratamiento y almacenamiento seguro de los datos con los que trabaja;
+- uso seguro de dispositivos extraíbles, como USB o discos duros externos: cifrado, control, pérdida y tratamiento tras incidente;
+- teletrabajo seguro, cuando el usuario trabaja fuera de la organización;
+- denuncia de incidentes y canales de comunicación interna.
+
+También es recomendable adaptar la formación a los distintos perfiles de empleados. No es lo mismo formar a un empleado de mantenimiento, un técnico de sistemas, un profesional de contabilidad o un directivo. Cada colectivo tiene distintos riesgos y distintos compromisos de acceso y uso de la tecnología. Por eso, la campaña debe incluir mensajes específicos para:
+
+- empleados de dirección;
+- empleados que manipulan información sensible o cuentas bancarias;
+- empleados que viajan con frecuencia;
+- empleados que gestionan equipos industriales, IoT u OT;
+- empleados técnicos y administradores de sistemas, redes y desarrolladores.
+
+#### 6.10.2. Materiales que apoyan la concienciación
+
+Las campañas de concienciación deben apoyarse en materiales que estén siempre al alcance del empleado. Una buena estrategia combina distintos medios y formatos para reforzar la memorización y la comprensión del comportamiento seguro.
+
+- boletines informativos en correo o plataformas internas;
+- charlas, talleres presenciales o en línea;
+- vídeos tutoriales y podcasts;
+- correos electrónicos de alerta y buenas prácticas;
+- cursos específicos y microformación;
+- consejos en redes sociales, foros o blogs corporativos;
+- cartelería y medición visual, como posters, infografías y checklists;
+- manuales de uso y buenas prácticas;
+- plantillas y procedimientos de notificación y denuncia.
+
+Es importante que estos materiales no sean solo informativos, sino accionables. Un empleado debe poder entender qué debe hacer exactamente ante un correo sospechoso, cómo reportar un posible incidente y quién es la persona responsable de atenderlo.
+
+#### 6.10.3. Relación con la cultura de seguridad
+
+La concienciación debe reforzar una cultura de seguridad que empodere al personal para actuar con criterio. El principio clave es que el empleado debe convertirse en parte activa de la defensa de la organización. Esto implica capacidades para:
+
+- utilizar la información y los medios digitales de forma segura;
+- reconocer señales de riesgo o anomalía;
+- comunicar de forma temprana un problema;
+- colaborar con los responsables de seguridad;
+- poner en práctica los procedimientos aprobados por la organización.
+
+En este sentido, la máxima “if you see something, say something” es especialmente útil, porque recuerda que la prevención no depende únicamente de la tecnología, sino también de la capacidad del personal para detectar riesgos y denunciar situaciones sospechosas antes de que se conviertan en incidentes graves.
+
 ## 7. Materiales de formación y concienciación
 
 ### 7.1. Tipos de materiales
@@ -623,6 +791,23 @@ Para saber si la prevención funciona, es útil medir indicadores como:
 - cumplimiento de revisiones periódicas de permisos.
 
 Estos indicadores permiten pasar de una gestión intuitiva a una gestión basada en datos y evidencia, lo que facilita la toma de decisiones y la priorización de acciones.
+
+### 8.9. Auditoría de cumplimiento de planes de concienciación
+
+Tras cada campaña de concienciación, iniciativa formativa o actividad orientada a la prevención, es necesario evaluar si los empleados han entendido los conceptos y si los mensajes han generado un cambio real en su comportamiento. La auditoría del plan de concienciación no debe limitarse a constatar que se han impartido cursos, sino a verificar si se ha producido una mejora efectiva en la capacidad de detectar y reaccionar ante amenazas.
+
+Para ello, la organización puede emplear:
+
+- encuestas y cuestionarios de conocimiento;
+- pruebas breves de evaluación antes y después de la formación;
+- ciberejercicios o simulacros prácticos;
+- ejercicios de reconocimiento de correos fraudulentos;
+- análisis de indicadores de comportamiento, como clics en phishing, reportes de mensajes sospechosos o fallos en procedimientos de acceso;
+- observación de cumplimiento en entornos reales.
+
+Un plan de concienciación solo se considera eficaz si puede demostrarse que ha mejorado la capacidad de respuesta de la organización. Esto requiere medir la receptividad del alumnado, su nivel de comprensión y la transformación de sus hábitos. El objetivo final no es que el personal memorice definiciones, sino que relacione la teoría con la práctica y se convierta en un agente activo de seguridad.
+
+La auditoría de cumplimiento debe ser independiente, estructurada y documentada. Debe centrarse en la calidad de la formación, la cobertura del programa, la claridad de los procedimientos de denuncia y la capacidad de los empleados para utilizar los canales adecuados en caso de sospecha. Una organización que no evalúa el impacto de la formación corre el riesgo de mantener una falsa sensación de seguridad.
 
 ## 9. Técnicas y procedimientos de prevención comunes
 
