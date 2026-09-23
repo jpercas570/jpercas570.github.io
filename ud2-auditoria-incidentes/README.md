@@ -14,6 +14,16 @@
 
 > La auditoría y la detección son la base de una respuesta efectiva: si no sabemos qué está ocurriendo, no podemos priorizar ni reaccionar con criterio. La segunda unidad se centra en la identificación, monitorización, clasificación y valoración inicial de los incidentes.
 
+## Índice
+
+- [1. Introducción a la unidad](#1-introducción-a-la-unidad)
+- [2. Resultado de aprendizaje y criterios](#2-resultado-de-aprendizaje-y-criterios)
+- [3. Conceptos fundamentales](#3-conceptos-fundamentales)
+- [4. Monitorización y detección](#4-monitorización-y-detección)
+- [5. Seguridad física y controles operativos](#5-seguridad-física-y-controles-operativos)
+- [6. Investigación OSINT](#6-investigación-osint)
+- [7. Valoración, clasificación y seguimiento inicial](#7-valoración-clasificación-y-seguimiento-inicial)
+
 ## 1. Introducción a la unidad
 
 La auditoría de incidentes de ciberseguridad constituye una disciplina esencial dentro del ciclo de seguridad de la información, ya que permite identificar, validar, clasificar y priorizar los eventos que pueden comprometer la confidencialidad, integridad y disponibilidad de los activos organizativos. Esta unidad aborda de forma integrada la taxonomía de incidentes, la monitorización de señales de seguridad, la detección de anomalías, la revisión de elementos físicos y el uso de fuentes abiertas para la investigación inicial.
@@ -589,6 +599,7 @@ Analizar una URL sospechosa o un dominio relacionado con un correo de phishing p
 ### Actividad 3. Matriz de severidad
 
 Elaborar un cuadro con incidentes hipotéticos y clasificar severidad, impacto y nivel de respuesta.
+
 
 ## 12. Herramientas esenciales de la unidad
 
