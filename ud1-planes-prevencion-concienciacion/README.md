@@ -15,6 +15,18 @@
 
 > La prevención es el primer escudo de la ciberseguridad. Antes de detectar y responder a un incidente, la organización debe construir una cultura de seguridad, definir normas claras, sensibilizar a las personas y comprobar que esas medidas se cumplen de forma continua.
 
+## Índice
+
+- [1. Introducción a la unidad](#1-introducción-a-la-unidad)
+- [2. Resultado de aprendizaje y criterios asociados](#2-resultado-de-aprendizaje-y-criterios-asociados)
+- [3. Fundamentos de la prevención en ciberseguridad](#3-fundamentos-de-la-prevención-en-ciberseguridad)
+- [4. Normativa y protección del puesto de trabajo](#4-normativa-y-protección-del-puesto-de-trabajo)
+- [5. Principios de protección del puesto de trabajo](#5-principios-de-protección-del-puesto-de-trabajo)
+- [6. Formación y concienciación en ciberseguridad](#6-formación-y-concienciación-en-ciberseguridad)
+- [7. Materiales de formación y concienciación](#7-materiales-de-formación-y-concienciación)
+- [8. Auditorías internas de cumplimiento en materia de prevención](#8-auditorías-internas-de-cumplimiento-en-materia-de-prevención)
+- [9. Técnicas y procedimientos de prevención comunes](#9-técnicas-y-procedimientos-de-prevención-comunes)
+
 ## 1. Introducción a la unidad
 
 Esta unidad aborda los fundamentos de la prevención en ciberseguridad y la importancia de la concienciación como elemento central de la seguridad organizativa. El objetivo no es solo instalar herramientas o redactar políticas, sino crear una cultura de seguridad que ayude a toda la organización a actuar con criterio, reducir riesgos y evitar incidentes.
