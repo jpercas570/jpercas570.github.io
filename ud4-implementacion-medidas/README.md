@@ -14,6 +14,25 @@
 
 > La implementación de medidas de ciberseguridad es la fase operativa y estratégica del tratamiento del incidente. Una vez detectado, validado y analizado el evento, la organización debe actuar con rapidez, criterio y coordinación para limitar el impacto, recuperar la normalidad operativa, reforzar sus defensas y reducir la probabilidad de que el problema se repita. Esta unidad aborda en profundidad la contención, la erradicación, la recuperación, la ciberresiliencia, la toma de decisiones, la continuidad del negocio y la mejora contínua como elementos esenciales de una respuesta eficaz.
 
+## Índice
+
+- [1. Introducción a la unidad](#1-introducción-a-la-unidad)
+- [2. Resultado de aprendizaje y criterios](#2-resultado-de-aprendizaje-y-criterios)
+- [3. Respuesta al incidente como proceso de gestión](#3-respuesta-al-incidente-como-proceso-de-gestión)
+- [4. Fases de la respuesta al incidente](#4-fases-de-la-respuesta-al-incidente)
+- [5. Procedimientos de respuesta](#5-procedimientos-de-respuesta)
+- [6. Ciberresiliencia y continuidad del negocio](#6-ciberresiliencia-y-continuidad-del-negocio)
+- [7. Escalado y toma de decisiones](#7-escalado-y-toma-de-decisiones)
+- [8. Reestablecimiento de servicios](#8-reestablecimiento-de-servicios)
+- [9. Gestión de crisis y coordinación interdepartamental](#9-gestión-de-crisis-y-coordinación-interdepartamental)
+- [10. Lecciones aprendidas y mejora continua](#10-lecciones-aprendidas-y-mejora-continua)
+- [11. Procedimientos de respuesta ante incidentes](#11-procedimientos-de-respuesta-ante-incidentes)
+- [12. Casos prácticos ampliados](#12-casos-prácticos-ampliados)
+- [13. Ejercicios de consolidación](#13-ejercicios-de-consolidación)
+- [14. Actividades prácticas recomendadas](#14-actividades-prácticas-recomendadas)
+- [15. Resumen](#15-resumen)
+- [16. Autoevaluación](#16-autoevaluación)
+
 ## 1. Introducción a la unidad
 
 La implementación de medidas de ciberseguridad no es una mera secuencia de pasos técnicos que se aplican después de una alerta. Es un proceso de gestión, coordinación y control que transforma el conocimiento del incidente en decisiones operativas, acciones concretas y mejora del nivel de protección. El objetivo no se limita a “restaurar el sistema”, sino a asegurar que la entidad pueda continuar funcionando con un nivel de riesgo aceptable y con la capacidad de aprender de la experiencia.
@@ -644,7 +663,7 @@ Se detecta tráfico anómalo saliente con grandes volúmenes de transferencias d
 
 Este caso muestra que no siempre la amenaza es visible en el sistema, sino en la salida de datos o la actividad irregular de red.
 
-## 12. Ejercicios de consolidación
+## 13. Ejercicios de consolidación
 
 ### Ejercicio 1. Procedimiento de respuesta
 
@@ -696,7 +715,7 @@ Cuando el impacto potencial supera el control operativo interno, afecta a activo
 - revisar la gestión de backups;
 - ajustar la monitorización y la respuesta.
 
-## 13. Actividades prácticas recomendadas
+## 14. Actividades prácticas recomendadas
 
 - diseñar un plan de respuesta ante ransomware;
 - crear una matriz de escalado de incidentes;
@@ -706,14 +725,14 @@ Cuando el impacto potencial supera el control operativo interno, afecta a activo
 - probar la recuperación desde copias de seguridad verificadas;
 - elaborar un informe de lecciones aprendidas tras un ejercicio práctico.
 
-## 14. Resumen
+## 15. Resumen
 
 La implementación de medidas de ciberseguridad es la fase que convierte la detección y la investigación en una respuesta organizada, útil y sostenible. No basta con detectar el incidente ni con limitarlo de forma superficial: la organización debe decidir con criterio, priorizar activos críticos, coordinar equipos, restaurar servicios seguros y aprender de la experiencia. La verdadera calidad de la respuesta se mide por la capacidad de recuperar la normalidad sin comprometer la continuidad del negocio ni la confianza de los usuarios.
 
 En un entorno digital cada vez más complejo, la respuesta al incidente es una competencia estratégica. Las organizaciones no solo deben detener la amenaza, sino garantizar la continuidad, reforzar la resiliencia y mejorar sus defensas. De este modo, la ciberseguridad deja de ser una reacción puntual para convertirse en una capacidad de adaptación y aprendizaje.
 
 
-## 15. Autoevaluación
+## 16. Autoevaluación
 
 1. ¿Qué diferencia hay entre contención, erradicación y recuperación?
 2. ¿Cuándo debe escalarse un incidente a la dirección o a terceros?
