@@ -491,11 +491,6 @@ Elaborar un cuadro con incidentes hipotéticos y clasificar severidad, impacto y
 
 La auditoría de incidentes no se reduce a la observación de alarmas; constituye un proceso analítico orientado a interpretar la evidencia, comprender el contexto operativo, determinar la relevancia del evento y priorizar la respuesta. A lo largo de esta unidad se ha abordado la base para detectar los sucesos que pueden ser incidentes reales, valorar su gravedad y decidir el seguimiento inicial necesario antes de pasar a la fase de investigación más profunda.
 
-## 14. Recursos recomendados
-
-- TeoríaUD2-01-Taxonomía de los incidentes.pdf
-- TeoríaUD2-02-Monitorización de eventos de seguridad.pdf
-- TeoríaUD2-03-Detección del incidente y valoración.pdf
 
 ## 15. Autoevaluación
 
