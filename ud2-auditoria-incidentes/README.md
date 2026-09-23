@@ -479,20 +479,20 @@ Elaborar un cuadro con incidentes hipotéticos y clasificar severidad, impacto y
 
 ## 12. Herramientas esenciales de la unidad
 
-- SIEM
-- EDR
-- IDS/IPS
-- Firewall
-- Wireshark
-- Nmap
-- OSINT framework y motores de búsqueda
+- **SIEM (Security Information and Event Management)**: Centraliza, recopila y correlaciona registros (logs) de eventos provenientes de múltiples fuentes (servidores, firewalls, aplicaciones). Sirve para obtener visibilidad global en tiempo real, detectar patrones de ataque complejos mediante reglas de correlación y generar alertas automatizadas para el equipo de seguridad.
+- **EDR (Endpoint Detection and Response)**: Monitoriza y analiza continuamente la actividad interna a nivel de equipo final (ordenadores, servidores, portátiles), supervisando procesos, archivos y memoria. Sirve para detectar amenazas avanzadas (como ransomware o malware sin archivo), aislar dispositivos infectados de la red de forma remota y recopilar telemetría forense detallada.
+- **IDS/IPS (Sistema de Detección / Prevención de Intrusiones)**: Inspecciona el tráfico de red en busca de firmas o comportamientos anómalos que indiquen un ataque. El IDS únicamente detecta y genera alertas sobre tráfico sospechoso, mientras que el IPS actúa de forma proactiva bloqueando o interrumpiendo el tráfico malicioso en tiempo real.
+- **Firewall** (Cortafuegos): Filtra el tráfico de red entrante y saliente según un conjunto de reglas de seguridad predefinidas (direcciones IP, puertos, protocolos). Funciona como la primera línea de defensa perimetral para aislar la red interna de conexiones no autorizadas y controlar la segmentación de redes.
+- **Wireshark**: Analizador de protocolos de red que realiza una inspección profunda (deep packet inspection) del tráfico capturado. Sirve para analizar el contenido exacto de los paquetes de datos, reconstruir sesiones de comunicación, investigar exfiltraciones de datos y analizar el comportamiento de red del malware durante un análisis forense.
+- **Nmap (Network Mapper)**: Herramienta de escaneo y descubrimiento de red. Se utiliza para identificar qué dispositivos están activos en una red, mapear topologías, descubrir puertos abiertos, auditar los servicios y versiones que se están ejecutando y detectar posibles vulnerabilidades o sistemas no autorizados.
+- **OSINT framework y motores de búsqueda**: Conjunto de recursos, metodologías y motores especializados (como Shodan, Censys o búsquedas avanzadas/Dorks) para recopilar información pública y accesible en fuentes abiertas. Sirve para realizar reconocimiento pasivo, analizar la superficie de ataque expuesta a internet, identificar credenciales o datos filtrados de la organización e investigar la infraestructura empleada por ciberdelincuentes.
 
 ## 13. Resumen
 
 La auditoría de incidentes no se reduce a la observación de alarmas; constituye un proceso analítico orientado a interpretar la evidencia, comprender el contexto operativo, determinar la relevancia del evento y priorizar la respuesta. A lo largo de esta unidad se ha abordado la base para detectar los sucesos que pueden ser incidentes reales, valorar su gravedad y decidir el seguimiento inicial necesario antes de pasar a la fase de investigación más profunda.
 
 
-## 15. Autoevaluación
+## 14. Autoevaluación
 
 1. ¿Qué diferencia existe entre evento, alarma e incidente?
 2. ¿Cómo se clasifica un incidente según impacto y severidad?
