@@ -14,6 +14,35 @@
 
 > La detección y la documentación son esenciales para asegurar que los incidentes no se conviertan en pérdidas ocultas. Una organización puede contener un ataque con éxito y recuperar sus servicios, pero si no documenta lo ocurrido ni comunica adecuadamente el impacto, pierde la oportunidad de aprender, mejorar sus controles y cumplir con sus obligaciones legales y regulatorias. Esta unidad aborda la fase final del ciclo de vida del incidente: la validación, la notificación, la evidencia documental y la comunicación de la respuesta.
 
+## Índice
+
+- [1. Introducción a la unidad](#1-introducción-a-la-unidad)
+- [2. Resultado de aprendizaje y criterios](#2-resultado-de-aprendizaje-y-criterios)
+- [3. Proceso de detección y notificación](#3-proceso-de-detección-y-notificación)
+  - [3.1. Detección](#31-detección)
+  - [3.2. Validación inicial](#32-validación-inicial)
+  - [3.3. Notificación interna](#33-notificación-interna)
+- [4. Tipos de notificación](#4-tipos-de-notificación)
+  - [4.1. Notificación interna](#41-notificación-interna)
+  - [4.2. Notificación de incidentes: marco regulatorio, autoridades competentes y comunicación interna](#42-notificación-de-incidentes-marco-regulatorio-autoridades-competentes-y-comunicación-interna)
+    - [4.2.1. Notificaciones externas](#421-notificaciones-externas)
+    - [4.2.2. Notificación obligatoria asociada](#422-notificación-obligatoria-asociada)
+    - [4.2.3. Notificaciones internas](#423-notificaciones-internas)
+    - [4.2.4. Información a notificar](#424-información-a-notificar)
+    - [4.2.5. Estrategia de comunicación](#425-estrategia-de-comunicación)
+    - [4.2.6. Informes de incidentes de seguridad](#426-informes-de-incidentes-de-seguridad)
+  - [4.3. Notificación a autoridades competentes](#43-notificación-a-autoridades-competentes)
+  - [4.4. Notificación a afectados](#44-notificación-a-afectados)
+  - [4.5. Comunicación a medios y a la opinión pública](#45-comunicación-a-medios-y-a-la-opinión-pública)
+- [5. Documentación del incidente](#5-documentación-del-incidente)
+- [6. Comunicación efectiva](#6-comunicación-efectiva)
+- [7. Casos prácticos](#7-casos-prácticos)
+- [8. Ejercicios de consolidación](#8-ejercicios-de-consolidación)
+- [9. Actividades recomendadas](#9-actividades-recomendadas)
+- [10. Resumen](#10-resumen)
+- [11. Recursos recomendados](#11-recursos-recomendados)
+- [12. Autoevaluación](#12-autoevaluación)
+
 ## 1. Introducción a la unidad
 
 La detección y documentación de incidentes de ciberseguridad constituye una de las fases más relevantes del tratamiento de un incidente, porque permite convertir la actividad técnica en información útil para la organización y para terceros. Detectar un problema es necesario, pero no suficiente: la organización debe saber qué ha ocurrido, qué impacto tiene, quién debe ser informado, qué decisiones se han tomado y qué lecciones se extraen del caso para evitar que se repita.
@@ -119,11 +148,11 @@ Una notificación interna bien construida suele incluir:
 
 La notificación interna debe mantenerse actualizada según evolucione el caso. Es decir, no se trata de un aviso único, sino de un flujo dinámico de información para la toma de decisiones.
 
-### 3.4. Notificación de incidentes: marco regulatorio, autoridades competentes y comunicación interna
+### 4.2. Notificación de incidentes: marco regulatorio, autoridades competentes y comunicación interna
 
 En este punto se abordarán tanto las directrices para la notificación de incidentes de una organización a su autoridad competente y CSIRT de referencia, como las directrices para la notificación de incidentes desde un punto de vista interno a la organización.
 
-#### 3.4.1. Notificaciones externas
+#### 4.2.1. Notificaciones externas
 
 La Guía Nacional de notificación y gestión de ciberincidentes proporciona las directrices para el cumplimiento de las obligaciones de reporte de incidentes de ciberseguridad acaecidos en el seno de las Administraciones Públicas, las infraestructuras críticas y operadores estratégicos de su competencia, así como el resto de entidades comprendidas en el ámbito de aplicación del Real Decreto-Ley 12/2018.
 
@@ -140,7 +169,7 @@ Para la notificación de los incidentes se usará como criterio de referencia el
 
 En relación con los ciudadanos y empresas no incluidos en el ámbito de protección de infraestructuras críticas, del sector público, o del Real Decreto-ley 12/2018, la notificación de incidentes de ciberseguridad tendrá, en todo caso, un carácter potestativo y voluntario.
 
-#### 3.4.2. Notificación obligatoria asociada
+#### 4.2.2. Notificación obligatoria asociada
 
 De acuerdo con la Guía Nacional, los incidentes cuyo nivel de peligrosidad y/o nivel de impacto sea crítico, muy alto o alto para todos aquellos sujetos obligados deberán ser notificados a su autoridad competente o CSIRT de referencia.
 
@@ -159,13 +188,13 @@ En el ámbito privado, los responsables del tratamiento afectados por una brecha
 - si no tienen establecimiento principal en la Unión Europea, sólo en el caso de que hayan designado un representante en España;
 - si no tienen establecimiento ni representante en la Unión Europea, en el caso de que la brecha de datos personales cuente con afectados en España.
 
-#### 3.4.3. Notificaciones internas
+#### 4.2.3. Notificaciones internas
 
 Aunque la organización disponga de un sistema de monitorización para la detección de incidentes de seguridad, es necesario implantar canales de comunicación que permitan al personal de la organización, o a personas vinculadas a la misma de manera directa, como proveedores o colaboradores, la notificación de posibles incidentes de seguridad. Esos canales de comunicación, como correo electrónico, teléfonos de contacto, formularios web o herramientas de ticketing, deben ser ágiles, estar disponibles a través de distintos medios, estar debidamente publicitados y ser probados periódicamente para corroborar su correcto funcionamiento.
 
 El personal deberá estar concienciado para identificar y notificar lo antes posible cualquier situación sospechosa de ser un incidente de seguridad. La velocidad con la que se reconozca, analice y responda a ese incidente limitará el daño y reducirá el coste de recuperación. Por ello, es necesario emprender acciones formativas y de concienciación dirigidas a los empleados.
 
-#### 3.4.4. Información a notificar
+#### 4.2.4. Información a notificar
 
 Tanto en el caso de que la entidad afectada por el incidente notifique a la autoridad competente o CSIRT de referencia, como en el caso de que se realice una notificación interna en la organización, existen una serie de datos mínimos que deben aportarse de la forma más precisa posible para una correcta gestión del incidente registrado. En este punto debe tenerse presente que se prima la agilidad por encima de la completitud de la información.
 
@@ -204,7 +233,7 @@ Otro ejemplo de un reporte de un posible incidente de seguridad puede observarse
 
 En un escenario de phishing, la notificación puede indicar el asunto “New products” en un buzón de un usuario de la compañía, y la solución antispam no ha neutralizado el mensaje. Entonces, la investigación debe centrarse en saber si el usuario ha interactuado con ese correo, qué tipo de phishing es, si lleva anexos, si incluye URL incrustadas, cuántos usuarios han podido recibir ese correo y cuánta atención precisa requiere la campaña.
 
-#### 3.4.5. Estrategia de comunicación
+#### 4.2.5. Estrategia de comunicación
 
 Como hemos mencionado en los primeros capítulos, es necesario abordar la gestión de cada incidente de seguridad desde una perspectiva operativa y técnica, pero también desde una perspectiva organizativa y estratégica. Esto incluye evaluar cuál es la mejor estrategia de comunicación con los diferentes grupos de interés, como otras organizaciones, clientes, proveedores, empleados, sedes de la compañía, prensa o autoridades, dependiendo de la organización y del tipo de incidente.
 
@@ -226,7 +255,7 @@ Tal y como aconseja el CCN, se evitará mencionar, al menos inicialmente y hasta
 
 Un ejemplo público de una buena estrategia de comunicación fue la que llevó a cabo Kaspersky cuando sus redes fueron vulneradas en 2015. Lejos de centrarse solo en el compromiso y en su parte negativa, se focalizaron en cómo habían sido capaces de detectar y estudiar en detalle una amenaza tan avanzada, proporcionando información valiosa para la comunidad de ciberseguridad y transmitiendo confianza al asegurar que sus servicios no habrían sido comprometidos. El ejemplo demuestra que la comunicación de crisis debe ser clara, meditada y orientada a reforzar la confianza institucional.
 
-#### 3.4.6. Informes de incidentes de seguridad
+#### 4.2.6. Informes de incidentes de seguridad
 
 Escribir un informe sobre un incidente de seguridad no es una tarea trivial, porque puede requerirse para diferentes audiencias. En general, habrá una audiencia técnica que querrá más detalles de tipo técnico, y otra de carácter directivo que necesitará un lenguaje más claro, centrado en costes, plazos e impacto en el negocio. También puede existir una audiencia legal, interesada en normativas, evidencias y cumplimiento. Por ello, la organización deberá valorar si el informe se presenta en un único documento con diferentes partes diferenciadas (resumen ejecutivo, análisis técnico y consideraciones legales), o bien en varios informes específicos dirigidos a cada audiencia.
 
@@ -266,7 +295,7 @@ Por último, en los anexos se incluirá toda la información adicional que suste
 
 En síntesis, la notificación y la comunicación no son actividades accesorias en la gestión del incidente; son parte integral de la respuesta, porque permiten coordinar la actuación, cumplir con obligaciones regulatorias, mantener la confianza y documentar la evolución del caso con rigor. Una organización que comunica bien y documenta con precisión es una organización que gestiona mejor su riesgo y mejora su capacidad de resiliencia.
 
-### 4.1. Notificación a autoridades competentes
+### 4.3. Notificación a autoridades competentes
 
 En algunos incidentes, la organización debe notificar a autoridades competentes. Esta obligación surge cuando se afectan datos personales, servicios críticos, infraestructuras relevantes o se incumplen requisitos normativos. La notificación puede ser obligatoria por ley o por regulación sectorial, y su ausencia puede tener consecuencias legales, sancionadoras o reputacionales.
 
@@ -280,7 +309,7 @@ Los casos en los que suele producirse esta notificación son los siguientes:
 
 El contenido de la notificación a autoridades puede variar en función del marco regulador, pero normalmente incluye el tipo de incidente, el alcance, el impacto, las medidas tomadas y la identificación de los responsables.
 
-### 4.3. Notificación a afectados
+### 4.4. Notificación a afectados
 
 La notificación a personas o entidades afectadas es una práctica esencial cuando el incidente supone riesgo para derechos, privacidad o seguridad. Se comunica a quienes han podido ver comprometida su información, su cuenta, su acceso o sus datos personales.
 
@@ -293,7 +322,7 @@ Se suele activar cuando:
 - un usuario o cliente puede necesitar tomar medidas inmediatas;
 - existe riesgo para la confidencialidad o seguridad de la información.
 
-### 4.4. Comunicación a medios y a la opinión pública
+### 4.5. Comunicación a medios y a la opinión pública
 
 En incidentes de gran relevancia, la organización puede necesitar comunicar la situación al exterior mediante note o comunicación institucional. Este tipo de comunicación se produce, por ejemplo, cuando el incidente afecta a una gran cantidad de usuarios, tiene impacto reputacional o puede afectar a la confianza pública. En ese caso, la organización debe gestionar la información con gran rigor y con una estrategia de comunicación coherente.
 
