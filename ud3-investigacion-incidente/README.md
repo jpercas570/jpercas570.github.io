@@ -407,6 +407,167 @@ Se suele intercambiar información de naturaleza técnica y operativa, como:
 
 El objetivo no es exponer íntegramente la investigación, sino compartir la información que permita reducir el riesgo para otras organizaciones y mejorar la capacidad colectiva de defensa.
 
+### 9.4. Intercambio de información en ciberdefensa y gestión de incidentes
+
+Con independencia de la obligatoriedad que en algunos casos conlleva la comunicación de incidentes a terceros (autoridades competentes, CSIRT de referencia, afectados, etc.), el intercambio de información con entidades relevantes en el ámbito de la seguridad puede aportar a las organizaciones un valor añadido muy importante de cara tanto a la detección como a la gestión de incidentes de seguridad.
+
+La colaboración e intercambio de información en ciberdefensa puede mejorar los tiempos de respuesta frente a incidentes. Si se comparte información, las organizaciones tienen la posibilidad de contar con un panorama de información mayor, ya que cuando únicamente se utilizan datos propios, la perspectiva está sesgada. Este hecho permite tomar conciencia del estado global de la seguridad y obtener una comprensión más avanzada frente a las amenazas nuevas y ya existentes.
+
+Por ello, es recomendable que las organizaciones establezcan relaciones de confianza con terceros de interés y formalicen mecanismos de intercambio que enriquezcan el conocimiento sobre nuevas amenazas, nuevas técnicas de ataque, vulnerabilidades y, en definitiva, la inteligencia que posibilita una respuesta temprana ante la materialización de un incidente.
+
+Entre los ejemplos de información que puede compartirse destacan:
+
+- avisos de seguridad y campañas de ataque;
+- vulnerabilidades nuevas o críticas;
+- informes sectoriales y análisis de tendencias;
+- buenas prácticas y recomendaciones de mitigación;
+- indicadores de compromiso (IP, hashes, dominios, certificados, firmas, patrones de comportamiento);
+- alertas tempranas y avisos de actividad sospechosa;
+- procedimientos de respuesta y guías de actuación;
+- hallazgos derivados de análisis forenses o investigaciones internas.
+
+La organización debe, por tanto, evaluar la conveniencia de establecer y formalizar mecanismos de intercambio con los principales proveedores de productos y sistemas de información, Fuerzas y Cuerpos de Seguridad del Estado, proveedores de telecomunicaciones y CSIRT u otros grupos de respuesta o gestión de incidentes, principalmente de su sector.
+
+Sin embargo, el proceso no siempre resulta sencillo, porque:
+
+- es difícil registrar, resaltar y comunicar los modus operandi de los atacantes;
+- existe exceso de fuentes de información, lo que dificulta hacer un seguimiento de la información de calidad;
+- el formato de la información suele ser inconexo, ya que cada fuente elige una forma diferente de caracterizar las amenazas.
+
+Para lograr que el intercambio de información sea efectivo, debe tenerse en cuenta la relación entre confianza, estandarización, accesibilidad, calidad de los datos y tratamiento del dato. En este sentido, conviene:
+
+- acordar con los terceros el tipo de información a diseminar para garantizar el equilibrio de intereses y expectativas;
+- medir la calidad de la información intercambiada;
+- asegurar que la información compartida sea necesaria para el propósito que se persigue;
+- compartir solo con quienes realmente lo necesiten, aplicando niveles de difusión y clasificación adecuados;
+- aplicar estándares y acuerdos para uso y protección de la información;
+- garantizar que la información sea precisa, actualizada y compartida con agilidad;
+- llevar un registro seguro de la información compartida y de a quién se facilita;
+- utilizar canales seguros, apropiados y efectivos para incentivar la confianza y la colaboración.
+
+### 9.5. Indicadores de compromiso (IOC)
+
+Los indicadores de compromiso describen las características técnicas de una amenaza por medio de las evidencias que la misma deja en el equipo comprometido tras la infección. De lo que se trata al definir un conjunto de IOC es buscar, por ejemplo, localizaciones específicas en el sistema de ficheros, registro u otras partes del sistema operativo que habitualmente sean usadas por malware; rastros dejados por herramientas utilizadas por los atacantes; señales de actividad de intrusos sobre los sistemas que indiquen movimientos laterales o comportamiento anormal del usuario; entre otros elementos.
+
+Tal como describe Antonio Villalón en Security Art Work, un indicador de compromiso se define como una pieza de información que puede utilizarse para identificar el posible compromiso de un entorno: desde una dirección IP hasta un conjunto de Tácticas, Técnicas y Procedimientos (TTP) usados por un atacante. Es importante buscar datos muy concretos para evitar falsos positivos. En definitiva, la definición de IOC permite a las organizaciones definir piezas de inteligencia de amenazas de manera estandarizada.
+
+Los IOC pueden clasificarse en tres tipos principales:
+
+- Atómicos: no pueden descomponerse en partes más pequeñas sin perder utilidad. Ejemplos: una IP, un dominio, una URL, un valor hash.
+- Calculados: se derivan de datos implicados en un incidente, como el hash de un fichero o un valor de firma asociado a un artefacto.
+- Conductuales: representan el comportamiento del atacante a partir de los anteriores. Por ejemplo, el uso de la técnica de compromiso de la cadena de suministro o la modificación de políticas del dominio como mecanismo de escalada de privilegios.
+
+Los IOC atómicos y calculados suelen asociarse a la inteligencia táctica o de combate, y suelen tener un tiempo de vida corto. Un atacante puede cambiar el hash de un malware o la dirección IP del servidor de mando y control en cuestión de horas. En cambio, los indicadores conductuales están asociados a inteligencia operativa y suelen ser más difíciles de modificar, por lo que tienen más valor a la hora de detectar un compromiso persistente o reproducible.
+
+La pirámide del dolor, propuesta por David J. Bianco, refleja gráficamente la dificultad para obtener indicadores eficaces frente al esfuerzo que debe hacer un atacante para lograr su objetivo. La idea central es que, a medida que se avanza desde indicadores simples hacia patrones de comportamiento y técnicas, los IOC se vuelven más valiosos y más difíciles de evadir, pero también más complejos de obtener y analizar.
+
+### 9.6. Estándares para el intercambio de información
+
+En la gestión de la ciberseguridad y, sobre todo, en la gestión de incidentes, la información es un recurso estratégico. En ocasiones es necesario procesar una cantidad ingente de datos en el mínimo tiempo posible; para ello resulta imprescindible un lenguaje común que permita comunicar y compartir información de forma sencilla y no ambigua. Este lenguaje debe basarse en estándares que definan con claridad las características de una amenaza, los observables asociados, la cronología del incidente, los activos afectados y el contexto del compromiso.
+
+La guía CCN-STIC-424, “Intercambio de información de ciberamenazas. STIX-TAXII. Empleo en REYES”, es una referencia fundamental en este ámbito. Su objetivo es permitir que la información sobre amenazas se describa de manera uniforme, se analice y se comparta sin pérdida de contexto ni ambigüedad. De lo contrario, el intercambio de información se convierte en un ejercicio de acumulación de datos sin utilidad operativa.
+
+La inteligencia de amenazas es el conjunto de datos que, tras ser refinados, analizados, contextualizados y procesados, se convierten en información útil para la organización. Para que un dato sea inteligencia, debe cumplir tres condiciones: ser relevante, procesable y valioso. Debe aportar contexto para apoyar la toma de decisiones, ser suficientemente preciso como para generar una respuesta o acción, y contribuir a la consecución de objetivos del negocio o del entorno institucional.
+
+En este sentido, la inteligencia de amenazas es mucho más que un repositorio de indicadores. Es un mecanismo de conocimiento orientado a la prevención, la detección y la respuesta. Una organización que comparte solo listas de IPs o hashes sin contextualizar su relación con el riesgo, el vector, la técnica o la oportunidad de explotación, no está produciendo inteligencia real; está generando ruido.
+
+En esta lógica, la organización necesita plataformas de Threat Intelligence que faciliten y agilicen el intercambio y la explotación de esa información. Cuando no existen mecanismos de normalización ni análisis, la información puede generar incertidumbre, duplicidad, falsas alarmas y baja confianza en los canales de colaboración. Entre las iniciativas y marcos más relevantes se encuentran ATT&CK, desarrollado por MITRE, y los estándares STIX, TAXII, CyBOX, OpenIOC y MAEC.
+
+La diferencia entre dato, información e inteligencia es esencial:
+
+- dato: elemento bruto, aislado y sin contexto contextual;
+- información: conjunto de datos organizados y relacionados;
+- inteligencia: información valorada, interpretada y útil para la toma de decisiones.
+
+En ciberseguridad, esta distinción es crítica, porque los indicadores más simples pueden ser rápidamente inútiles si no se relacionan con contexto actor, técnica, impacto y propósito.
+
+### 9.7. STIX, TAXII, OpenIOC y otros estándares
+
+#### STIX
+
+STIX (Structured Threat Information eXpression) es un lenguaje estandarizado en formato XML que permite caracterizar la información sobre ciberamenazas para que pueda ser compartida, almacenada y analizada de forma consistente. MITRE mantiene la especificación oficial, y la documentación puede consultarse en su sitio web y en repositorios públicos.
+
+El lenguaje STIX está diseñado para apoyar múltiples casos de uso relacionados con la gestión y el análisis de ciberamenazas, la respuesta ante incidentes, la caracterización de patrones específicos o el intercambio de información sobre amenazas. Un analista puede documentar observables de interés e indicadores de compromiso obtenidos del análisis del correo fraudulento, como direcciones de envío y entrega, URLs involucradas, adjuntos y tipos de archivo, así como las Tácticas, Técnicas y Procedimientos detectados.
+
+En STIX, los incidentes se representan como instancias discretas de indicadores que incluyen información como cronología de hechos, partes involucradas, activos afectados, evaluación de impacto, TTP, actores atribuidos, naturaleza del compromiso y registro de acciones tomadas.
+
+Desde un punto de vista metodológico, STIX permite transformar una investigación forense en un artefacto estructurado, reutilizable y comparables con otras fuentes de inteligencia. Esto resulta especialmente útil para la automatización de detección, el análisis comparativo entre incidentes y la gestión de información a escala organizativa o sectorial.
+
+#### TAXII
+
+TAXII (Trusted Automated eXchange of Indicator Information) define un conjunto de servicios y formatos que permiten el intercambio de información sobre ciberamenazas entre organizaciones y sistemas de información de forma automática y en tiempo real. Al igual que STIX, está mantenido por MITRE.
+
+La función de TAXII es dar una base técnica para el transporte de la información, mientras que STIX define su contenido semántico. En otras palabras, STIX describe la amenaza; TAXII expone la forma de distribuirla de manera segura y automatizada entre organizaciones o sistemas. La combinación de ambos es clave para diseñar canales de colaboración fiables, rápidos y escalables.
+
+#### OpenIOC
+
+La empresa Mandiant desarrolló OpenIOC, un framework open source para describir de forma semántica el comportamiento de malware o APTs mediante ficheros XML, o bien para buscar signos de infección en una máquina sin necesidad de realizar un análisis exhaustivo para identificar el tipo de amenaza.
+
+OpenIOC define un formato de fichero con extensión .ioc que contiene un esquema XML para describir las características técnicas de una amenaza, una metodología de ataque o cualquier otro tipo de indicador de compromiso. Aunque STIX es más amplio en alcance, OpenIOC es especialmente útil para representar condiciones de detección concretas y reutilizables en herramientas de seguridad.
+
+#### TLP
+
+El TLP (Traffic Light Protocol) es un estándar de facto utilizado por la comunidad internacional de equipos de respuesta a incidentes para clasificar qué información puede compartirse y con quién. Basado en cuatro niveles de color, el esquema permite indicar el alcance de la difusión de la información y evita que la información sensible desborde el círculo de destinatarios apropiados. TLP no es aplicable a información clasificada.
+
+Su utilidad es clara: establece límites claros para la distribución de la información sin imponer una estructura legal rígida. De este modo, se facilita que los equipos compartan hallazgos esenciales sin comprometer la confidencialidad ni la necesidad de protección del negocio.
+
+### 9.8. Plataformas de inteligencia de amenazas
+
+Los indicadores de compromiso pueden almacenarse y distribuirse a través de las llamadas Threat Intelligence Sharing Platforms (TISP), plataformas de inteligencia contra amenazas que centralizan gran cantidad de datos provenientes de distintas fuentes y formatos. Estas plataformas están diseñadas para:
+
+- combinar fuentes de información en un solo punto centralizado;
+- recibir y configurar alertas en tiempo real;
+- normalizar los datos que obtienen;
+- integrar sus datos con otros sistemas, como cortafuegos o SIEM;
+- generar informes y cuadros de mando.
+
+Algunas de sus funciones más relevantes son la correlación de amenazas, la validación de indicadores, la automatización de reglas y la consolidación de la información operativa en un único punto. Esto permite convertir fuentes dispares en un flujo gestionado y accionable.
+
+Algunos ejemplos de plataformas ampliamente conocidas son MISP, MineMeld y MANTIS.
+
+#### MISP
+
+MISP (Malware Information Sharing Platform) es una tecnología usada por organizaciones para implementar una plataforma de intercambio de ciberinteligencia centrada principalmente en malware y sus indicadores de compromiso. Ofrece una base de datos centralizada de eventos de ciberseguridad en un formato estructurado compatible con iniciativas como OpenIOC o STIX.
+
+Sus principales objetivos son:
+
+- facilitar el almacenamiento de información sobre ataques y malware detectado;
+- crear relaciones automáticas entre el malware y sus atributos;
+- almacenar la información en un formato estructurado;
+- generar reglas para sistemas de detección de intrusos;
+- compartir las características de muestras de malware y de amenazas con grupos de confianza.
+
+MISP combina un repositorio indexado con un mecanismo de compartición multidireccional. Además, en determinadas circunstancias, permite automatización de importación y exportación y la interconexión con otros sistemas. Su utilidad es especialmente clara para redes de colaboración y centros de respuesta, donde la reutilización de inteligencia puede mejorar la detección y la respuesta en tiempo real.
+
+#### MineMeld
+
+MineMeld es un framework open source de Palo Alto Networks que permite recopilar indicadores de compromiso, asignarles una fiabilidad y tratarlos para generar parámetros y objetos que luego puedan incorporarse a distintos elementos de la arquitectura de seguridad. A través de MineMeld, las organizaciones pueden integrar fuentes públicas, privadas o comerciales de inteligencia y traducir los indicadores a controles procesables para los dispositivos de seguridad.
+
+Su valor reside en que convierte la inteligencia en políticas accionables: listas de bloqueo, reglas de firewall, restricciones de acceso, búsquedas en SIEM y cuellos de botella de detección. Es un ejemplo claro de cómo la inteligencia debe incorporarse al control operacional, no quedarse solo como información documental.
+
+#### MANTIS
+
+MANTIS (Model-based Analysis of Threat Intelligence Sources) es una plataforma que ayuda a la gestión de la ciberinteligencia expresada en estándares como STIX, CyBOX, OpenIOC, etc. Uno de sus principales objetivos es proporcionar una base sobre la cual se puedan llevar a cabo investigaciones y desarrollos impulsados por la comunidad en la gestión de inteligencia de amenazas, facilitando la navegación, el filtrado y la búsqueda de la información recopilada.
+
+MANTIS enfatiza la necesidad de un entorno común para la investigación de amenazas, la comparación de indicadores, la integración de fuentes distintas y la trazabilidad del conocimiento colectado. Al hacerlo, refuerza la visión de que la inteligencia es un proceso de construcción, validación y reutilización, no un mero archivo de observables.
+
+### 9.9. Relación entre intercambio de información, ciberinteligencia y respuesta
+
+La ciberinteligencia no es solo un conjunto de indicadores aislados, sino una capa de conocimiento que conecta amenazas, técnicas, actores, contextos y acciones realizadas. El intercambio de información tiene sentido solo si se convierte en inteligencia útil, si se normaliza y si se incorpora a las decisiones de seguridad operativa.
+
+En este sentido, se puede afirmar que la inteligencia sirve a la organización para:
+
+- anticiparse a nuevas amenazas;
+- reforzar la detección y la correlación;
+- mejorar la respuesta ante incidentes;
+- reducir el tiempo entre detección y contención;
+- apoyar la toma de decisiones de riesgo y continuidad del negocio;
+- mejorar la coordinación con terceros, autoridades y proveedores.
+
+La relación entre estos elementos es estrecha: la información compartida se analiza, se valida y se transforma en inteligencia; la inteligencia permite identificar patrones de amenaza; y esos patrones se convierten en medidas de detección, contención y mejora organizativa. En términos académicos, se trata de un ciclo de aprendizaje organizativo en materia de ciberseguridad, donde la experiencia de cada incidente se integra en el sistema de conocimiento colectivo.
+
+Este enfoque convierte el intercambio de información en una pieza clave del ciclo de defensa: desde la detección inicial hasta la contención, la recuperación y la mejora continua del sistema.
+
 ## 10. Contención, erradicación y recuperación
 
 La investigación no termina con la identificación de la causa. La información obtenida debe traducirse en acciones concretas para controlar la amenaza, minimizar el impacto y restaurar la operación normal.
