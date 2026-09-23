@@ -12,24 +12,24 @@
 
 </div>
 
-> La implementación de medidas de ciberseguridad es la fase operativa del tratamiento del incidente. Una vez detectado, validado y analizado el problema, la organización debe actuar con rapidez, coordinación y criterio para limitar el impacto, recuperar la normalidad y reducir la probabilidad de recurrencia. Esta unidad aborda la respuesta técnica, organizativa y estratégica ante un incidente, haciendo hincapié en la contención, la erradicación, la recuperación, la ciberresiliencia, la toma de decisiones y la mejora continua.
+> La implementación de medidas de ciberseguridad es la fase operativa y estratégica del tratamiento del incidente. Una vez detectado, validado y analizado el evento, la organización debe actuar con rapidez, criterio y coordinación para limitar el impacto, recuperar la normalidad operativa, reforzar sus defensas y reducir la probabilidad de que el problema se repita. Esta unidad aborda en profundidad la contención, la erradicación, la recuperación, la ciberresiliencia, la toma de decisiones, la continuidad del negocio y la mejora contínua como elementos esenciales de una respuesta eficaz.
 
 ## 1. Introducción a la unidad
 
-La implementación de medidas de seguridad no puede entenderse como un conjunto aislado de herramientas o acciones puntuales. Se trata de un proceso estructurado y de gestión que transforma la información derivada del análisis del incidente en decisiones operativas, recursos asignados y procedimientos de control. El objetivo final es garantizar que la organización no solo reaccione ante una amenaza, sino que pueda recuperarse de forma ordenada, minimizar el impacto y reforzar sus capacidades defensivas.
+La implementación de medidas de ciberseguridad no es una mera secuencia de pasos técnicos que se aplican después de una alerta. Es un proceso de gestión, coordinación y control que transforma el conocimiento del incidente en decisiones operativas, acciones concretas y mejora del nivel de protección. El objetivo no se limita a “restaurar el sistema”, sino a asegurar que la entidad pueda continuar funcionando con un nivel de riesgo aceptable y con la capacidad de aprender de la experiencia.
 
-En una organización moderna, la respuesta ante incidentes combina acciones tecnológicas, procedimientos, roles, planes de continuidad y coordinación entre departamentos. La capacidad de reaccionar con eficacia no depende únicamente de la tecnología instalada, sino también del nivel de preparación del personal, de la claridad de las responsabilidades, de la disponibilidad de backups, de la capacidad de escalado y de la calidad del plan de continuidad del negocio. La respuesta bien diseñada no puede ser improvisada: debe estar anticipada, documentada y adaptada al tipo de incidente.
+Una organización puede detectar un incidente, analizarlo técnicamente y conocer su causa raíz, pero si no dispone de un marco claro de actuación, la situación puede empeorar. Los errores más comunes no suelen estar en la detección sino en la ejecución: aislar demasiado tarde, no documentar los cambios, restaurar servicios sin validar adecuadamente, no coordinar con la dirección o no establecer prioridades correctas. La implementación de medidas es, por tanto, una disciplina de control y decisión, no solo de tecnología.
 
-Esta unidad se centra, precisamente, en ese vínculo entre la detección y la recuperación: la organización debe saber qué hacer, cuándo hacerlo, quién lo decide y cómo debe comunicarse la respuesta. La principal diferencia entre una entidad preparada y otra no preparada no está solo en la rapidez de reacción, sino en la calidad de la decisión, la coordinación y la capacidad de aprender de los fallos. En ese sentido, la respuesta ante incidentes es una disciplina de gestión, no solo de seguridad.
+En este sentido, esta unidad conecta la respuesta técnica con la continuidad del negocio y la gobernanza organizativa. La seguridad no puede entenderse solo como un conjunto de controles preventivos; también debe abarcar la capacidad de reaccionar, soportar la interrupción, recuperarse y aprender. Esto es lo que se conoce como resiliencia operativa ante incidentes.
 
-Los contenidos clave de esta unidad son:
+Los contenidos centrales de esta unidad son:
 
-- procedimientos de actuación ante incidentes;
-- medidas de contención, erradicación y recuperación;
-- capacidad de ciberresiliencia y continuidad de negocio;
-- toma de decisiones y escalado de la respuesta;
-- reestablecimiento de servicios y validación de seguridad;
-- lecciones aprendidas y mejora continua.
+- procedimientos de contención, erradicación y recuperación;
+- criterios de priorización y escalado de la respuesta;
+- ciberresiliencia y continuidad del negocio;
+- criterios de recuperación y validación de servicios;
+- documentación de la respuesta y lecciones aprendidas;
+- mejora continua del nivel de seguridad.
 
 ## 2. Resultado de aprendizaje y criterios
 
@@ -45,277 +45,398 @@ Implementa medidas de ciberseguridad en redes y sistemas respondiendo a los inci
 4. Reestablece servicios afectados por incidentes.
 5. Documenta lecciones aprendidas.
 
-## 3. Concepto de respuesta al incidente
+## 3. Respuesta al incidente como proceso de gestión
 
-La respuesta al incidente es el conjunto de acciones coordinadas encaminadas a controlar, mitigar y resolver un evento de seguridad. Esta respuesta debe ser rápida, metódica y proporcional al riesgo: cuanto mayor sea el impacto potencial, mayor deberá ser la rapidez, la autoridad y la coordinación de la intervención.
+La respuesta al incidente se entiende como la suma de acciones coordinadas dirigidas a controlar, mitigar y resolver un suceso que compromete la seguridad de la información o la continuidad del negocio. Este proceso no debe confundirse con la mera ejecución de comandos o con la aplicación automática de reglas. La respuesta adecuada implica análisis, priorización, criterio, coordinación y comunicación.
 
-No todas las alertas requieren la misma respuesta. Una anomalía menor puede resolverse con un análisis puntual y una monitorización incrementada, mientras que una actividad de persistencia, exfiltración o ransomware puede exigir aislamiento inmediato, gestión de crisis, coordinación con dirección y respaldo de terceros. La respuesta tiene carácter dinámico y depende del tipo de amenaza, su alcance, su severidad, su impacto operativo y la clase de activos afectados.
+Una organización debe actuar con proporcionalidad: no todos los incidentes requieren el mismo nivel de respuesta. Un caso de actividad sospechosa puede gestionarse con vigilancia reforzada y revisión de logs, mientras que un caso de ransomware, acceso no autorizado con privilegios elevados o exfiltración de información sensible exige medidas inmediatas, coordinación con dirección y preparación para la crisis. La calidad de la respuesta depende de la capacidad de diferenciar el nivel de severidad y compatibilizar la rapidez con la corrección técnica.
 
-Un enfoque adecuado para la respuesta al incidente debe basarse en varios principios:
+### 3.1. Principios de la respuesta
 
-- priorizar activos críticos y continuidad operativa;
-- preservar la evidencia durante la respuesta;
-- evitar acciones que empeoren la situación o destruyan pruebas;
-- coordinar las decisiones entre seguridad, sistemas, negocio y dirección;
-- comunicar con criterio a las partes implicadas;
-- establecer medidas de contención y recuperación de forma progresiva;
-- documentar cada acción para la mejora continua.
+La respuesta al incidente debe sustentarse en varios principios básicos:
 
-La respuesta al incidente no termina con la eliminación del problema inmediato: debe adaptarse a la realidad operativa y a la capacidad organizativa de la entidad. En organizaciones con poca madurez, la respuesta se suele centrar en la mitigación rápida y la restauración. En organizaciones con mayor madurez, la respuesta integra análisis de causa raíz, validación de controles, revisión del riesgo residual y planes de mejora.
+- prioridad de los activos críticos: proteger primero los servicios y datos esenciales;
+- preservación de la evidencia: no destruir ni contaminar pruebas durante la reacción;
+- proporcionalidad: aplicar medidas según la criticidad del evento;
+- coordinación: mantener a todos los actores implicados en la misma línea de acción;
+- trazabilidad: documentar cada decisión y cada acción;
+- recuperación segura: devolver a producción solo tras validar la integridad del entorno;
+- mejora continua: convertir cada incidente en una oportunidad de aprendizaje.
 
-## 4. Fases de la respuesta
+### 3.2. Relación entre investigación y respuesta
 
-La respuesta al incidente no es una acción única, sino un proceso encadenado en fases. Aunque la secuencia exacta puede variar según el tipo de incidente, la mayoría de los casos siguen un esquema muy similar.
+La respuesta no se desarrolla en un vacío: se apoya directamente en la investigación del incidente. El trabajo técnico del analista de seguridad permite conocer qué ocurrió, cómo, cuándo y por qué. La respuesta debe basarse en ese conocimiento para decidir qué aislar, qué eliminar, qué restaurar y qué reforzar. Si la investigación es débil, la respuesta será improvisada. Si la respuesta se adelanta a la investigación, puede destruir evidencia o actuar sobre activos que aún no han sido validados.
+
+Por este motivo, la respuesta al incidente debe gestionarse como una actividad dinámica. La organización debe estar preparada para combinar acciones simultáneas: aislar un equipo, preservar evidencia, validar si el ataque sigue activo, bloquear IOCs, coordinar con dirección y preparar la recuperación. La reacción eficaz exige coordinación y disciplina, no solo intuición.
+
+## 4. Fases de la respuesta al incidente
+
+La respuesta al incidente se estructura en un conjunto de fases que permiten transformar la alerta en una gestión ordenada del riesgo. Aunque cada caso es particular, la mayoría de los incidentes siguen una lógica secuencial que combina medidas técnicas, organizativas y administrativas.
 
 ```mermaid
 flowchart LR
-A[Detección] --> B[Contención]
-B --> C[Erradicación]
-C --> D[Recuperación]
-D --> E[Lecciones aprendidas]
-E --> F[Mejora continua]
+A[Detección] --> B[Validación]
+B --> C[Contención]
+C --> D[Erradicación]
+D --> E[Recuperación]
+E --> F[Lecciones aprendidas]
+F --> G[Mejora continua]
 ```
 
 ### 4.1. Detección y validación
 
-La respuesta comienza cuando el incidente se detecta y se confirma. En esta fase se comprueba si la alerta corresponde a un evento real, si la amenaza sigue activa y si requiere intervención inmediata. Es esencial confirmar el alcance del problema antes de actuar, porque una respuesta desproporcionada o prematura puede incrementar el riesgo o dificultar la investigación.
+La fase inicial de la respuesta consiste en confirmar que la señal es un incidente de seguridad y no un evento de baja relevancia. La validación debe responder a preguntas esenciales: ¿es real?, ¿afecta a activos críticos?, ¿hay evidencia de afección?, ¿se sigue propagando?, ¿existe riesgo de continuidad?.
+
+La validación requiere contrastar información procedente de diversas fuentes: SIEM, EDR, firewall, logs de acceso, observación del usuario, actividades del sistema y patrones de red. Un evento aislado puede ser un ruido operativo; cuando se correlaciona con otros indicadores, puede convertirse en una amenaza real.
 
 ### 4.2. Contención
 
-Una vez validado el incidente, la primera prioridad suele ser limitar el alcance. La contención consiste en reducir la capacidad de propagación, evitar nuevas consecuencias y establecer un perímetro de control. Puede implicar aislar equipos, bloquear accesos, cerrar servicios, limitar conexiones, restringir credenciales y aplicar reglas de firewall. La contención debe equilibrar velocidad y precisión: se debe decidir qué se corta primero para evitar daños mayores sin comprometer la investigación.
+Cuando se confirma el incidente, la primera prioridad es limitar el daño. La contención tiene como objetivo evitar la propagación, reducir la superficie de impacto y ganar tiempo para investigar. La decisión de aislar un sistema o reforzar el control de acceso puede ser definitiva para que un problema localizado no se convierta en una brecha generalizada.
+
+La contención puede adoptar diversas formas:
+
+- aislamiento de hosts comprometidos;
+- bloqueo de accesos o credenciales;
+- restricción de puertos y servicios;
+- bloqueo de dominios o direcciones IP;
+- intervención sobre cuentas privilegiadas;
+- redirección del tráfico o segmentación de subredes;
+- desconexión de sistemas no esenciales.
+
+La contención debe ser dinámica. No es suficiente “cerrar” lo que parece sospechoso; hay que valorar qué impacto tendrá esa acción en la continuidad del negocio, en la evidencia disponible y en la posibilidad de recuperar la operación.
 
 ### 4.3. Erradicación
 
-La erradicación pretende eliminar la causa del problema. Esto incluye quitar malware, limpiar artefactos, revertir cambios maliciosos, corregir configuraciones, cerrar brechas, eliminar persistencia y reforzar la defensa del entorno. La erradicación es más profunda que la contención: no basta con bloquear la amenaza, sino que hay que sanear la infraestructura afectada.
+La erradicación es más profunda que la contención. No implica solo bloquear la amenaza, sino eliminar su origen y cualquier rastro que permita su persistencia. La erradicación puede consistir en:
+
+- eliminar malware o scripts maliciosos;
+- limpiar artefactos, persistencia y herramientas de acceso;
+- corregir vulnerabilidades explotadas;
+- cerrar brechas de seguridad en configuraciones;
+- restaurar permisos o políticas alteradas;
+- revisar y corregir cuentas y servicios involucrados.
+
+Un ataque puede ser contenido, pero si la causa raíz no se elimina, el riesgo puede persistir. Un ejemplo típico es un ransomware que ha sido aislado, pero cuya clave de persistencia o una cuenta administrativa comprometida sigue activa. La erradicación debe orientarse al origen de la amenaza, no sólo a su efecto visible.
 
 ### 4.4. Recuperación
 
-La recuperación busca devolver la operación a su estado normal de manera segura. Esto implica restaurar equipos, servicios o datos desde copias fiables, comprobar la integridad del entorno y validar que los controles de seguridad vuelven a estar activos. La recuperación no debe entenderse como un “reinicio rápido”: debe reforzar la confianza en que el servicio ya no está comprometido.
+La recuperación es la fase de reestablecimiento de la normalidad. Debe ejecutarse de forma segura y gradual, y no puede basarse únicamente en la restauración empírica. El objetivo es devolver a producción los servicios con mínima exposición residual.
 
-### 4.5. Lecciones aprendidas
+La recuperación adecuada exige:
 
-La fase final es crucial para la mejora. Se revisa qué falló, qué funcionó bien, cómo se gestionó la crisis y qué cambios deben hacerse para evitar recurrencias. Esta fase convierte la experiencia del incidente en conocimiento organizativo: un informe de lecciones aprendidas debe actuar como base para la planificación y la mejora del nivel de seguridad.
+- restauración desde copias fiables;
+- validación de integridad del sistema;
+- comprobación de que no quedan artefactos maliciosos;
+- revisión de permisos, políticas y controles;
+- aplicación de parches y ajustes de seguridad;
+- prueba funcional previa a la producción;
+- monitorización intensificada tras la restauración.
+
+### 4.5. Lecciones aprendidas y mejora continua
+
+Una vez superada la crisis, la organización debe analizar el suceso para extraer conclusiones útiles. Este paso evita que el incidente quede como una experiencia aislada. Las lecciones aprendidas deben orientar ajustes en seguridad, respuesta, formación y continuidad del negocio.
+
+Este proceso incluye revisar:
+
+- qué controles fallaron;
+- qué se detectó tarde;
+- qué decisiones fueron correctas;
+- qué procedimientos fueron insuficientes;
+- qué cambios de configuración, políticas o formación son necesarios.
 
 ## 5. Procedimientos de respuesta
 
-### 5.1. Contención
+### 5.1. Contención: medidas técnicas y operativas
 
-La contención tiene como objetivo principal limitar la propagación del incidente y reducir su alcance. La decisión concreta depende del tipo de riesgo, de la criticidad del activo y del nivel de conocimiento disponible. En muchos casos, la contención requiere una combinación de decisiones técnicas y organizativas.
+La contención se puede entender como la acción inmediata que busca limitar el impacto y evitar la propagación del incidente. Esta fase requiere equilibrio y criterio: no siempre es conveniente aislar todo de golpe, porque puede afectar a la continuidad operativa o destruir evidencias valiosas.
 
-Ejemplos básicos de contención son:
+Algunas de las medidas de contención más habituales son:
 
-- aislar un equipo de la red;
-- bloquear una cuenta o sesión comprometida;
-- cerrar puertos o servicios explotados;
-- restringir acceso a carpetas o recursos críticos;
-- aplicar reglas de firewall específicas para bloquear IOCs;
-- bloquear un dominio, una IP o un hash sospechoso;
-- deshabilitar una cuenta de servicio o una API con comportamiento anómalo;
-- limitar el acceso administrativo a un sistema afectado.
+- desconexión física o lógica de equipos sospechosos;
+- bloqueo de cuentas comprometidas;
+- aislamiento de segmentos de red;
+- bloqueo de puertos o servicios sospechosos;
+- restricción de acceso a datos sensibles;
+- desactivación de credenciales o tokens comprometidos;
+- aplicación de reglas de firewall y proxy;
+- segmentación por zonas de riesgo.
 
-La contención debe ser proporcional y planificada. Por ejemplo, desconectar un servidor de producción puede ser la respuesta correcta ante un ransomware activo, pero no debería hacerse sin tener en cuenta la continuidad del negocio. La decisión de aislar o mantener el sistema en servicio depende de si el incidente puede propagarse, degradar más servicios o generarse un riesgo de mayor alcance.
+La elección de la medida dependerá del tipo de incidente y del activo afectado. Por ejemplo, en un ransomware que afecta a un servidor crítico, la contención puede requerir aislar ese equipo y sus conexiones, mientras que en un caso de phishing masivo será más efectivo bloquear campañas, resetear credenciales y reforzar la validación de correo.
 
-### 5.2. Erradicación
+### 5.2. Contención selectiva frente a contención global
 
-La erradicación no solo elimina el síntoma visible del incidente, sino su origen y cualquier rastro que permita la persistencia. El objetivo es que la amenaza no vuelva a aparecer con la misma vía de acceso. En la práctica, esto puede implicar varias tareas:
+La contención se debe planificar como una estrategia selectiva. No siempre conviene actuar de forma global porque puede implicar interrupciones innecesarias. Una contención selectiva prioriza:
 
-- eliminación de malware o scripts maliciosos;
-- revisión de cuentas y accesos no autorizados;
-- eliminación de herramientas de persistencia;
-- corrección de vulnerabilidades explotadas;
-- restauración de archivos y configuraciones comprometidas;
-- reducción de privilegios excesivos;
-- eliminación o bloqueo de accesos anómalos.
+- activos críticos;
+- sistemas con mayor posibilidad de propagación;
+- servicios con impacto inmediato sobre la operación;
+- puntos que permitan la lateralización del atacante.
 
-La erradicación requiere una visión amplia del entorno: si un atacante explotó un punto de entrada y obtuvo acceso, no basta con limpiar un equipo. Debe revisarse si se hizo pivoting lateral, si se añadió persistencia, si se creó una cuenta de servicio o si se modificó una política de seguridad. Una respuesta incompleta deja la organización en riesgo de una segunda ejecución del ataque.
+Esto requiere posicionar la decisión en función del riesgo, no en función del pánico. La respuesta a un incidente no debe constituir un corte indiscriminado de la infraestructura, porque puede generar más perjuicio que el propio ataque.
 
-### 5.3. Recuperación
+### 5.3. Erradicación y eliminación del vector
 
-La recuperación es la fase destinada a devolver la operación a su estado normal. En este punto, la organización debe reanudar los servicios de manera segura, verificando que el sistema no sigue comprometido y que las medidas correctivas ya están implementadas.
+La erradicación está orientada a la eliminación del vector que permite la continuidad del ataque. Esto implica no solo borrar programas o archivos maliciosos, sino verificar si el atacante dejó persistencia o mecanismos alternativos. La erradicación debe incluir una revisión profunda de:
 
-Las tareas habituales de recuperación incluyen:
+- tareas programadas;
+- servicios de inicio;
+- cuentas de servicio;
+- cambios en el registro del sistema;
+- permisos excesivos;
+- herramientas administrativas usadas indebidamente;
+- procesos ocultos o automatizados;
+- scripts y payloads en ubicaciones no habituales.
 
-- restauración desde una imagen limpia o desde una copia segura;
-- aplicación de parches pendientes;
-- validación de la integridad del sistema;
-- reasignación de permisos y políticas;
-- comprobación de servicios críticos y de continuidad;
-- prueba funcional del sistema antes de devolverlo a producción;
-- monitorización reforzada durante el periodo inicial de recuperación.
+Una erradicación incompleta puede dejar la organización expuesta a reinfecciones o a ataques repetidos. La revisión del entorno no debería concluir con la supresión del artefacto visible, sino con la comprobación de que la amenaza ya no puede volver a activarse.
 
-La recuperación debe contemplar la continuidad del negocio: no basta con restaurar la tecnología; es necesario verificar que la actividad operativa puede reanudarse sin generar nuevos riesgos. La validación es clave: devolver un servicio a producción sin comprobar si está limpio puede significar reintroducir el problema original.
+### 5.4. Recuperación segura y validada
 
-## 6. Ciberresiliencia
+La recuperación es la fase en la que la organización restablece la operación a partir de una base fiable. La recuperación puede realizarse desde:
 
-La ciberresiliencia es la capacidad de una organización para resistir, absorber, adaptarse y recuperarse de un incidente sin perder la continuidad de los servicios esenciales. No se limita a la prevención; incorpora la capacidad de reaccionar ante amenazas reales y mantener la operativa pese a la presencia de disrupciones.
+- imagen limpia;
+- copia de seguridad verificada;
+- restauración parcial por servicios;
+- entorno de prueba antes de la producción.
 
-Un entorno resiente puede sobrevivir a un ataque sin colapsar porque dispone de redundancias, controles, procedimientos y planes de continuidad. La ciberresiliencia debe entenderse como una capacidad estratégica, no simplemente tecnológica. La organización debe tener la capacidad de sostener sus procesos esenciales incluso ante un evento grave.
+Antes de volver a producción, se deben comprobar varios aspectos:
 
-### 6.1. Elementos esenciales de la ciberresiliencia
+- integridad de los datos;
+- ausencia de malware o herramientas persistentes;
+- configuración segura de los sistemas;
+- revisión de permisos y políticas;
+- ausencia de tráfico anómalo;
+- validación funcional del servicio;
+- pruebas de conectividad y autenticación.
 
-Entre los mecanismos que habitualmente refuerzan la ciberresiliencia se encuentran:
+La restauración de un servicio no es un acto técnico aislado: es una decisión de riesgo. La organización debe operar con un marco de validación para evitar que el incidente vuelva a materializarse inmediatamente tras la recuperación.
 
-- copias de seguridad con restauración verificada;
-- segmentación de red y aislamiento por zonas críticas;
-- redundancia de servicios y nodos de alta disponibilidad;
-- planes de continuidad del negocio;
-- pruebas regulares de recuperación;
-- políticas de acceso con separación de roles;
-- monitorización continua y alertas basadas en comportamiento;
-- planificación por escenarios y simulacros de crisis.
+## 6. Ciberresiliencia y continuidad del negocio
 
-### 6.2. Importancia de la continuidad del negocio
+La ciberresiliencia es una capacidad organizativa y técnica que permite resistir, absorber, adaptarse y recuperarse de un incidente sin comprometer la continuidad de los servicios esenciales. Es distinta de la seguridad tradicional porque no se limita a prevenir el ataque, sino a garantizar que la organización pueda seguir operando incluso ante eventos adversos.
 
-La ciberresiliencia no se centra solo en “volver a arrancar” los sistemas, sino en mantener la entrega de servicios esenciales cuando ocurre una amenaza. Por ejemplo, una organización puede no poder evitar por completo un ransomware, pero sí minimizar el impacto si dispone de sistemas redundantes, copias verificados y procesos de recuperación definidos. La continuidad del negocio exige que la organización enumere qué procesos son críticos, cuáles tienen menor tolerancia al tiempo de interrupción y cómo se gestionará la operación durante la crisis.
+### 6.1. Qué implica la ciberresiliencia
 
-### 6.3. Simulación y prueba de recuperación
+Una organización resiliente no necesita estar libre de todos los ataques, sino tener la capacidad de mantener una operación aceptable en presencia de una amenaza. Esto requiere:
 
-La ciberresiliencia se evidencia en la práctica, no solo en los documentos. Un plan de continuidad que nunca se prueba puede ser insuficiente. Por ello, es recomendable realizar simulacros y pruebas de recuperación para comprobar si las copias son válidas, si la restauración funciona y si la organización sabe actuar frente a un incidente real.
+- redundancia de servicios;
+- plan de continuidad del negocio;
+- segmentación y aislamiento de red;
+- copias de seguridad y pruebas periódicas;
+- simulacros de respuesta;
+- matricez de dependencias críticas;
+- formación del personal ante crisis;
+- coordinación entre áreas y proveedores.
 
-En estas pruebas se pueden evaluar:
+La ciberresiliencia se manifiesta cuando la organización puede mantener, aunque sea en modo reducido, sus funciones más críticas sin comprometer la seguridad ni la confianza de los usuarios.
 
-- ritmo de recuperación;
-- eficacia de la segmentación y aislamiento;
-- tiempo necesario para restablecer servicios críticos;
-- coordinación entre equipos;
-- validez del plan de comunicación;
-- tiempo de recuperación objetivo (RTO) y objetivo de punto de recuperación (RPO).
+### 6.2. Continuidad del negocio y recuperación
+
+La continuidad del negocio conecta la respuesta técnica con la supervivencia operativa de la organización. Un incidente puede afectar a un sistema, pero también puede implicar a clientes, proveedores, procesos de negocio, cumplimiento o reputación. Por ello, la organización debe identificar:
+
+- qué procesos son esenciales;
+- cuánto tiempo puede tolerar la interrupción;
+- qué servicios pueden recuperarse con prioridad;
+- cuánto riesgo se acepta durante la crisis;
+- qué dependencias existen con terceros.
+
+Este análisis permite priorizar qué servicio recuperar primero y qué nivel de funcionamiento es necesario para seguir operando. La continuidad del negocio no es una cuestión de “restaurar todo lo antes posible”; es una cuestión de restaurar lo esencial con criterio y riesgo controlado.
+
+### 6.3. RTO y RPO como indicadores de recuperación
+
+Dos indicadores clave en la continuidad del negocio son:
+
+- RTO (Recovery Time Objective): tiempo objetivo de recuperación;
+- RPO (Recovery Point Objective): nivel aceptable de pérdida de datos.
+
+Estos indicadores permiten cuantificar la capacidad de recuperación. Si una organización tiene un RTO muy corto y un RPO muy bajo, necesitará soluciones de alta disponibilidad, backup incrementales frecuentes y procedimientos de restauración bien definidos. Si una organización tiene menor tolerancia al riesgo, deberá priorizar la continuidad y la sincronización de copias de seguridad.
+
+### 6.4. Simulacros y pruebas de continuidad
+
+La ciberresiliencia se demuestra en la práctica. Un simulacro puede poner de manifiesto problemas reales como:
+
+- falta de coordinación;
+- dependencia de una persona concreta;
+- restauración imposible desde backups;
+- ausencia de roles claros;
+- demora en decisiones de dirección;
+- comunicación insuficiente ante la crisis.
+
+Por ello, la organización debe realizar ejercicios periódicos que validen la capacidad de respuesta, la recuperación y la continuidad operativa. Los simulacros permiten reducir la incertidumbre y detectar brechas antes de que se materialicen en un incidente real.
 
 ## 7. Escalado y toma de decisiones
 
-La respuesta no puede depender solo de la tarea técnica. Debe existir un marco claro de escalado que determine quién toma decisiones, cuándo se informa a la dirección y qué actores participan. El escalado adecuado permite repartir la carga de decisión y evitar una respuesta fragmentada o tardía.
+La respuesta ante un incidente requiere una estructura clara de decisión. En muchos casos, los equipos técnicos son capaces de reaccionar, pero no todos los incidentes se pueden resolver solo a nivel técnico. Es necesario contar con una cadena de mando en la que los responsables de negocio, seguridad y dirección tomen decisiones en función del riesgo real.
 
-### 7.1. Quién debe decidir
+### 7.1. Niveles de decisión
 
-La escala de la decisión depende del tipo, alcance e impacto del incidente.
+El escalado puede realizarse en varios niveles:
 
-- nivel técnico: equipo de seguridad, sistemas o infraestructura;
-- nivel operativo: responsables de servicios, área de negocio o gestión de operaciones;
-- nivel institucional: dirección, comité de crisis o responsables ejecutivos;
-- nivel externo: proveedores, aliados, autoridades competentes o socios críticos.
+- técnico: seguridad, sistemas, infraestructura;
+- operativo: responsables de servicio y continuidad;
+- estratégico: dirección y comité de crisis;
+- externo: proveedores, autoridades, clientes críticos o socios.
 
-Una mala decisión de escalado puede ser tan problemática como una mala respuesta técnica. Si un incidente importante se resuelve solo a nivel operativo, puede existir falta de visión estratégica. Si, por el contrario, se escalado demasiado pronto, la organización puede movilizar recursos innecesarios sin que exista una evidencia suficiente. La clave es un criterio claro basado en impacto y nivel de riesgo.
+La clave es decidir en cada momento quién debe intervenir según el impacto y la gravedad. Un incidente técnico de poca entidad puede manejarse dentro del equipo operativo; un incidente con impacto en negocio, reputación o cumplimiento exige implicar a dirección y, en ocasiones, a terceros.
 
-### 7.2. Criterios de escalado
+### 7.2. Matriz de escalado
 
-Los incidentes deben escalarse cuando se cumplen determinados criterios, como:
+Una buena organización suele elaborar una matriz de escalado que defina:
 
-- impacto en datos sensibles o información confidencial;
-- afectar a servicios críticos para la continuidad de la organización;
-- pérdida o corrupción de datos relevantes;
-- riesgo de propagación a otros sistemas o entornos;
-- presencia de terceros críticos o proveedores afectados;
-- impacto reputacional o mediático;
-- incumplimiento normativo o legal;
-- incapacidad operativa para responder con los recursos internos disponibles.
+- qué tipo de incidentes requieren notificación a dirección;
+- cuándo se activa un comité de crisis;
+- qué eventos deben comunicarse a proveedores o autoridades;
+- qué roles tienen prioridad en la toma de decisiones;
+- qué criterios de severidad se manejan en cada nivel.
 
-En muchos casos, una respuesta comienza con un equipo técnico, pero cuando el incidente afecta a la continuidad empresarial o a la protección de datos, es necesario implicar a dirección, legal y comunicaciones. La metodología de escalado debe estar formalizada en el plan de respuesta.
+La matriz evita la improvisación y reduce los tiempos de decisión. En una crisis, cada minuto sin decisión puede aumentar el impacto destructivo del incidente.
 
-### 7.3. Comunicación y coordinación
+### 7.3. Comunicación como parte de la decisión
 
-La coordinación no solo es técnica. La respuesta debe incluir un canal de comunicación claro entre los distintos actores: seguridad, sistemas, negocio, RRHH, dirección, comunicación y terceros. La falta de coordinación puede provocar que una misma máquina se aísle dos veces, que se borren evidencias sin permiso o que la dirección no conozca el alcance real del incidente.
+La toma de decisiones y la comunicación están estrechamente ligadas. El equipo técnico debe comunicar con precisión el estado del incidente, su alcance y la evolución esperada. La dirección requiere datos útiles: impacto, riesgo residual, tiempo estimado de recuperación y decisiones de negocio. Los usuarios necesitan mensajes concretos, claros y sin deliberaciones internas complejas.
 
-La comunicación debe ser continua, precisa y adaptada al destinatario. El equipo técnico requiere detalles operativos; la dirección necesita impacto, riesgo, tiempo estimado y decisiones de negocio; los usuarios necesitan información clara y limitada, sin generar alarma innecesaria. La gestión de la comunicación es parte esencial de la respuesta.
+La falta de comunicación suele ser una de las mayores fuentes de caos durante la crisis, aunque la causa del incidente haya sido técnicamente resuelta. Una organización no debe solo reaccionar; debe informar con criterio.
 
 ## 8. Reestablecimiento de servicios
 
-El reestablecimiento de servicios es una de las etapas más delicadas de la respuesta al incidente. Se trata de devolver a producción sistemas y procesos afectados de manera segura, tras evaluar el riesgo residual y garantizar que los controles reforzados estén activos.
+### 8.1. Recuperación gradual frente a recuperación directa
 
-### 8.1. Requisitos previos antes de la recuperación
+La restauración de servicios puede realizarse de dos formas básicas:
 
-Antes de devolver un servicio a producción, la organización debe verificar varios requisitos:
+- recuperación directa: se devuelve todo el sistema o servicio a producción lo antes posible;
+- recuperación gradual: se rehabilita el servicio por fases y con validación controlada.
 
-- integridad del sistema: ausencia de cambios maliciosos o artefactos persistentes;
-- ausencia de persistencia: no debe quedar un punto de acceso reutilizable por el atacante;
-- parches y configuraciones: deben aplicarse las correcciones requeridas;
-- generación de una imagen limpia o validada;
-- copias de seguridad comprobadas e íntegra;
-- pruebas funcionales: el servicio debe operar sin errores evidentes;
-- validación de permisos y cuentas: eliminación de accesos no autorizados;
-- monitorización reforzada: debe existir vigilancia durante la recuperación inicial.
+La recuperación gradual suele ser preferible cuando el entorno es crítico o cuando se desconoce el alcance exacto del incidente. Permite restablecer primero servicios menos sensibles, comprobar estabilidad y limitar el riesgo de reinfección. En servicios esenciales, la organización debe decidir si una recuperación directa es viable o si se exige un plan más prudente.
 
-La ignorancia de cualquiera de estos requisitos puede llevar a un “cierre falso”, en el que el sistema parece recuperado, pero la amenaza sigue presente o reaparece en cuanto se conecta nuevamente a la red.
+### 8.2. Requisitos previos para la vuelta a producción
 
-### 8.2. Procedimiento de restauración
+Antes de devolver un servicio a producción, el responsable de seguridad y de operación debe verificar:
 
-Un procedimiento de restauración suele seguir estas fases:
+- integridad de datos y configuración;
+- eliminación de malware o artefactos sospechosos;
+- actualización de parches y ajustes de vulnerabilidad;
+- revisión de permisos y cuentas;
+- ausencia de persistencia o acceso lateral;
+- funcionamiento correcto de alertas y monitorización;
+- evaluación del impacto residual;
+- observación del tráfico y la actividad del sistema.
 
-```text
-1. Aislar y validar el entorno afectado.
-2. Determinar si la recuperación será gradual o directa.
-3. Restablecer desde una imagen limpia o copia fiable.
-4. Reconfigurar permisos, seguridad y parches.
-5. Validar integridad y funcionalidad.
-6. Rehabilitar acceso gradual y controlado.
-7. Monitorizar durante un periodo de ajuste.
-```
-
-La restauración gradual es especialmente útil en entornos críticos. En lugar de devolver todo el servicio a la vez, se puede restaurar por fases: primeramente el acceso a las funciones menos sensibles, luego la infraestructura crítica y finalmente la totalidad del entorno. De esta forma, se reduce la probabilidad de reiniciar la amenaza o generar nuevos fallos. La monitorización durante los primeros minutos y horas es esencial para detectar cualquier actividad sospechosa no prevista.
+La organización no debe producir un “cierre falso” por el que el servicio vuelve a funcionar pero con un riesgo latente. La validación post-recuperación es parte esencial del proceso.
 
 ### 8.3. Validación post-recuperación
 
-La recuperación no se considera completa si no se valida. La validación comprobada debe incluir:
+La validación debe incluir la comprobación de varios aspectos:
 
-- integridad de los datos;
-- ausencia de tráfico anómalo;
-- funcionamiento regular de los servicios;
-- confirmación de que las cuentas y privilegios son los apropiados;
-- revisión del estado del endpoint o del host;
-- comparación con la línea base previa al incidente;
-- análisis de logs para verificar que no existen eventos de recurrencia.
+- comportamiento de la infraestructura;
+- ausencia de tráfico sospechoso;
+- estabilidad de procesos esenciales;
+- buen funcionamiento de autentications y permisos;
+- revisión de logs y alertas;
+- comparación con la línea base previa al incidente.
 
-La organización debe documentar la recuperación y mantener una vigilancia intensiva durante un periodo posterior para comprobar el estado real del sistema.
+La empresa debe mantenerse en vigilancia durante un tiempo razonable después del reencendido para asegurar que no reaparece la amenaza.
 
-## 9. Lecciones aprendidas
+## 9. Gestión de crisis y coordinación interdepartamental
 
-La fase de cierre no debe considerarse una simple obligación administrativa. Es un proceso central para la mejora de la madurez de seguridad de la organización. En una respuesta efectiva, no solo se valora cómo se resolvió el incidente, sino qué y cómo puede aprenderse de ello.
+Durante un incidente grave, la respuesta no es solo técnica. Se transforma en una situación de gestión de crisis. En ese contexto, la seguridad, sistemas, dirección, comunicaciones, RRHH, legal y negocio deben operar de forma coordinada.
 
-### 9.1. Qué debe incluir un informe de lecciones aprendidas
+### 9.1. Qué hace un comité de crisis
 
-Un buen informe de lecciones aprendidas debe recoger al menos:
+Un comité de crisis suele liderar la coordinación entre:
 
-- descripción breve del incidente y del impacto;
-- cronología de los hechos;
+- seguridad informática;
+- infraestructura y sistemas;
+- comunicación corporativa;
+- dirección;
+- negocio y operaciones;
+- proveedores y terceros clave;
+- legal y cumplimiento.
+
+Este comité decide qué prioridades se deben atender, qué nivel de información es necesario divulgar, qué servicios deben recuperarse primero y qué criterios se aplican para la toma de decisiones.
+
+### 9.2. Importancia de la coordinación
+
+La falta de coordinación es uno de los factores más dañinos durante un incidente. Un equipo técnico puede detectar el ataque y aun así haber ausencia de seguimiento operativo, falta de autorización para aislar servicios o ausencia de comunicación con la dirección. La coordinación evita que cada área actúe con criterios distintos y crea una estrategia común de respuesta.
+
+La clave es que la organización no actúe por fragmentos. Si cada responsable interpreta el incidente de forma aislada, se producen decisiones contradictorias y la organización pierde capacidad de control.
+
+## 10. Lecciones aprendidas y mejora continua
+
+La fase de cierre del incidente es decisiva para la madurez de la organización. Un caso puede resolverse técnicamente, pero si la organización no extrae lecciones, no mejora ni previene la recurrencia. Por ello, la respuesta debe incluir un cierre formal con análisis y recomendación.
+
+### 10.1. Qué debe incluir un informe de cierre
+
+Un informe de cierre debe recoger:
+
+- resumen del incidente;
+- cronología de la respuesta;
+- impacto real y sistémico;
 - causa raíz y vector de ataque;
-- tiempo de detección y de contención;
-- medidas aplicadas y su efectividad;
-- debilidades de los controles existentes;
-- recomendaciones de mejora específicas;
-- cambios en procedimientos, políticas o tecnologías;
-- responsables de cada acción y del seguimiento.
+- medidas tomadas y su efectividad;
+- brechas detectadas;
+- decisiones de escalado y coordinación;
+- recursos materiales y humanos involucrados;
+- recomendaciones de mejora específicas.
 
-### 9.2. Importancia de la mejora continua
+### 10.2. Mejora continúa
 
-En ciberseguridad, la organización no debe quedarse en el hecho de “cerrar” el caso. Debe aprovechar la experiencia para analizar qué controles fallaron, qué punto de entrada fue explotado, qué se tardó en detectar y qué errores de coordinación ocurrieron. Con frecuencia, la causa raíz no es solo técnica: también hay fallos en gestión, formación, comunicación, segmentación, validación o documentación.
+Una organización madura no se centra solo en reparar el daño, sino en actualizar los controles y los procedimientos para que el riesgo disminuya en el futuro. Las recomendaciones pueden afectar a:
 
-La mejora continua no solo mejora la seguridad operativa, sino que también fortalece la capacidad de anticipación ante futuros incidentes. En ese sentido, cada incidente deja una posibilidad de aprendizaje que, si se gestiona bien, reduce el riesgo a medio y largo plazo.
+- políticas de acceso;
+- segmentación de red;
+- formación del personal;
+- gestión de incidencias y automatización;
+- backups y restauración;
+- revisión del plan de continuidad;
+- detección y monitorización.
 
-## 10. Ejemplos prácticos
+La mejora continua convierte el incidente en una oportunidad de evolución para la seguridad de la entidad.
 
-### Caso 1. Ransomware en un servidor crítico
+## 11. Casos prácticos ampliados
 
-Un servidor que alberga aplicaciones clave se detecta infectado por ransomware. La respuesta debe ser rápida y ordenada:
+### Caso 1. Ransomware en infraestructura crítica
 
-- contención: aislar inmediatamente el servidor y segmentar la red para impedir propagación;
-- investigación: analizar el origen, el vector, los cambios recientes y la evidencia de persistencia;
-- erradicación: restaurar desde una imagen limpia o una copia verificada, eliminar artefactos y corregir la vulnerabilidad explotada;
-- recuperación: reintegrar el servicio en fases, comprobando integridad y funcionamiento antes de volver a producción;
-- prevención: reforzar backups, segmentación, MFA, alertas y prácticas de parcheo.
+Una empresa detecta que varios servidores críticos se están cifrando y que algunos servicios ya no responden. A partir de ahí, la respuesta debe seguir una lógica clara:
 
-Este caso ilustra que la recuperación efectiva exige coordinación entre seguridad, infraestructura y dirección, no solo la limpieza técnica del sistema.
+1. confirmar el alcance del incidente y el impacto en servicios críticos;
+2. aislar los servidores afectados para evitar propagación;
+3. bloquear el tráfico sospechoso y desconectar dependencias críticas si es necesario;
+4. preservar evidencia forense y registrar todos los cambios;
+5. ejecutar la recuperación desde backups verificados y validada;
+6. revisar qué vulnerabilidad o punto de entrada fue explotado;
+7. documentar todas las decisiones y comunicar la situación a dirección y a terceros afectados;
+8. reforzar segmentación, MFA, backups, parches y monitorización.
+
+Este caso evidencia que un incidente de ransomware no es solo un problema de cifrado, sino un problema de continuidad, reputación y resiliencia.
 
 ### Caso 2. Acceso no autorizado a una cuenta administrativa
 
-Un acceso inusual a una cuenta con privilegios elevados se detecta mediante alertas de acceso anómalo. La respuesta debe incluir:
+Se detecta actividad anómala en una cuenta con privilegios de administración. La respuesta debe incluir:
 
-- contención: bloquear la cuenta y revocar sesiones activas;
-- investigación: revisar el origen del acceso, la actividad del usuario y la presencia de MFA o condiciones de riesgo;
-- recuperación: restablecer credenciales, revisar permisos y eliminar accesos inesperados;
-- mejora: reforzar políticas de autenticación, control de acceso, alertas de anomalía y revisión de privilegios.
+- bloqueo inmediato de la cuenta;
+- revisión de sesiones activas y accesos recientes;
+- verificación si se accedió a recursos sensibles;
+- revisión de MFA, credenciales y políticas;
+- análisis de portales y logs;
+- restauración de permisos si se alteraron;
+- revisión de la causa raíz y del origen del acceso;
+- cierre del caso con lecciones aprendidas.
 
-Este tipo de incidente demuestra que un problema aparentemente centrado en una cuenta puede tener implicaciones en identidad, infraestructura y continuidad del negocio.
+La clave aquí es que un problema aparentemente localizado puede implicar un riesgo global si la cuenta fue usada para acceder a servicios críticos.
 
-## 11. Ejercicios de consolidación
+### Caso 3. Exfiltración de información sensible
+
+Se detecta tráfico anómalo saliente con grandes volúmenes de transferencias de datos. El riesgo inmediato es la pérdida de información. La respuesta debe ser rápidamente orientada a:
+
+- identificar qué datos se iban a exfiltrar;
+- aislar los sistemas implicados;
+- bloquear la salida de tráfico sospechoso;
+- revisar la causa raíz y la persistencia del ataque;
+- valorar si se requiere notificación a terceros, autoridades o clientes;
+- documentar daños potenciales y aprender de los fallos de monitorización.
+
+Este caso muestra que no siempre la amenaza es visible en el sistema, sino en la salida de datos o la actividad irregular de red.
+
+## 12. Ejercicios de consolidación
 
 ### Ejercicio 1. Procedimiento de respuesta
 
@@ -323,87 +444,79 @@ Describe el procedimiento que llevarías si detectas una máquina infectada en u
 
 #### Solución orientativa
 
+- confirmar la alerta;
 - aislar la máquina;
-- confirmar la validez de la alerta;
-- preservar evidencia;
+- preservar evidencia y logs;
+- analizar procesos, red y persistencia;
 - bloquear rutas de propagación;
-- analizar procesos y tráfico;
-- eliminar la causa e implementar medidas de seguridad;
-- restaurar desde imagen limpia o copia segura;
-- documentar y evaluar mejoras necesarias.
+- erradicar la causa;
+- restaurar desde copia segura;
+- vigilar la recuperación; 
+- documentar el caso.
 
-### Ejercicio 2. Criterios de escalado
+### Ejercicio 2. Importancia del escalado
 
-¿Qué escenarios harían que escalases un incidente a la dirección o a proveedores externos?
+¿En qué momento un incidente debe escalarse a la dirección o a terceros?
 
 #### Solución orientativa
 
-- daño a servicios críticos;
-- fuga de información sensible;
-- riesgo de propagación a terceros;
-- imposibilidad de contención con recursos internos;
-- posible impacto legal o reputacional;
-- necesidad de coordinación con proveedores o autoridades.
+Cuando el impacto potencial supera el control operativo interno, afecta a activos críticos, compromete datos sensibles, exige coordinación con terceros o puede implicar cumplimiento normativo o reputación.
 
 ### Ejercicio 3. Recuperación segura
 
-Explica qué requisitos deben cumplirse antes de devolver un sistema a producción.
+¿Qué condiciones deben cumplirse antes de devolver a producción un servicio comprometiendo la seguridad?
 
 #### Solución orientativa
 
 - ausencia de persistencia;
-- integridad verificada;
-- copias de seguridad válidas;
-- parches y configuraciones correctas;
-- validación funcional y seguridad;
-- monitorización reforzada tras recuperación.
+- integración de los parches y configuraciones correctas;
+- validación del entorno;
+- alta fiabilidad de backups;
+- comprobación de integridad;
+- presencia de monitorización reforzada.
 
 ### Ejercicio 4. Mejora continua
 
-¿De qué forma una lección aprendida puede evitar futuros incidentes?
+¿Qué cambios introducirías en un sistema tras un incidente para reducir la posibilidad de recurrencia?
 
 #### Solución orientativa
 
-- revisar procedimientos y controles;
-- reforzar capacitación interna;
-- mejorar la segmentación y monitorización;
-- ajustar aprobaciones, políticas y permisos;
-- actualizar planes de continuidad y respuesta.
+- mejorar segmentación;
+- reforzar autenticación;
+- actualizar políticas;
+- mejorar la formación del personal;
+- revisar la gestión de backups;
+- ajustar la monitorización y la respuesta.
 
-## 12. Actividades prácticas recomendadas
+## 13. Actividades prácticas recomendadas
 
 - diseñar un plan de respuesta ante ransomware;
 - crear una matriz de escalado de incidentes;
-- simular la restauración de un servicio crítico;
-- redactar un informe de lecciones aprendidas;
-- realizar un ejercicio de continuidad del negocio para un escenario de ciberataque;
-- analizar un caso real de phishing con acceso administrativo;
-- validar la idoneidad de una estrategia de copias de seguridad y recuperación.
+- simular un ejercicio de recuperación ante pérdida de servicio;
+- definir un procedimiento de continuidad del negocio para un servicio crítico;
+- analizar un caso real de acceso administrativo no autorizado;
+- probar la recuperación desde copias de seguridad verificadas;
+- elaborar un informe de lecciones aprendidas tras un ejercicio práctico.
 
-## 13. Resumen
+## 14. Resumen
 
-La implementación de medidas de ciberseguridad es la fase que transforma la detección y la investigación en una respuesta concreta, medible y sostenible. La organización debe actuar con rapidez, criterio y coordinación para limitar el impacto del incidente, recuperar la normalidad operativa y reforzar su capacidad defensiva. La respuesta eficaz no termina cuando el sistema vuelve a funcionar; termina cuando la organización ha aprendido, documentado y mejorado su resiliencia.
+La implementación de medidas de ciberseguridad es la fase que convierte la detección y la investigación en una respuesta organizada, útil y sostenible. No basta con detectar el incidente ni con limitarlo de forma superficial: la organización debe decidir con criterio, priorizar activos críticos, coordinar equipos, restaurar servicios seguros y aprender de la experiencia. La verdadera calidad de la respuesta se mide por la capacidad de recuperar la normalidad sin comprometer la continuidad del negocio ni la confianza de los usuarios.
 
-En un entorno cada vez más complejo, la capacidad de responder con inteligencia y orden no es un lujo sino una necesidad. La diferencia entre una organización vulnerable y una preparada no está solo en los controles técnicos, sino en la calidad de la gestión del incidente, la disciplina de la recuperación y la voluntad de aprender de cada crisis.
+En un entorno digital cada vez más complejo, la respuesta al incidente es una competencia estratégica. Las organizaciones no solo deben detener la amenaza, sino garantizar la continuidad, reforzar la resiliencia y mejorar sus defensas. De este modo, la ciberseguridad deja de ser una reacción puntual para convertirse en una capacidad de adaptación y aprendizaje.
 
-## 14. Recursos recomendados
-
-- TeoríaUD4-04-CapacidadRespuestaIncidentes.pdf
-- TeoríaUD4-05-Procedimientos de respuesta ante incidentes.pdf
-- TeoríaUD4-08-Lecciones aprendidas (Revisión post-incidente y planes de acción preventivos).pdf
-- Guías de continuidad del negocio y planes de recuperación ante desastres (DRP)
-- Documentación sobre pruebas de recuperación, BCP y gestión de crisis
 
 ## 15. Autoevaluación
 
 1. ¿Qué diferencia hay entre contención, erradicación y recuperación?
-2. ¿Cómo se decide si un incidente requiere escalado a dirección o a terceros?
-3. ¿Qué es la ciberresiliencia y por qué es importante para la continuidad del negocio?
-4. ¿Qué debería incluir un informe de lecciones aprendidas?
+2. ¿Cuándo debe escalarse un incidente a la dirección o a terceros?
+3. ¿Qué es la ciberresiliencia y por qué resulta esencial para la continuidad del negocio?
+4. ¿Qué debe incluir un informe de lecciones aprendidas?
 5. ¿Por qué es necesario validar la restauración antes de devolver un servicio a producción?
 6. ¿Qué papel juega la comunicación en la respuesta al incidente?
-7. ¿Qué factores condicionan la elección de una recuperación gradual frente a una directa?
+7. ¿Qué factores condicionan una recuperación gradual frente a una directa?
 8. ¿Cómo se relacionan la continuidad del negocio, la detección y la respuesta?
+9. ¿Qué elementos impiden una respuesta eficaz cuando no existe coordinación entre equipos?
+10. ¿Por qué la mejora continua es más útil que una mera “solución técnica” del problema?
 
 ---
 
